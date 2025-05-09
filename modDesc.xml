@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="97">
+<modDesc descVersion="98">
     <author>MISSYB</author>
     <version>1.0.0.0</version>
     <title>
@@ -20,8 +20,8 @@
         <storeItem xmlFilename="xml/sheepBarn.xml" />
         <storeItem xmlFilename="xml/grainSilo.xml" />
         <storeItem xmlFilename="xml/siloStorage.xml" />
-<!--        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" /> -->
+        <storeItem xmlFilename="xml/cornerShed.xml" />
+<!--         <storeItem xmlFilename="xml/.xml" /> -->
     </storeItems>
 
     <placeableTypes>

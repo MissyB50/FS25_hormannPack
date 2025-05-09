@@ -7,32 +7,25 @@
 
   <Files>
     <File fileId="10" filename="$data/maps/textures/shared/assetLibraryDecals_diffuse.png"/>
-    <File fileId="27" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_diffuse.dds"/>
-    <File fileId="28" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_normal.dds"/>
-    <File fileId="29" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_specular.dds"/>
-    <File fileId="31" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
-    <File fileId="32" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
-    <File fileId="33" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="20" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_diffuse.dds"/>
+    <File fileId="21" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_normal.dds"/>
+    <File fileId="22" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_specular.dds"/>
+    <File fileId="24" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
+    <File fileId="25" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
+    <File fileId="26" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
     <File fileId="1" filename="$data/placeables/rudolfHormann/shared/garageDoors_diffuse.dds"/>
     <File fileId="5" filename="$data/placeables/rudolfHormann/shared/garageDoors_mask.png"/>
     <File fileId="2" filename="$data/placeables/rudolfHormann/shared/garageDoors_normal.dds"/>
     <File fileId="3" filename="$data/placeables/rudolfHormann/shared/garageDoors_specular.dds"/>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
     <File fileId="13" filename="$data/shaders/decalShader.xml"/>
-    <File fileId="24" filename="$data/shaders/glowShader.xml"/>
     <File fileId="17" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="11" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
     <File fileId="12" filename="$data/shared/assets/assetLibraryDecals_vmask.png"/>
-    <File fileId="19" filename="$data/shared/assets/lights/rudolfHormann/lightsSet_diffuse.png"/>
-    <File fileId="22" filename="$data/shared/assets/lights/rudolfHormann/lightsSet_emissive.png"/>
-    <File fileId="20" filename="$data/shared/assets/lights/rudolfHormann/lightsSet_normal.png"/>
-    <File fileId="21" filename="$data/shared/assets/lights/rudolfHormann/lightsSet_specular.png"/>
-    <File fileId="25" filename="$data/shared/clearGlass_diffuse.png"/>
     <File fileId="15" filename="$data/shared/default_normal.png"/>
     <File fileId="14" filename="$data/shared/window_diffuse.png"/>
-    <File fileId="26" filename="$data/shared/window_specular.png"/>
-    <File fileId="34" filename="../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/buildingShader.xml"/>
-    <File fileId="38" filename="../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/snowHeapShader.xml"/>
+    <File fileId="27" filename="../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/buildingShader.xml"/>
+    <File fileId="30" filename="../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/snowHeapShader.xml"/>
   </Files>
 
 
@@ -42,24 +35,19 @@
       <Normalmap fileId="11"/>
       <Glossmap fileId="12"/>
     </Material>
-    <Material name="clearGlass_mat" materialId="6" alphaBlending="true" customShaderId="17">
-      <Texture fileId="25"/>
-      <Normalmap fileId="15"/>
-      <Glossmap fileId="26"/>
-    </Material>
     <Material name="cornerShed01_mat" materialId="7" customShaderId="4">
-      <Texture fileId="27"/>
-      <Normalmap fileId="28"/>
-      <Glossmap fileId="29"/>
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
       <CustomParameter name="snowScale" value="0"/>
     </Material>
     <Material name="cornerShed02_mat" materialId="8" customShaderId="4" customShaderVariation="colorScale">
-      <Texture fileId="31"/>
-      <Normalmap fileId="32"/>
-      <Glossmap fileId="33"/>
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
-    <Material name="garageDoor_mat" materialId="9" customShaderId="34" customShaderVariation="colorScale">
+    <Material name="garageDoor_mat" materialId="9" customShaderId="27" customShaderVariation="colorScale">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
@@ -78,15 +66,9 @@
     </Material>
     <Material name="lambert1" materialId="13" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
-    <Material name="lightsSet_emissive_mat" materialId="14" specularColor="0.501961 1 0.501961" customShaderId="24">
-      <Texture fileId="22"/>
+    <Material name="snow_mat" materialId="16" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0" customShaderId="30">
     </Material>
-    <Material name="lightsSet_mat" materialId="15" customShaderId="17">
-      <Texture fileId="19"/>
-      <Normalmap fileId="20"/>
-      <Glossmap fileId="21"/>
-    </Material>
-    <Material name="snow_mat" materialId="16" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0" customShaderId="38">
+    <Material name="UnnamedMaterial" materialId="335" diffuseColor="1 1 1 1">
     </Material>
     <Material name="window_mat" materialId="17" specularColor="1 1 0.301961" alphaBlending="true" customShaderId="17">
       <Texture fileId="14"/>
@@ -278,152 +260,25 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="lights" nodeId="169">
-        <TransformGroup name="lightSwitch" nodeId="170"/>
+        <TransformGroup name="lightSwitch" translation="-0.15055 1.84051 0.958602" rotation="90 -90 0" nodeId="170"/>
+        <Shape name="lightTrigger" translation="-1.19861 0.0972953 0.731727" shapeId="11" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="334" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="335"/>
         <TransformGroup name="linkedLights" nodeId="171">
-          <Shape name="light150" translation="-5.27485 7.21776 5" rotation="0 0 -15" shapeId="11" clipDistance="80" nodeId="172" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="174" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="176"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="177" castsShadows="true" receiveShadows="true" skinBindNodeIds="178 176" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="178"/>
-          </Shape>
-          <Shape name="light150" translation="-5.27485 7.21776 15" rotation="0 0 -15" shapeId="11" clipDistance="80" nodeId="179" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="180" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="183"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="184" castsShadows="true" receiveShadows="true" skinBindNodeIds="185 183" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="185"/>
-          </Shape>
-          <Shape name="light150" translation="-5.27485 7.21776 25" rotation="0 0 -15" shapeId="11" clipDistance="80" nodeId="186" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="188" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="190"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="191" castsShadows="true" receiveShadows="true" skinBindNodeIds="192 190" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="192"/>
-          </Shape>
-          <Shape name="light150" translation="-9.79065 7.22016 25" rotation="0 0 15" shapeId="11" clipDistance="80" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="197"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="198" castsShadows="true" receiveShadows="true" skinBindNodeIds="199 197" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="199"/>
-          </Shape>
-          <Shape name="light150" translation="-9.79065 7.22016 15" rotation="0 0 15" shapeId="11" clipDistance="80" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="202" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="204"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="205" castsShadows="true" receiveShadows="true" skinBindNodeIds="206 204" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="206"/>
-          </Shape>
-          <Shape name="light150" translation="-9.79065 7.22016 5" rotation="0 0 15" shapeId="11" clipDistance="80" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="211"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="212" castsShadows="true" receiveShadows="true" skinBindNodeIds="213 211" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="213"/>
-          </Shape>
-          <Shape name="light150" translation="-9.79065 7.22016 -4" rotation="0 0 15" shapeId="11" clipDistance="80" nodeId="214" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="215" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="216" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="217" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="218"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="219" castsShadows="true" receiveShadows="true" skinBindNodeIds="220 218" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="220"/>
-          </Shape>
-          <Shape name="light150" translation="-7.5 7.50566 -7.5" rotation="0 -45 0" shapeId="11" clipDistance="80" nodeId="221" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="223" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="224" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="225"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="226" castsShadows="true" receiveShadows="true" skinBindNodeIds="227 225" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="227"/>
-          </Shape>
-          <Shape name="light150" translation="-4 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" shapeId="11" clipDistance="80" nodeId="228" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="229" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="230" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="232"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="233" castsShadows="true" receiveShadows="true" skinBindNodeIds="234 232" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="234"/>
-          </Shape>
-          <Shape name="light150" translation="5 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" shapeId="11" clipDistance="80" nodeId="235" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="237" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="238" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="239"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="240" castsShadows="true" receiveShadows="true" skinBindNodeIds="241 239" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="241"/>
-          </Shape>
-          <Shape name="light150" translation="15 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" shapeId="11" clipDistance="80" nodeId="242" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="243" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="244" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="245" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="246"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="247" castsShadows="true" receiveShadows="true" skinBindNodeIds="248 246" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="248"/>
-          </Shape>
-          <Shape name="light150" translation="25 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" shapeId="11" clipDistance="80" nodeId="249" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="250" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="252" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="253"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="254" castsShadows="true" receiveShadows="true" skinBindNodeIds="255 253" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="255"/>
-          </Shape>
-          <Shape name="light150" translation="-4 7.21776 -5.275" rotation="90.0003 75 90.0003" shapeId="11" clipDistance="80" nodeId="256" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="257" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="258" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="259" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="260"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="261" castsShadows="true" receiveShadows="true" skinBindNodeIds="262 260" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="262"/>
-          </Shape>
-          <Shape name="light150" translation="5 7.21776 -5.275" rotation="90.0001 75 90.0001" shapeId="11" clipDistance="80" nodeId="263" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="264" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="265" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="266" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="267"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="268" castsShadows="true" receiveShadows="true" skinBindNodeIds="269 267" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="269"/>
-          </Shape>
-          <Shape name="light150" translation="15 7.21776 -5.275" rotation="90.0002 75 90.0002" shapeId="11" clipDistance="80" nodeId="270" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="271" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="272" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="273" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="274"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="275" castsShadows="true" receiveShadows="true" skinBindNodeIds="276 274" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="276"/>
-          </Shape>
-          <Shape name="light150" translation="25 7.21776 -5.275" rotation="90.0003 75 90.0003" shapeId="11" clipDistance="80" nodeId="277" castsShadows="true" receiveShadows="true" materialIds="15">
-            <Shape name="rotPart" translation="0 -0.232524 0" shapeId="12" clipDistance="80" nodeId="278" castsShadows="true" receiveShadows="true" materialIds="15">
-              <Shape name="selfIllum" translation="0 0.046399 0" shapeId="13" clipDistance="50" nodeId="279" castsShadows="true" receiveShadows="true" materialIds="14"/>
-              <Shape name="glass" translation="0 0.046399 0" shapeId="14" clipDistance="35" nodeId="280" castsShadows="true" receiveShadows="true" materialIds="6"/>
-              <TransformGroup name="rotPartJoint" nodeId="281"/>
-            </Shape>
-            <Shape name="hoses" shapeId="15" clipDistance="80" nodeId="282" castsShadows="true" receiveShadows="true" skinBindNodeIds="283 281" materialIds="15"/>
-            <TransformGroup name="rootJoint" nodeId="283"/>
-          </Shape>
+          <TransformGroup name="transform" translation="-5.27485 7.21776 5" rotation="0 0 -15" nodeId="357"/>
+          <TransformGroup name="transform" translation="-5.27485 7.21776 15" rotation="0 0 -15" nodeId="356"/>
+          <TransformGroup name="transform" translation="-5.27485 7.21776 25" rotation="0 0 -15" nodeId="358"/>
+          <TransformGroup name="transform" translation="-9.79065 7.22016 25" rotation="0 0 15" nodeId="355"/>
+          <TransformGroup name="transform" translation="-9.79065 7.22016 15" rotation="0 0 15" nodeId="359"/>
+          <TransformGroup name="transform" translation="-9.79065 7.22016 5" rotation="0 0 15" nodeId="360"/>
+          <TransformGroup name="transform" translation="-9.79065 7.22016 -4" rotation="0 0 15" nodeId="362"/>
+          <TransformGroup name="transform" translation="-7.5 7.50566 -7.5" rotation="0 -45 0" nodeId="361"/>
+          <TransformGroup name="transform" translation="-4 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" nodeId="367"/>
+          <TransformGroup name="transform" translation="5 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" nodeId="366"/>
+          <TransformGroup name="transform" translation="15 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" nodeId="365"/>
+          <TransformGroup name="transform" translation="25 7.22016 -9.79066" rotation="-90.0001 -75 90.0001" nodeId="363"/>
+          <TransformGroup name="transform" translation="-4 7.21776 -5.275" rotation="90.0003 75 90.0003" nodeId="364"/>
+          <TransformGroup name="transform" translation="5 7.21776 -5.275" rotation="90.0001 75 90.0001" nodeId="368"/>
+          <TransformGroup name="transform" translation="15 7.21776 -5.275" rotation="90.0002 75 90.0002" nodeId="369"/>
+          <TransformGroup name="transform" translation="25 7.21776 -5.275" rotation="90.0003 75 90.0003" nodeId="370"/>
         </TransformGroup>
         <TransformGroup name="realLights" nodeId="284">
           <TransformGroup name="realLightsHigh" nodeId="285">
@@ -460,125 +315,26 @@
       <TransformGroup name="visuals" nodeId="312">
         <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="313">
           <TransformGroup name="LOD0" nodeId="314">
-            <Shape name="cornerShed01_vis" shapeId="16" clipDistance="400" nodeId="315" castsShadows="true" receiveShadows="true" materialIds="7"/>
-            <Shape name="cornerShed02_vis" shapeId="17" clipDistance="400" nodeId="316" castsShadows="true" receiveShadows="true" materialIds="8"/>
-            <Shape name="metalDoorFrame" shapeId="18" nodeId="317" castsShadows="true" receiveShadows="true" materialIds="9"/>
-            <Shape name="windowFrame" translation="-1.815 1.36 30.45" shapeId="19" clipDistance="600" nodeId="318" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="cornerShed01_vis" shapeId="12" clipDistance="400" nodeId="315" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cornerShed02_vis" shapeId="13" clipDistance="400" nodeId="316" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="metalDoorFrame" shapeId="14" nodeId="317" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            <Shape name="windowFrame" translation="-1.815 1.36 30.45" shapeId="15" clipDistance="600" nodeId="318" castsShadows="true" receiveShadows="true" materialIds="10"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="319">
-            <Shape name="cornerShed01_vis_LOD" shapeId="20" clipDistance="600" nodeId="320" castsShadows="true" receiveShadows="true" materialIds="7"/>
-            <Shape name="cornerShed02_vis_LOD" shapeId="21" clipDistance="600" nodeId="321" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="cornerShed01_vis_LOD" shapeId="16" clipDistance="600" nodeId="320" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cornerShed02_vis_LOD" shapeId="17" clipDistance="600" nodeId="321" castsShadows="true" receiveShadows="true" materialIds="8"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="322">
-          <Shape name="snowMask" translation="-7.57159 8.40275 -7.58127" shapeId="22" nodeId="323" castsShadows="true" receiveShadows="true" materialIds="16"/>
+          <Shape name="snowMask" translation="-7.57159 8.40275 -7.58127" shapeId="18" nodeId="323" castsShadows="true" receiveShadows="true" materialIds="16"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collision" nodeId="324">
-        <Shape name="collision" shapeId="23" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="325" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
+        <Shape name="collision" shapeId="19" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="325" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>
 
 
   <Animation externalAnimFile="cornerShed.i3d.anim" />
-  <UserAttributes>
-    <UserAttribute nodeId="176">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="178">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="183">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="185">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="190">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="192">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="197">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="199">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="204">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="206">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="211">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="213">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="218">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="220">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="225">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="227">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="232">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="234">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="239">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="241">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="246">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="248">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="253">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="255">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="260">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="262">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="267">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="269">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="274">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="276">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="281">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="283">
-      <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-  </UserAttributes>
-
 </i3D>
