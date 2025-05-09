@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="siloWorkshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_storage</name>
+        <functions>
+            <function>$l10n_function_farmSilo</function>
+            <function>$l10n_function_workshop</function>
+        </functions>
+        <image>store/store_storage.dds</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>RUDOLFHOERMANN</brand>
+        <species>PLACEABLE</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>i3d/siloBuilding.i3d</filename>
+		<boughtWithFarmland>true</boughtWithFarmland>
+        <buysFarmland priceScale="1">false</buysFarmland>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+
+        </testAreas>
+
+        <sounds>
+            <place template="siloImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+        <indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="mapPosition" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+        <triggerMarker node="loadingMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+        <triggerMarker node="refillMarkerDiesel"  filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+
+    </triggerMarkers>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="switch1" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="switch2" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="switch3" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    </dynamicallyLoadedParts>
+
+    <animatedObjects>	
+        <animatedObject saveId="door01" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor1Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor1Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor1Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor1Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>		
+        <animatedObject saveId="door02" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor2Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor2Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor2Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor2Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>				
+        <animatedObject saveId="door03" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor3Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor3Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor3Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor3Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor3Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>			
+        <animatedObject saveId="door04" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor4Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor4Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor4Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor4Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor4Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>				
+        <animatedObject saveId="door05" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor5Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor5Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor5Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor5Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor5Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>			
+        <animatedObject saveId="door06" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor6Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor6Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor6Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor6Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor6Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>			
+        <animatedObject saveId="door07" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor7Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor7Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor7Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor7Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor7Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door08" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor8Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor8Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor8Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor8Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor8Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door09" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor9Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor9Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor9Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor9Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor9Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door10" >
+            <animation duration="5">
+                <clip rootNode="rollingDoor10Panel1" name="gate6Panels1Source" filename="$data/placeables/rudolfHormann/garageContractor/gate6Panels_animation.i3d" />
+            </animation>
+            <controls triggerNode="rollingDoor10Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor10Sound" template="slidingGateMetalLoop" />
+                <posEnd linkNode="rollingDoor10Sound" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor10Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <lights>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode01" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode02" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode03" groupIndex="2"/>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode04" groupIndex="2"/>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode05" groupIndex="3"/>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode06" groupIndex="3"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+                <light node="realLightsLow" groupIndex="2"/>
+                <light node="realLightsLow" groupIndex="3"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+                <light node="realLightsHigh" groupIndex="2"/>
+                <light node="realLightsHigh" groupIndex="3"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger1">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
+            </sounds>
+        </group>
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger2">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
+            </sounds>
+        </group>
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger3">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
+            </sounds>
+        </group>
+    </lights>
+
+    <silo>
+        <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypeCategories="farmSilo" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+                <sounds>
+                    <loading template="silosActive" />
+                </sounds>
+            </loadTrigger>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="true" storageRadius="50">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="farmSilo" aiNode="aiUnloadingNode"/>
+        </unloadingStation>
+
+        <storages>
+			<storage node="storage" fillTypes="BARLEY" capacity="5000000" isExtension="false"/>
+			<storage node="storage" fillTypes="WHEAT" capacity="5000000" isExtension="false"/>
+			<storage node="storage" fillTypes="OAT" capacity="5000000" isExtension="false"/>
+			<storage node="storage" fillTypes="CANOLA" capacity="5000000" isExtension="false"/>
+			<storage node="storage" fillTypes="" capacity="5000000" isExtension="false"/>
+			<storage node="storage" fillTypes="" capacity="5000000" isExtension="false"/>			
+			<storage node="storage" fillTypes="" capacity="5000000" isExtension="false"/>
+        </storages>
+    </silo>
+
+    <silo playerActionTrigger="refillPlayerTrigger" sellWarningText="$l10n_info_tankNotEmpty">
+        <loadingStation node="loadingTriggerDiesel" supportsExtension="false">
+            <loadTrigger triggerNode="loadingTriggerDiesel" fillTypes="DIESEL" fillLitersPerSecond="40" dischargeNode="dischargeNodeDiesel" startFillText="$l10n_action_refuel" stopFillText="$l10n_action_stopRefuel"/>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="false">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeDiesel" fillTypes="DIESEL"/>
+        </unloadingStation>
+
+        <storages>
+            <storage node="storageDiesel" fillTypes="DIESEL" capacity="10000" isExtension="false">
+                <startFillLevel fillType="DIESEL" fillLevel="200" />
+            </storage>
+        </storages>
+    </silo>
+
+    <workshop>
+        <sellingPoint playerTriggerNode="playerTrigger" iconNode="markerWrench" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
+    </workshop>
+
+    <colorConfigurations>
+        <material slotName="siloStorage02_mat" />
+        <material slotName="mainColor_mat" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BEIGE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_RED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BLUE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WHITEALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_GREYALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_OXIDRED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODDARK"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODBRIGHT"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
+    </colorConfigurations>
+
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_no" isActive="false">
+                <objectChange node="solarPanels" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="90000" incomePerHour="1000" />
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>2|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>2|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>2|1|1" />
+        <i3dMapping id="indoorAreaStart03" node="0>2|2" />
+        <i3dMapping id="indoorAreaWidth03" node="0>2|2|0" />
+        <i3dMapping id="indoorAreaHeight03" node="0>2|2|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="rollingDoor1Panel1" node="0>5|0|0" />
+        <i3dMapping id="rollingDoor1Panel2" node="0>5|0|0|0" />
+        <i3dMapping id="rollingDoor1Panel3" node="0>5|0|0|0|0" />
+        <i3dMapping id="rollingDoor1Panel4" node="0>5|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor1Panel5" node="0>5|0|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor1Panel6" node="0>5|0|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor1Trigger" node="0>5|0|1" />
+        <i3dMapping id="rollingDoor1Sound" node="0>5|0|2" />
+        <i3dMapping id="rollingDoor2Panel1" node="0>5|1|0" />
+        <i3dMapping id="rollingDoor2Panel2" node="0>5|1|0|0" />
+        <i3dMapping id="rollingDoor2Panel3" node="0>5|1|0|0|0" />
+        <i3dMapping id="rollingDoor2Panel4" node="0>5|1|0|0|0|0" />
+        <i3dMapping id="rollingDoor2Panel5" node="0>5|1|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor2Panel6" node="0>5|1|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor2Trigger" node="0>5|1|1" />
+        <i3dMapping id="rollingDoor2Sound" node="0>5|1|2" />
+        <i3dMapping id="rollingDoor3Panel1" node="0>5|2|0" />
+        <i3dMapping id="rollingDoor3Panel2" node="0>5|2|0|0" />
+        <i3dMapping id="rollingDoor3Panel3" node="0>5|2|0|0|0" />
+        <i3dMapping id="rollingDoor3Panel4" node="0>5|2|0|0|0|0" />
+        <i3dMapping id="rollingDoor3Panel5" node="0>5|2|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor3Panel6" node="0>5|2|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor3Trigger" node="0>5|2|1" />
+        <i3dMapping id="rollingDoor3Sound" node="0>5|2|2" />
+        <i3dMapping id="rollingDoor4Panel1" node="0>5|3|0" />
+        <i3dMapping id="rollingDoor4Panel2" node="0>5|3|0|0" />
+        <i3dMapping id="rollingDoor4Panel3" node="0>5|3|0|0|0" />
+        <i3dMapping id="rollingDoor4Panel4" node="0>5|3|0|0|0|0" />
+        <i3dMapping id="rollingDoor4Panel5" node="0>5|3|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor4Panel6" node="0>5|3|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor4Trigger" node="0>5|3|1" />
+        <i3dMapping id="rollingDoor4Sound" node="0>5|3|2" />		
+        <i3dMapping id="rollingDoor5Panel1" node="0>5|4|0" />
+        <i3dMapping id="rollingDoor5Panel2" node="0>5|4|0|0" />
+        <i3dMapping id="rollingDoor5Panel3" node="0>5|4|0|0|0" />
+        <i3dMapping id="rollingDoor5Panel4" node="0>5|4|0|0|0|0" />
+        <i3dMapping id="rollingDoor5Panel5" node="0>5|4|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor5Panel6" node="0>5|4|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor5Trigger" node="0>5|4|1" />
+        <i3dMapping id="rollingDoor5Sound" node="0>5|4|2" />		
+        <i3dMapping id="rollingDoor6Panel1" node="0>5|5|0" />
+        <i3dMapping id="rollingDoor6Panel2" node="0>5|5|0|0" />
+        <i3dMapping id="rollingDoor6Panel3" node="0>5|5|0|0|0" />
+        <i3dMapping id="rollingDoor6Panel4" node="0>5|5|0|0|0|0" />
+        <i3dMapping id="rollingDoor6Panel5" node="0>5|5|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor6Panel6" node="0>5|5|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor6Trigger" node="0>5|5|1" />
+        <i3dMapping id="rollingDoor6Sound" node="0>5|6|2" />
+        <i3dMapping id="rollingDoor7Panel1" node="0>5|6|0" />
+        <i3dMapping id="rollingDoor7Panel2" node="0>5|6|0|0" />
+        <i3dMapping id="rollingDoor7Panel3" node="0>5|6|0|0|0" />
+        <i3dMapping id="rollingDoor7Panel4" node="0>5|6|0|0|0|0" />
+        <i3dMapping id="rollingDoor7Panel5" node="0>5|6|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor7Panel6" node="0>5|6|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor7Trigger" node="0>5|6|1" />
+        <i3dMapping id="rollingDoor7Sound" node="0>5|6|2" />
+        <i3dMapping id="rollingDoor8Panel1" node="0>5|7|0" />
+        <i3dMapping id="rollingDoor8Panel2" node="0>5|7|0|0" />
+        <i3dMapping id="rollingDoor8Panel3" node="0>5|7|0|0|0" />
+        <i3dMapping id="rollingDoor8Panel4" node="0>5|7|0|0|0|0" />
+        <i3dMapping id="rollingDoor8Panel5" node="0>5|7|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor8Panel6" node="0>5|7|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor8Trigger" node="0>5|7|1" />
+        <i3dMapping id="rollingDoor8Sound" node="0>5|7|2" />		
+        <i3dMapping id="rollingDoor9Panel1" node="0>5|8|0" />
+        <i3dMapping id="rollingDoor9Panel2" node="0>5|8|0|0" />
+        <i3dMapping id="rollingDoor9Panel3" node="0>5|8|0|0|0" />
+        <i3dMapping id="rollingDoor9Panel4" node="0>5|8|0|0|0|0" />
+        <i3dMapping id="rollingDoor9Panel5" node="0>5|8|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor9Panel6" node="0>5|8|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor9Trigger" node="0>5|8|1" />
+        <i3dMapping id="rollingDoor9Sound" node="0>5|8|2" />		
+        <i3dMapping id="rollingDoor10Panel1" node="0>5|9|0" />
+        <i3dMapping id="rollingDoor10Panel2" node="0>5|9|0|0" />
+        <i3dMapping id="rollingDoor10Panel3" node="0>5|9|0|0|0" />
+        <i3dMapping id="rollingDoor10Panel4" node="0>5|9|0|0|0|0" />
+        <i3dMapping id="rollingDoor10Panel5" node="0>5|9|0|0|0|0|0" />
+        <i3dMapping id="rollingDoor10Panel6" node="0>5|9|0|0|0|0|0|0" />		
+        <i3dMapping id="rollingDoor10Trigger" node="0>5|9|1" />
+        <i3dMapping id="rollingDoor10Sound" node="0>5|9|2" />
+        <i3dMapping id="switch1" node="0>6|0" />
+        <i3dMapping id="switch2" node="0>6|1" />
+        <i3dMapping id="switch3" node="0>6|2" />
+        <i3dMapping id="lightTrigger1" node="0>6|3" />
+        <i3dMapping id="lightTrigger2" node="0>6|4" />
+        <i3dMapping id="lightTrigger3" node="0>6|5" />
+        <i3dMapping id="lightNode01" node="0>6|6|0" />
+        <i3dMapping id="lightNode02" node="0>6|6|1" />
+        <i3dMapping id="lightNode03" node="0>6|6|2" />
+        <i3dMapping id="lightNode04" node="0>6|6|3" />
+        <i3dMapping id="lightNode05" node="0>6|6|4" />
+        <i3dMapping id="lightNode06" node="0>6|6|5" />
+        <i3dMapping id="realLightsLow" node="0>6|7|0" />
+        <i3dMapping id="realLightsHigh" node="0>6|7|1" />
+        <i3dMapping id="loadingTrigger" node="0>7|0|0" />
+        <i3dMapping id="dischargeNode" node="0>7|0|1" />
+        <i3dMapping id="pipeEffect" node="0>7|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>7|0|2|1" />
+        <i3dMapping id="aiLoadingNode" node="0>7|0|3" />
+        <i3dMapping id="exactFillRootNode" node="0>7|1|0" />
+        <i3dMapping id="aiUnloadingNode" node="0>7|1|1" />
+        <i3dMapping id="mapPosition" node="0>7|2" />
+        <i3dMapping id="markerLoading" node="0>7|3" />
+        <i3dMapping id="markerUnloading" node="0>7|4" />
+        <i3dMapping id="storage" node="0>7|5" />
+        <i3dMapping id="teleportNode" node="0>7|6" />
+        <i3dMapping id="aiSpline" node="0>7|7" />
+        <i3dMapping id="infoTrigger" node="0>7|8" />
+        <i3dMapping id="vehicleTrigger" node="0>8|0" />
+        <i3dMapping id="playerTrigger" node="0>8|1" />
+        <i3dMapping id="markerWrench" node="0>8|1|0" />
+        <i3dMapping id="storageDiesel" node="0>9|0|0|0" />
+        <i3dMapping id="exactFillRootNodeDiesel" node="0>9|0|0|1|0" />
+        <i3dMapping id="loadingTriggerDiesel" node="0>9|0|0|2|0" />
+        <i3dMapping id="dischargeNodeDiesel" node="0>9|0|0|2|1" />
+        <i3dMapping id="loadingMarker" node="0>9|0|0|2|2" />
+        <i3dMapping id="refillPlayerTrigger" node="0>9|0|0|3" />
+        <i3dMapping id="refillMarkerDiesel" node="0>9|0|0|3|0" />
+        <i3dMapping id="solarPanels" node="0>10|1" />
+    </i3dMappings>
+</placeable>

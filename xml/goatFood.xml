@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<subType subType="GOAT" fillTypeName="GOAT" statsBreeding="breedGoatsCount">
+<visuals>
+<visual minAge="0" visualAnimalIndex="13" image="$dataS/character/animals/domesticated/goat/store_goatBaby.png" canBeBought="true">
+<description>$l10n_animal_descriptionGoatProfit</description>
+<description>$l10n_animal_descriptionGoatFeed</description>
+<description>$l10n_animal_descriptionWater</description>
+<description>$l10n_animal_descriptionSheepYoung</description>
+<description>$l10n_animal_descriptionGoatReproduction</description>
+</visual>
+<visual minAge="3" visualAnimalIndex="14" image="$dataS/character/animals/domesticated/goat/store_goatKid.png" canBeBought="true">
+<description>$l10n_animal_descriptionGoatProfit</description>
+<description>$l10n_animal_descriptionGoatFeed</description>
+<description>$l10n_animal_descriptionWater</description>
+<description>$l10n_animal_descriptionSheepYoung</description>
+<description>$l10n_animal_descriptionGoatReproduction</description>
+</visual>
+<visual minAge="16" visualAnimalIndex="15" image="$dataS/character/animals/domesticated/goat/store_goat.png" canBeBought="true">
+<description>$l10n_animal_descriptionGoatProfit</description>
+<description>$l10n_animal_descriptionGoatFeed</description>
+<description>$l10n_animal_descriptionWater</description>
+<description>$l10n_animal_descriptionMature</description>
+<description>$l10n_animal_descriptionGoatReproduction</description>
+</visual>
+</visuals>
+<reproduction minAgeMonth="16" durationMonth="5" minHealthFactor="0.75"/>
+<buyPrice>
+<key ageMonth="0" value="200"/>
+<key ageMonth="36" value="1500"/>
+</buyPrice>
+<sellPrice>
+<key ageMonth="0" value="100"/>
+<key ageMonth="36" value="1000"/>
+</sellPrice>
+<transportPrice>
+<key ageMonth="0" value="30"/>
+<key ageMonth="8" value="50"/>
+</transportPrice>
+<input>
+<water>
+<key ageMonth="0" value="2"/>
+<key ageMonth="5" value="20"/>
+</water>
+<food>
+<key ageMonth="0" value="5"/>
+<key ageMonth="5" value="50"/>
+</food>
+</input>
+<output>
+<pallets fillType="GOATMILK">
+<key ageMonth="0" value="0"/>
+<key ageMonth="6" value="5"/>
+<key ageMonth="18" value="25"/>
+</pallets>
+</output>
+</subType>
+</animal>

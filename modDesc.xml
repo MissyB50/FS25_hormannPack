@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="97">
+    <author>MISSYB</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Hormann Building Pack</en>
+        <de>Hormann Gebäudepaket</de>
+    </title>
+    <description>
+        <en><![CDATA[
+]]></en>
+        <de><![CDATA[
+]]></de>
+    </description>
+    <iconFilename>icon_hormann.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="xml/cowBarnLarge.xml" />
+        <storeItem xmlFilename="xml/sheepBarn.xml" />
+        <storeItem xmlFilename="xml/grainSilo.xml" />
+        <storeItem xmlFilename="xml/siloStorage.xml" />
+<!--        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" /> -->
+    </storeItems>
+
+    <placeableTypes>
+        <type name="cowHusbandryBarnMilkManure" parent="baseHusbandry" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="husbandryWater" />
+            <specialization name="husbandryMilk" />
+            <specialization name="husbandryStraw" />
+            <specialization name="husbandryLiquidManure" />
+            <specialization name="manureHeap" />
+            <specialization name="husbandryMeadow" />
+        </type>
+    </placeableTypes>
+
+    <placeableTypes>
+        <type name="siloWorkshop" parent="silo" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="workshop"/>           
+            <specialization name="buyPoint"/> 
+        </type>
+    </placeableTypes>
+
+    <l10n>
+        <text name="shopItem_storage">
+            <en>Silo Storage With Workshop</en>
+            <de>Silolager mit Werkstatt</de>
+        </text>
+        <text name="storeItem_cowBarnOpenRoof">
+            <en>Cow Barn With Open Roof</en>
+            <de>Kuhstall Mit Offenem Dach</de>
+            <fr>Étable à vaches avec toit ouvert</fr>
+        </text>
+        <text name="storeItem_horseBarnLShape">
+            <en>Horse Barn In L Shape</en>
+            <de>Pferdestall In L-Form</de>
+            <fr>Stabulation pour chevaux en forme de L</fr>
+        </text>
+        <text name="storeItem_cowPasture">
+            <en>Cow pasture</en>
+            <de>Kuh mit Weide</de>
+        </text>
+    </l10n>
+</modDesc>

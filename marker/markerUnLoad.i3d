@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="markerUnLoad.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="1" filename="../textures/markerUnload.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="marker_mat" materialId="28" specularColor="0.572549 1 0.360784" alphaBlending="true" customShaderId="3" customShaderVariation="additive_billboard_pulsating">
+      <Texture fileId="1"/>
+      <Emissivemap fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="markerUnLoad.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="markerUnLoad" nodeId="8">
+      <Shape name="markerUnLoad" translation="0 1 0" shapeId="1" clipDistance="300" nodeId="9" castsShadows="true" receiveShadows="true" materialIds="28"/>
+      <Light name="pointLight" translation="0 1 0" clipDistance="300" nodeId="10" type="point" color="0.417119 0.506314 0.0445976" emitDiffuse="true" emitSpecular="true" range="3"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

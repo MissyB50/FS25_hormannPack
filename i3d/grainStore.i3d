@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grainStore.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="29" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachmentsVentArray.png"/>
+    <File fileId="25" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_diffuse.dds"/>
+    <File fileId="26" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_normal.dds"/>
+    <File fileId="27" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_specular.dds"/>
+    <File fileId="11" filename="$data/maps/textures/shared/assetLibraryDecals_diffuse.png"/>
+    <File fileId="31" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="32" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="9" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="19" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_diffuse.dds"/>
+    <File fileId="20" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_normal.dds"/>
+    <File fileId="21" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_specular.dds"/>
+    <File fileId="23" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
+    <File fileId="24" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
+    <File fileId="30" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="2" filename="$data/placeables/rudolfHormann/shared/garageDoors_diffuse.dds"/>
+    <File fileId="6" filename="$data/placeables/rudolfHormann/shared/garageDoors_mask.png"/>
+    <File fileId="3" filename="$data/placeables/rudolfHormann/shared/garageDoors_normal.dds"/>
+    <File fileId="4" filename="$data/placeables/rudolfHormann/shared/garageDoors_specular.dds"/>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="14" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="18" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="33" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="28" filename="$data/shaders/vtxVentShader.xml"/>
+    <File fileId="12" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="13" filename="$data/shared/assets/assetLibraryDecals_vmask.png"/>
+    <File fileId="16" filename="$data/shared/default_normal.png"/>
+    <File fileId="15" filename="$data/shared/window_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="5" alphaBlending="true" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="fanCover_mat" materialId="6" customShaderId="18">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="garageDoors_mat" materialId="7" customShaderId="5" customShaderVariation="colorScale">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mMaskMap" fileId="6"/>
+      <CustomParameter name="colorScale0" value="0.0667 0.2588 0.1961 1"/>
+    </Material>
+    <Material name="grainStore01_mat" materialId="8" customShaderId="5">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <CustomParameter name="snowScale" value="0"/>
+    </Material>
+    <Material name="grainStore02_mat" materialId="9" customShaderId="5" customShaderVariation="colorScale">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24" bumpDepth="2"/>
+      <Glossmap fileId="24"/>
+      <CustomParameter name="colorScale0" value="0.47 0.3 0.6 1"/>
+    </Material>
+    <Material name="grainStore02_mat" materialId="10" customShaderId="5" customShaderVariation="colorScale">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24" bumpDepth="2"/>
+      <Glossmap fileId="30"/>
+      <CustomParameter name="colorScale0" value="0.64 0.29 0.35 1"/>
+    </Material>
+    <Material name="industrialBuildingAttachments_mat3" materialId="11" customShaderId="28">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+      <Custommap name="mArray" fileId="29"/>
+    </Material>
+    <Material name="lambert" materialId="12" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="metalFrame_mat (color_mat)" materialId="13" customShaderId="5" customShaderVariation="colorScale">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="colorScale0" value="0.93 0.37 0.4 1"/>
+    </Material>
+    <Material name="snow_mat" materialId="14" customShaderId="33">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="window_mat" materialId="15" specularColor="1 1 0.301961" alphaBlending="true" customShaderId="18">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grainStore.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="placeable" clipDistance="600" nodeId="39">
+      <TransformGroup name="1_clearAreas" nodeId="40">
+        <TransformGroup name="clearArea1Start" translation="-16 0 -13" nodeId="41">
+          <TransformGroup name="clearArea1Width" translation="0 0 26" nodeId="42"/>
+          <TransformGroup name="clearArea1Height" translation="32 0 0" nodeId="43"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="2_levelAreas" nodeId="44">
+        <TransformGroup name="levelArea1Start" translation="-16 0 -13" nodeId="45">
+          <TransformGroup name="levelArea1Width" translation="0 0 26" nodeId="46"/>
+          <TransformGroup name="levelArea1Height" translation="32 0 0" nodeId="47"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="3_indoorAreas" nodeId="48">
+        <TransformGroup name="indoorArea1Start" translation="-15.15 0.1 -12.15" nodeId="49">
+          <TransformGroup name="indoorArea1Width" translation="0 0 24.3001" nodeId="50"/>
+          <TransformGroup name="indoorArea1Height" translation="30.2995 0 0" nodeId="51"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="4_testAreas" nodeId="52">
+        <TransformGroup name="testArea1Start" translation="-17 0 14" nodeId="53">
+          <TransformGroup name="testArea1End" translation="34 10 -28" nodeId="54"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="5_tipOcclusionUpdateAreas" nodeId="55">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-17 0 14" nodeId="56">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="34 0 -28" nodeId="57"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="6_lights" nodeId="58">
+        <TransformGroup name="lightSwitch" translation="-1.29 1.03371 11.8344" rotation="-90 -0 0" nodeId="59"/>
+        <Shape name="lightTrigger" translation="-1.19819 0.1 11.4327" shapeId="1" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+        <TransformGroup name="linkedLights" nodeId="61">
+          <TransformGroup name="linkedLights" translation="-10.5 7.45427 0" rotation="0 -0 11.25" nodeId="62"/>
+          <TransformGroup name="linkedLights" translation="-10.5 7.45427 6" rotation="0 -0 11.25" nodeId="63"/>
+          <TransformGroup name="linkedLights" translation="-10.5 7.45427 -6" rotation="0 -0 11.25" nodeId="64"/>
+          <TransformGroup name="linkedLights" translation="-4.48826 8.65008 -6" rotation="0 -0 11.25" nodeId="65"/>
+          <TransformGroup name="linkedLights" translation="-4.48826 8.65008 0" rotation="0 -0 11.25" nodeId="66"/>
+          <TransformGroup name="linkedLights" translation="-4.48826 8.65008 6" rotation="0 -0 11.25" nodeId="67"/>
+          <TransformGroup name="linkedLights" translation="4.49894 8.64637 -6" rotation="0 -0 -11.25" nodeId="68"/>
+          <TransformGroup name="linkedLights" translation="4.49894 8.64637 0" rotation="0 -0 -11.25" nodeId="69"/>
+          <TransformGroup name="linkedLights" translation="10.5003 7.45263 6" rotation="0 -0 -11.25" nodeId="70"/>
+          <TransformGroup name="linkedLights" translation="4.49894 8.64637 6" rotation="0 -0 -11.25" nodeId="71"/>
+          <TransformGroup name="linkedLights" translation="10.5003 7.45263 -6" rotation="0 -0 -11.25" nodeId="72"/>
+          <TransformGroup name="linkedLights" translation="10.5003 7.45263 0" rotation="0 -0 -11.25" nodeId="73"/>
+        </TransformGroup>
+        <TransformGroup name="realLights" nodeId="74">
+          <TransformGroup name="realLightsHigh" nodeId="75">
+            <Light name="spotLightHigh" translation="-4.41628 8.31446 0" rotation="-90 -0 11" nodeId="76" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.001" translation="-10.4363 7.14429 0" rotation="-90 -0 11" nodeId="77" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.002" translation="4.43916 8.3209 0" rotation="-90 -0 -11" nodeId="78" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.003" translation="10.4351 7.11286 0" rotation="-90 -0 -11" nodeId="79" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh" translation="-4.41628 8.31446 6" rotation="-90 -0 11" nodeId="143" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh" translation="-4.41628 8.31446 -6" rotation="-90 -0 11" nodeId="144" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.001" translation="-10.4363 7.14429 2.1864" rotation="-90 -0 11" nodeId="145" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.001" translation="-10.4363 7.14429 -6" rotation="-90 -0 11" nodeId="146" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.002" translation="4.43916 8.3209 0" rotation="-90 -0 -11" nodeId="147" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.002" translation="4.43916 8.3209 -6" rotation="-90 -0 -11" nodeId="148" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.003" translation="10.4351 7.11286 0" rotation="-90 -0 -11" nodeId="149" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.003" translation="10.4351 7.11286 -6" rotation="-90 -0 -11" nodeId="150" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+          </TransformGroup>
+          <TransformGroup name="realLightsLow" nodeId="80">
+            <Light name="pointLightLow" translation="-7.5 3.5 0" rotation="-90 -0 0" nodeId="81" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.001" translation="-7.5 3.5 6" rotation="-90 -0 0" nodeId="82" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.002" translation="-7.5 3.5 -6" rotation="-90 -0 0" nodeId="83" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.003" translation="7.5 3.5 0" rotation="-90 -0 0" nodeId="84" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.004" translation="7.5 3.5 6" rotation="-90 -0 0" nodeId="85" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.005" translation="7.5 3.5 -6" rotation="-90 -0 0" nodeId="86" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="7_doors" nodeId="87">
+        <TransformGroup name="doorSwitch" translation="-4 1.3 11.86" rotation="-0 180 -0" nodeId="88"/>
+        <TransformGroup name="doorSwitch" translation="4 1.3 11.86" rotation="-0 180 -0" nodeId="89"/>
+        <TransformGroup name="rollingDoor1" translation="10.8126 0.13974 11.8876" rotation="0 180 0" nodeId="90">
+          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="2" clipDistance="300" nodeId="91" castsShadows="true" receiveShadows="true" skinBindNodeIds="91 92 93 94 95" materialIds="7">
+            <TransformGroup name="rollingDoor1Panel2" translation="-2.27374e-15 0.848488 -0.048076" clipDistance="300" nodeId="92">
+              <TransformGroup name="rollingDoor1Panel3" translation="-1.7053e-15 0.8913 -5.68434e-15" clipDistance="300" nodeId="93">
+                <TransformGroup name="rollingDoor1Panel4" translation="1.7053e-15 0.8913 -1.47793e-14" clipDistance="300" nodeId="94">
+                  <TransformGroup name="rollingDoor1Panel5" translation="0 0.8912 2.95586e-14" clipDistance="300" nodeId="95">
+                    <Shape name="screwsDecalsPanel5" translation="-0.0151057 0 -0.00296667" shapeId="3" clipDistance="122" nodeId="96" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+                  </TransformGroup>
+                  <Shape name="screwsDecalsPanel4" translation="-0.0193844 0 0" shapeId="4" clipDistance="50" nodeId="97" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+                  <Shape name="glass" translation="-0.0166335 0 -0.00250994" shapeId="5" clipDistance="100" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="15"/>
+                </TransformGroup>
+                <Shape name="screwsDecalsPanel3" translation="-0.0175005 0 -0.00226444" shapeId="6" clipDistance="50" nodeId="99" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+                <Shape name="rollingDoor1Panel3Collision" translation="-2.4e-05 0.855446 0.048075" shapeId="7" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+              </TransformGroup>
+              <Shape name="screwsDecalsPanel2" translation="-0.0178347 0 -0.00329713" shapeId="8" clipDistance="50" nodeId="101" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+            </TransformGroup>
+            <Shape name="rollingDoor1Panel1Collision" translation="0 0.811975 0" shapeId="9" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+            <Shape name="screwsDecalsPanel1" translation="0 -0.000127886 -0.00409755" shapeId="10" clipDistance="50" nodeId="103" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+          </Shape>
+          <Shape name="rollingDoor1Trigger" translation="7.11631 1.13659 0.633897" shapeId="11" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+          <TransformGroup name="rollingDoor1Sound" translation="3.30901 2.51212 0" nodeId="105"/>
+        </TransformGroup>
+        <TransformGroup name="rollingDoor1" translation="-4.19305 0.13974 11.8876" rotation="0 180 0" nodeId="106">
+          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="2" clipDistance="300" nodeId="107" castsShadows="true" receiveShadows="true" skinBindNodeIds="107 108 109 110 111" materialIds="7">
+            <TransformGroup name="rollingDoor1Panel2" translation="-2.27374e-15 0.848488 -0.048076" clipDistance="300" nodeId="108">
+              <TransformGroup name="rollingDoor1Panel3" translation="-1.7053e-15 0.8913 -5.68434e-15" clipDistance="300" nodeId="109">
+                <TransformGroup name="rollingDoor1Panel4" translation="1.7053e-15 0.8913 -1.47793e-14" clipDistance="300" nodeId="110">
+                  <TransformGroup name="rollingDoor1Panel5" translation="0 0.8912 2.95586e-14" clipDistance="300" nodeId="111">
+                    <Shape name="screwsDecalsPanel5" translation="-0.0151057 0 -0.00296667" shapeId="3" clipDistance="122" nodeId="112" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+                  </TransformGroup>
+                  <Shape name="screwsDecalsPanel4" translation="-0.0193844 0 0" shapeId="4" clipDistance="50" nodeId="113" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+                  <Shape name="glass" translation="-0.0166335 0 -0.00250994" shapeId="5" clipDistance="100" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="15"/>
+                </TransformGroup>
+                <Shape name="screwsDecalsPanel3" translation="-0.0175005 0 -0.00226444" shapeId="6" clipDistance="50" nodeId="115" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+                <Shape name="rollingDoor1Panel3Collision" translation="-2.4e-05 0.855446 0.048075" shapeId="7" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="116" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+              </TransformGroup>
+              <Shape name="screwsDecalsPanel2" translation="-0.0178347 0 -0.00329713" shapeId="8" clipDistance="50" nodeId="117" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+            </TransformGroup>
+            <Shape name="rollingDoor1Panel1Collision" translation="0 0.811975 0" shapeId="9" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+            <Shape name="screwsDecalsPanel1" translation="0 -0.000127886 -0.00409755" shapeId="10" clipDistance="50" nodeId="119" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+          </Shape>
+          <Shape name="rollingDoor1Trigger" translation="-0.198812 0.983232 1.04305e-13" shapeId="12" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+          <TransformGroup name="rollingDoor1Sound" translation="3.30901 2.51212 0" nodeId="121"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="8_visuals" nodeId="122">
+        <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="123">
+          <TransformGroup name="LOD0" nodeId="124">
+            <Shape name="grainStore01_vis" shapeId="13" clipDistance="400" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="grainStore02_vis" shapeId="14" clipDistance="400" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            <Shape name="metalFrame" translation="0 0 -0.092" shapeId="15" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="13"/>
+            <TransformGroup name="fanCover" nodeId="128">
+              <Shape name="fanCover" shapeId="16" clipDistance="400" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="flaps" translation="0 8.74634 12.1183" shapeId="17" clipDistance="400" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="11"/>
+                <Shape name="flaps" translation="0 8.74634 -12.118" rotation="0 180 0" shapeId="17" clipDistance="400" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="11"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="132">
+            <Shape name="grainStore01_vis_LOD" shapeId="18" clipDistance="600" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="grainStore02_vis_LOD" shapeId="19" clipDistance="600" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="winter" nodeId="135">
+          <Shape name="snowMask" translation="-0.00590168 8.82808 0.0049043" shapeId="20" clipDistance="600" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="14"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="9_collisions" nodeId="137">
+        <Shape name="collisionMain" shapeId="21" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="138" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+        <Shape name="tipCollisionMain" shapeId="22" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="139" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+
+  <Animation externalAnimFile="grainStore.i3d.anim" />
+</i3D>
