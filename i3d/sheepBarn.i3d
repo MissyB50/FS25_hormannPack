@@ -206,7 +206,7 @@
           <Shape name="windowFrame" translation="-5 1.82 10.2301" shapeId="5" clipDistance="600" nodeId="109" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="8">
             <Shape name="windowPlexiGlass" shapeId="6" clipDistance="600" nodeId="110" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="19"/>
           </Shape>
-          <Shape name="windowTrigger" translation="0 0.25 10.8" shapeId="7" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="111" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="26"/>
+          <Shape name="windowTrigger" translation="0 0.25 10.8" shapeId="7" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="111" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="26"/>
           <TransformGroup name="windowNode1" translation="-15.0066 1.8 10.25" nodeId="112"/>
           <TransformGroup name="windowNode2" translation="15.0738 1.8 10.25" nodeId="113"/>
           <TransformGroup name="windowNode3" translation="5.1206 1.8 10.25" nodeId="114"/>
@@ -396,8 +396,8 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="waterPlaces" nodeId="248">
-        <Shape name="waterTrigger" translation="-28 0 -7" scale="1 1 0.5" shapeId="24" static="true" trigger="true" collisionFilterGroup="0x60000000" collisionFilterMask="0x40000000" nodeId="249" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
-        <Shape name="waterTrough" translation="-4.76837e-07 0.415026 -20" shapeId="25" nodeId="250" castsShadows="true" receiveShadows="true" materialIds="25">
+        <Shape name="waterTrigger" translation="-28 0 -7" scale="1 1 0.5" shapeId="24" static="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="249" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="waterTrough" translation="-4.76837e-07 0.415026 -20" shapeId="25" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="250" castsShadows="true" receiveShadows="true" materialIds="25">
           <Shape name="waterPlane" translation="1.13687e-13 -0.4 0" shapeId="26" clipDistance="400" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="10"/>
         </Shape>
         <TransformGroup name="waterPlace1" translation="3.94928 0.550985 -16.8513" nodeId="252"/>
@@ -434,7 +434,7 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="navigationRootNode" nodeId="275">
-        <Shape name="navigationMesh" shapeId="34" nodeId="276" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="6"/>
+        <Shape name="navigationMesh" shapeId="34" static="true" nodeId="276" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="6"/>
         <Shape name="walkingPlane" shapeId="35" static="true" collisionFilterGroup="0x400000" collisionFilterMask="0x1" nodeId="277" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
       </TransformGroup>
       <TransformGroup name="fences" nodeId="278">
@@ -449,21 +449,21 @@
       <Shape name="infoTrigger" shapeId="36" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="285" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
       <Shape name="loadingTrigger" translation="27 0 -2.5" shapeId="37" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="286" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
       <TransformGroup name="markers" nodeId="287">
-        <TransformGroup name="animal" translation="26.7245 1 -2.67758" nodeId="288"/>
-        <TransformGroup name="food" translation="0 1.2 7" nodeId="289"/>
-        <TransformGroup name="bales" translation="22 1.2 8" nodeId="290"/>
-        <TransformGroup name="milk" translation="-27.1019 1 1.83288" nodeId="291"/>
-        <TransformGroup name="water" translation="-27.1019 1 -6.46667" nodeId="292"/>
+        <TransformGroup name="animal" translation="26.7245 0 -2.67758" nodeId="288"/>
+        <TransformGroup name="food" translation="0 0 7" nodeId="289"/>
+        <TransformGroup name="bales" translation="22 0 8" nodeId="290"/>
+        <TransformGroup name="milk" translation="-27.1019 0 1.83288" nodeId="291"/>
+        <TransformGroup name="water" translation="-27.1019 0 -6.46667" nodeId="292"/>
         <TransformGroup name="teleport" translation="0 0 12" nodeId="293"/>
       </TransformGroup>
       <TransformGroup name="visuals" nodeId="294">
         <TransformGroup name="visual_LOD" lodDistance="0 600" nodeId="295">
           <TransformGroup name="LOD0" nodeId="296">
             <Shape name="feedBarriers" translation="24.934 0 4.7" shapeId="38" clipDistance="600" nodeId="297" castsShadows="true" receiveShadows="true" materialIds="7"/>
-            <Shape name="glassRoof" translation="0 7 0" shapeId="39" clipDistance="600" nodeId="298" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            <Shape name="glassRoof" translation="0 7 0" shapeId="39" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="298" castsShadows="true" receiveShadows="true" materialIds="9"/>
             <Shape name="goatShed01_vis" shapeId="40" clipDistance="400" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="13"/>
             <Shape name="goatShed02_vis" shapeId="41" clipDistance="400" nodeId="300" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="14"/>
-            <Shape name="waterTroughFake" translation="-0.540678 0.05 -7.17929" rotation="0 -90 0" shapeId="42" clipDistance="300" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="24">
+            <Shape name="waterTroughFake" translation="-0.540678 0.05 -7.17929" rotation="0 -90 0" shapeId="42" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="24">
               <Shape name="waterPlaneFake" translation="0 0.453992 0" shapeId="43" clipDistance="250" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="10"/>
             </Shape>
             <Shape name="warningStripes" shapeId="44" clipDistance="600" nodeId="303" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="11"/>
@@ -478,15 +478,15 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="309">
-        <Shape name="collision" shapeId="47" nodeId="310" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
-        <Shape name="collisionFeed" shapeId="48" nodeId="311" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="collision" shapeId="47" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="310" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+        <Shape name="collisionFeed" shapeId="48" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="311" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>
 
   <UserAttributes>
     <UserAttribute nodeId="276">
-      <Attribute name="animalType" type="string" value="SHEEP"/>
+      <Attribute name="animalType" type="string" value="sheep"/>
     </UserAttribute>
   </UserAttributes>
 

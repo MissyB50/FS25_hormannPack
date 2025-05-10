@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<i3D name="openShed" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+<i3D name="openShed.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="i3dConverter" version="1.0"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
   </Asset>
 
   <Files>
+    <File fileId="1" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_diffuse.dds"/>
+    <File fileId="2" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_normal.dds"/>
+    <File fileId="3" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_specular.dds"/>
+    <File fileId="10" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
+    <File fileId="11" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
+    <File fileId="12" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
   </Files>
 
 
   <Materials>
-    <Material name="default" materialId="1" diffuseColor="0.501961 0.501961 0.501961 1">
+    <Material name="objectStorage01_mat" materialId="132" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
     </Material>
-    <Material name="objectStorage01_mat" materialId="2" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    <Material name="objectStorage01_mat" materialId="118" customShaderId="4" customShaderVariation="colorScale">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="colorScale0" value="0.7 0.55 0.05 1"/>
+    </Material>
+    <Material name="objectStorage01_mat" materialId="6" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
   </Materials>
 
@@ -21,68 +37,66 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="placeable" nodeId="10">
-      <TransformGroup name="1_clearAreas" nodeId="11">
-        <TransformGroup name="clearArea1Start" translation="-9 0 -4" nodeId="12">
-          <TransformGroup name="clearArea1Height" translation="18 0 0" nodeId="13"/>
-          <TransformGroup name="clearArea1Width" translation="0 0 8" nodeId="14"/>
+    <TransformGroup name="openShed" clipDistance="600" nodeId="13">
+      <TransformGroup name="clearAreas" nodeId="14">
+        <TransformGroup name="clearArea1Start" translation="-9 0 -4" nodeId="15">
+          <TransformGroup name="clearArea1Height" translation="18 0 0" nodeId="16"/>
+          <TransformGroup name="clearArea1Width" translation="0 0 8" nodeId="17"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="2_levelAreas" nodeId="15">
-        <TransformGroup name="levelArea1Start" translation="-9 0 -4" nodeId="16">
-          <TransformGroup name="levelArea1Height" translation="18 0 0" nodeId="17"/>
-          <TransformGroup name="levelArea1Width" translation="0 0 8" nodeId="18"/>
+      <TransformGroup name="levelAreas" nodeId="18">
+        <TransformGroup name="levelArea1Start" translation="-9 0 -4" nodeId="19">
+          <TransformGroup name="levelArea1Height" translation="18 0 0" nodeId="20"/>
+          <TransformGroup name="levelArea1Width" translation="0 0 8" nodeId="21"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="3_indoorAreas" nodeId="19">
-        <TransformGroup name="indoorArea1Start" translation="-8.1 0.05 -3.1" nodeId="20">
-          <TransformGroup name="indoorArea1Height" translation="16.2 0 0" nodeId="21"/>
-          <TransformGroup name="indoorArea1Width" translation="0 0 6.2" nodeId="22"/>
+      <TransformGroup name="indoorAreas" nodeId="22">
+        <TransformGroup name="indoorArea1Start" translation="-8.1 0.05 -3.1" nodeId="23">
+          <TransformGroup name="indoorArea1Height" translation="16.2 0 0" nodeId="24"/>
+          <TransformGroup name="indoorArea1Width" translation="0 0 6.2" nodeId="25"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="4_testAreas" nodeId="23">
-        <TransformGroup name="testArea1Start" translation="-9 0 -4" nodeId="24">
-          <TransformGroup name="testArea1End" translation="18 0 8" nodeId="25"/>
+      <TransformGroup name="testAreas" nodeId="26">
+        <TransformGroup name="testArea1Start" translation="-9 0 -4" nodeId="27">
+          <TransformGroup name="testArea1End" translation="18 0 8" nodeId="28"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="5_tipOcclusionUpdateAreas" nodeId="26">
-        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9 0 -4" nodeId="27">
-          <TransformGroup name="tipOcclusionUpdateArea1End" translation="18 0 8" nodeId="28"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="29">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9 0 -4" nodeId="30">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="18 0 8" nodeId="31"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="6_lights" nodeId="29">
-        <TransformGroup name="lightSwitch" translation="8.06 1.532 2.63684" rotation="90 -90 0" nodeId="30"/>
-        <Shape name="lightTrgger" translation="7.4 0.05 2.5" scale="0.5 1 0.5" shapeId="1" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="1"/>
-        <TransformGroup name="linkedLights" nodeId="32">
-          <TransformGroup name="linkedLight01" translation="-4 4.15375 0" rotation="-90 85.5 -90" nodeId="33"/>
-          <TransformGroup name="linkedLights02" translation="4 4.15375 0" rotation="-90 85.5 -90" nodeId="34"/>
+      <TransformGroup name="lights" nodeId="32">
+        <TransformGroup name="linkedLights" nodeId="35">
+          <TransformGroup name="linkedLight01" translation="-4 4.15375 0" rotation="-90 85.5 -90" nodeId="36"/>
+          <TransformGroup name="linkedLights02" translation="4 4.15375 0" rotation="-90 85.5 -90" nodeId="37"/>
         </TransformGroup>
-        <TransformGroup name="realLights" nodeId="35">
-          <TransformGroup name="realLightsHigh" nodeId="36">
-            <Light name="spotLightHigh" translation="-4 4.1 0" rotation="-94 -0 0" nodeId="37" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.001" translation="4 4.1 0" rotation="-94 -0 0" nodeId="38" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+        <TransformGroup name="realLights" nodeId="38">
+          <TransformGroup name="realLightsHigh" nodeId="39">
+            <Light name="spotLightHigh" translation="-4 4.1 0" rotation="-94 -0 0" nodeId="40" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.001" translation="4 4.1 0" rotation="-94 -0 0" nodeId="41" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
           </TransformGroup>
-          <TransformGroup name="realLightsLow" nodeId="39">
-            <Light name="pointLightLow" translation="-4 2.5 0" rotation="-90 -0 0" nodeId="40" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.001" translation="4 2.5 0" rotation="-90 -0 0" nodeId="41" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+          <TransformGroup name="realLightsLow" nodeId="42">
+            <Light name="pointLightLow" translation="-4 2.5 0" rotation="-90 -0 0" nodeId="43" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.001" translation="4 2.5 0" rotation="-90 -0 0" nodeId="44" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="8_visuals" nodeId="42">
-        <TransformGroup name="visual" nodeId="43">
-          <TransformGroup name="LOD0" nodeId="44">
-            <Shape name="objectStorage01_vis" shapeId="2" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="2"/>
-            <Shape name="objectStorage02_vis" shapeId="3" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <TransformGroup name="8_visuals" nodeId="45">
+        <TransformGroup name="visual" nodeId="46">
+          <TransformGroup name="LOD0" nodeId="47">
+            <Shape name="objectStorage01_vis" shapeId="1" clipDistance="400" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="132"/>
+            <Shape name="objectStorage02_vis" shapeId="2" clipDistance="400" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="118"/>
           </TransformGroup>
-          <TransformGroup name="LOD1" nodeId="47">
-            <Shape name="objectStorage01_vis_LOD" shapeId="4" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="2"/>
-            <Shape name="objectStorage02_vis_LOD" shapeId="3" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="2"/>
+          <TransformGroup name="LOD1" nodeId="50">
+            <Shape name="objectStorage01_vis_LOD" shapeId="3" clipDistance="600" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="132"/>
+            <Shape name="objectStorage02_vis_LOD" shapeId="2" clipDistance="600" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="118"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="winter" nodeId="50"/>
+        <TransformGroup name="winter" nodeId="53"/>
       </TransformGroup>
-      <TransformGroup name="9_collisions" nodeId="51">
-        <Shape name="collision" scale="8.25 0.0500001 3.25" shapeId="5" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="2"/>
+      <TransformGroup name="9_collisions" nodeId="54">
+        <Shape name="collision" scale="8.25 0.0500001 3.25" shapeId="4" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

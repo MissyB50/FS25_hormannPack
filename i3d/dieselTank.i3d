@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dieselTank.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02_diffuse.dds"/>
+    <File fileId="10" filename="$data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02_normal.dds"/>
+    <File fileId="11" filename="$data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02_specular.dds"/>
+    <File fileId="15" filename="$data/placeables/brandless/dieselTanks/shared/dieselTanksDecals_diffuse.dds"/>
+    <File fileId="18" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="6" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="13" filename="$data/shared/default_normal.png"/>
+    <File fileId="14" filename="$data/shared/default_specular.dds"/>
+    <File fileId="12" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="16" filename="../textures/decals_diffuse.dds"/>
+    <File fileId="17" filename="../textures/decals_normal.dds"/>
+    <File fileId="3" filename="../textures/tank_diffuse.dds"/>
+    <File fileId="4" filename="../textures/tank_normal.dds"/>
+    <File fileId="5" filename="../textures/tank_spec.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="decals_mat" materialId="5" alphaBlending="true" customShaderId="18">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="dieselTanksDecals_mat" materialId="7" alphaBlending="true">
+      <Texture fileId="15"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="pump_mat" materialId="15" customShaderId="6">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="tank_mat" materialId="28" customShaderId="6">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="29" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="window_mat" materialId="31" alphaBlending="true">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dieselTank.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="dieselTank" translation="20.25 0.052899 13.15" rotation="-1.08362e-10 -90 0" clipDistance="800" nodeId="383">
+      <TransformGroup name="silo" nodeId="384">
+        <TransformGroup name="storage" nodeId="385"/>
+        <TransformGroup name="unloadingStation" nodeId="386">
+          <Shape name="exactFillRootNode" translation="2.5 0 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="387" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+        </TransformGroup>
+        <TransformGroup name="loadingStation" nodeId="388">
+          <Shape name="loadingTrigger" translation="2.5 0 0" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="389" castsShadows="true" receiveShadows="true" nonRenderable="true" distanceBlending="false" materialIds="29"/>
+          <TransformGroup name="dischargeNode" translation="2.5 0 0" nodeId="390"/>
+          <TransformGroup name="loadingMarker" translation="2.5 0 0" nodeId="391"/>
+        </TransformGroup>
+        <Shape name="refillPlayerTrigger" translation="0 0 -2" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="392" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+          <TransformGroup name="refillTriggerMarker" nodeId="393"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="394">
+        <Shape name="tank" shapeId="4" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="400" nodeId="395" castsShadows="true" receiveShadows="true" materialIds="28">
+          <Shape name="pump" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="400" nodeId="396" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        </Shape>
+        <Shape name="glass" translation="-0.0539859 1.20352 2.02673" scale="1 1.03128 1" shapeId="6" clipDistance="15" nodeId="397" castsShadows="true" receiveShadows="true" materialIds="31"/>
+        <Shape name="decals" translation="0.00761602 1.13851 1.87148" shapeId="7" clipDistance="20" nodeId="398" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="7"/>
+        <Shape name="decals" shapeId="8" nodeId="399" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

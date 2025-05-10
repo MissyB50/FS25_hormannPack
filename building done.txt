@@ -1,0 +1,5 @@
+Sheep Barn
+cow barn
+grain silo
+grain store
+objectStorage01

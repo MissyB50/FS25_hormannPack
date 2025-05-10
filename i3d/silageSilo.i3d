@@ -6,38 +6,42 @@
   </Asset>
 
   <Files>
-    <File fileId="3" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_diffuse.dds"/>
-    <File fileId="4" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_normal.dds"/>
-    <File fileId="12" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
-    <File fileId="13" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
-    <File fileId="6" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="2" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_diffuse.dds"/>
+    <File fileId="3" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_normal.dds"/>
+    <File fileId="13" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_specular.dds"/>
+    <File fileId="11" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
+    <File fileId="12" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
+    <File fileId="4" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
   </Files>
 
 
   <Materials>
-    <Material name="bukerSilo02_mat" materialId="131" specularColor="0.501961 1 0" customShaderId="6" customShaderVariation="colorScale">
-      <Texture fileId="12"/>
-      <Normalmap fileId="13"/>
+    <Material name="bukerSilo02_mat" materialId="114" customShaderId="5" customShaderVariation="colorScale">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="4"/>
       <CustomParameter name="colorScale0" value="0.29 0.7 0.05 1"/>
     </Material>
-    <Material name="bukerSilo02_mat" materialId="151" specularColor="0.501961 1 0" customShaderId="6" customShaderVariation="colorScale">
-      <Texture fileId="12"/>
-      <Normalmap fileId="13"/>
+    <Material name="bukerSilo02_mat" materialId="119" customShaderId="5" customShaderVariation="colorScale">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="4"/>
       <CustomParameter name="colorScale0" value="0.53 0.0700002 0.84 1"/>
     </Material>
-    <Material name="bunkerSilo01_mat" materialId="6" specularColor="0.501961 1 0">
-      <Texture fileId="3"/>
-      <Normalmap fileId="4" bumpDepth="4.5"/>
+    <Material name="bunkerSilo01_mat" materialId="135">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="13"/>
     </Material>
-    <Material name="bunkerSilo01_mat" materialId="88" specularColor="0.501961 1 0" customShaderId="6">
-      <Texture fileId="3"/>
-      <Normalmap fileId="4" bumpDepth="4.5"/>
+    <Material name="bunkerSilo01_mat" materialId="139" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
     </Material>
-    <Material name="default" materialId="213" diffuseColor="0.501961 0.501961 0.501961 1">
+    <Material name="default" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
     </Material>
-    <Material name="lambert2" materialId="7" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
-    </Material>
-    <Material name="UnnamedMaterial" materialId="278" diffuseColor="1 1 1 1">
+    <Material name="lambert2" materialId="10" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
   </Materials>
 
@@ -46,89 +50,87 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="silageBunker" clipDistance="600" nodeId="24">
-      <TransformGroup name="clearAreas" nodeId="25">
-        <TransformGroup name="clearArea1Start" translation="-11 0 -16" nodeId="26">
-          <TransformGroup name="clearArea1Height" translation="22 0 0" nodeId="27"/>
-          <TransformGroup name="clearArea1Width" translation="0 0 32" nodeId="28"/>
+    <TransformGroup name="silageBunker" clipDistance="600" nodeId="21">
+      <TransformGroup name="clearAreas" nodeId="22">
+        <TransformGroup name="clearArea1Start" translation="-11 0 -16" nodeId="23">
+          <TransformGroup name="clearArea1Width" translation="0 0 32" nodeId="25"/>
+          <TransformGroup name="clearArea1Height" translation="22 0 0" nodeId="24"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="levelAreas" nodeId="29">
-        <TransformGroup name="levelArea1Start" translation="-11 0 -16" nodeId="30">
-          <TransformGroup name="levelArea1Height" translation="22 0 0" nodeId="31"/>
-          <TransformGroup name="levelArea1Width" translation="0 0 32" nodeId="32"/>
+      <TransformGroup name="levelAreas" nodeId="26">
+        <TransformGroup name="levelArea1Start" translation="-11 0 -16" nodeId="27">
+          <TransformGroup name="levelArea1Width" translation="0 0 32" nodeId="29"/>
+          <TransformGroup name="levelArea1Height" translation="22 0 0" nodeId="28"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="indoorAreas" nodeId="33">
-        <TransformGroup name="indoorArea1Start" translation="-10.2 0 -15.4" nodeId="34">
-          <TransformGroup name="indoorArea1Height" translation="20.4 0 0" nodeId="35"/>
-          <TransformGroup name="indoorArea1Width" translation="0 0 30.4" nodeId="36"/>
+      <TransformGroup name="indoorAreas" nodeId="30">
+        <TransformGroup name="indoorArea1Start" translation="-10.2 0 -15.4" nodeId="31">
+          <TransformGroup name="indoorArea1Width" translation="0 0 30.4" nodeId="33"/>
+          <TransformGroup name="indoorArea1Height" translation="20.4 0 0" nodeId="32"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="testAreas" nodeId="37">
-        <TransformGroup name="testArea1Start" translation="11 0 -16" nodeId="38">
-          <TransformGroup name="testArea1End" translation="-22 11.5 32" nodeId="39"/>
+      <TransformGroup name="testAreas" nodeId="34">
+        <TransformGroup name="testArea1Start" translation="11 0 -16" nodeId="35">
+          <TransformGroup name="testArea1End" translation="-22 11.5 32" nodeId="36"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="40">
-        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="11 0 -16" nodeId="41">
-          <TransformGroup name="tipOcclusionUpdateArea1End" translation="-22 0 32" nodeId="42"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="37">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="11 0 -16" nodeId="38">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="-22 0 32" nodeId="39"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="lights" nodeId="43">
-        <TransformGroup name="lightSwitch" translation="9.99656 1.4 15" rotation="90 -0 0" nodeId="285"/>
-        <Shape name="switchTrigger" translation="10 0 15.6145" shapeId="1" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="277" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="278"/>
-        <TransformGroup name="linkedLights" nodeId="45">
-          <TransformGroup name="linkedLights" translation="0 10.5785 0" nodeId="300"/>
-          <TransformGroup name="linkedLights" translation="0 10.5785 9" nodeId="301"/>
-          <TransformGroup name="linkedLights" translation="0 10.5785 -9" nodeId="302"/>
+      <TransformGroup name="lights" nodeId="40">
+        <TransformGroup name="linkedLights" nodeId="43">
+          <TransformGroup name="linkedLights" translation="0 10.5785 0" nodeId="44"/>
+          <TransformGroup name="linkedLights" translation="0 10.5785 9" nodeId="45"/>
+          <TransformGroup name="linkedLights" translation="0 10.5785 -9" nodeId="46"/>
         </TransformGroup>
-        <TransformGroup name="realLights" nodeId="46">
-          <TransformGroup name="realLightsHigh" nodeId="47">
-            <Light name="spotLightHigh" translation="0 10.5387 -9" rotation="-90 -0 0" nodeId="48" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.001" translation="0 10.5387 9" rotation="-90 -0 0" nodeId="49" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.002" translation="0 10.5387 0" rotation="-90 -0 0" nodeId="50" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+        <TransformGroup name="realLights" nodeId="47">
+          <TransformGroup name="realLightsHigh" nodeId="48">
+            <Light name="spotLightHigh" translation="0 10.5387 -9" rotation="-90 -0 0" nodeId="49" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.001" translation="0 10.5387 9" rotation="-90 -0 0" nodeId="50" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.002" translation="0 10.5387 0" rotation="-90 -0 0" nodeId="51" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
           </TransformGroup>
-          <TransformGroup name="realLightsLow" nodeId="51">
-            <Light name="pointLightLow" translation="0 4 -9" rotation="-90 -0 0" nodeId="52" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.001" translation="0 4 0" rotation="-90 -0 0" nodeId="53" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.002" translation="0 4 9" rotation="-90 -0 0" nodeId="54" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+          <TransformGroup name="realLightsLow" nodeId="52">
+            <Light name="pointLightLow" translation="0 4 -9" rotation="-90 -0 0" nodeId="53" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.001" translation="0 4 0" rotation="-90 -0 0" nodeId="54" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.002" translation="0 4 9" rotation="-90 -0 0" nodeId="55" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="bunkerSilo" nodeId="185">
-        <TransformGroup name="siloArea" nodeId="186">
-          <TransformGroup name="siloAreaStart" translation="10 0 14.9997" nodeId="187"/>
-          <TransformGroup name="siloAreaWidth" translation="-10 0 15" nodeId="188"/>
-          <TransformGroup name="siloAreaHeight" translation="10 0 -15.2466" nodeId="189"/>
-          <Shape name="siloTrigger" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="216" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="213"/>
+      <TransformGroup name="bunkerSilo" nodeId="56">
+        <TransformGroup name="siloArea" nodeId="57">
+          <TransformGroup name="siloAreaStart" translation="10 0 14.9997" nodeId="58"/>
+          <TransformGroup name="siloAreaWidth" translation="-10 0 15" nodeId="59"/>
+          <TransformGroup name="siloAreaHeight" translation="10 0 -15.2466" nodeId="60"/>
+          <Shape name="siloTrigger" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
         </TransformGroup>
-        <TransformGroup name="siloInnerArea" nodeId="191">
-          <TransformGroup name="siloInnerAreaStart" translation="9.7 0 15" nodeId="192"/>
-          <TransformGroup name="siloInnerAreaWidth" translation="-9.7 0 15" nodeId="193"/>
-          <TransformGroup name="siloInnerAreaHeight" translation="9.7 0 -15" nodeId="194"/>
+        <TransformGroup name="siloInnerArea" nodeId="62">
+          <TransformGroup name="siloInnerAreaStart" translation="9.7 0 15" nodeId="63"/>
+          <TransformGroup name="siloInnerAreaWidth" translation="-9.7 0 15" nodeId="64"/>
+          <TransformGroup name="siloInnerAreaHeight" translation="9.7 0 -15" nodeId="65"/>
         </TransformGroup>
-        <TransformGroup name="walls" nodeId="195">
-          <TransformGroup name="wallRight" translation="10 0 0" nodeId="207"/>
-          <TransformGroup name="wallLeft" translation="-10 0 0" nodeId="208"/>
-        </TransformGroup>
-      </TransformGroup>
-      <TransformGroup name="visuals" nodeId="55">
-        <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="60">
-          <TransformGroup name="LOD0" nodeId="58">
-            <Shape name="bunkerSilo01_vis" shapeId="3" clipDistance="400" nodeId="15" castsShadows="true" receiveShadows="true" materialIds="88"/>
-            <Shape name="bunkerSilo02_vis" shapeId="4" clipDistance="400" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="151"/>
-          </TransformGroup>
-          <TransformGroup name="LOD1" nodeId="59">
-            <Shape name="bunkerSilo01_vis_LOD" shapeId="5" clipDistance="600" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="bunkerSilo02_vis_LOD" shapeId="4" clipDistance="600" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="131"/>
-          </TransformGroup>
+        <TransformGroup name="walls" nodeId="66">
+          <TransformGroup name="wallRight" translation="10 0 0" nodeId="67"/>
+          <TransformGroup name="wallLeft" translation="-10 0 0" nodeId="68"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="collisions" nodeId="56">
-        <Shape name="collision" shapeId="6" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="19" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
-        <Shape name="groundTipCollision" scale="9.8 1 15" shapeId="7" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
-        <Shape name="tipCollision" shapeId="8" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      <TransformGroup name="visuals" nodeId="69">
+        <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="70">
+          <TransformGroup name="LOD0" nodeId="71">
+            <Shape name="bunkerSilo01_vis" shapeId="2" clipDistance="400" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="139"/>
+            <Shape name="bunkerSilo02_vis" shapeId="3" clipDistance="400" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="119"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="74">
+            <Shape name="bunkerSilo01_vis_LOD" shapeId="4" clipDistance="600" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="135"/>
+            <Shape name="bunkerSilo02_vis_LOD" shapeId="3" clipDistance="600" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="114"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="77">
+        <Shape name="collision" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="groundTipCollision" scale="9.8 1 15" shapeId="6" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="tipCollision" shapeId="7" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="10"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

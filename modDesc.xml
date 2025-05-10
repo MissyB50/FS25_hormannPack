@@ -21,7 +21,31 @@
         <storeItem xmlFilename="xml/grainSilo.xml" />
         <storeItem xmlFilename="xml/siloStorage.xml" />
         <storeItem xmlFilename="xml/cornerShed.xml" />
-<!--         <storeItem xmlFilename="xml/.xml" /> -->
+        <storeItem xmlFilename="xml/baleShedSmall.xml" />
+        <storeItem xmlFilename="xml/grainStore.xml" />
+        <storeItem xmlFilename="xml/objectStorage01.xml" />
+        <storeItem xmlFilename="xml/openShed.xml" />
+        <storeItem xmlFilename="xml/shed2.xml" />
+        <storeItem xmlFilename="xml/shed3.xml" />
+        <storeItem xmlFilename="xml/shed5.xml" />
+        <storeItem xmlFilename="xml/silageSilo.xml" />
+<!--         <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" />
+        <storeItem xmlFilename="xml/.xml" /> -->
     </storeItems>
 
     <placeableTypes>
@@ -32,13 +56,6 @@
             <specialization name="husbandryLiquidManure" />
             <specialization name="manureHeap" />
             <specialization name="husbandryMeadow" />
-        </type>
-    </placeableTypes>
-
-    <placeableTypes>
-        <type name="siloWorkshop" parent="silo" filename="$dataS/scripts/vehicles/Vehicle.lua">
-            <specialization name="workshop"/>           
-            <specialization name="buyPoint"/> 
         </type>
     </placeableTypes>
 

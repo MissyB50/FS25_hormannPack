@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="siloWorkshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_shopItem_storage</name>
         <functions>
             <function>$l10n_function_farmSilo</function>
-            <function>$l10n_function_workshop</function>
         </functions>
         <image>store/store_storage.dds</image>
         <price>1</price>
@@ -53,8 +52,6 @@
 
     <indoorAreas>
         <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
-        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
-        <indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03" />
     </indoorAreas>
 
     <tipOcclusionUpdateAreas>
@@ -78,8 +75,6 @@
         <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" />
         <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
         <triggerMarker node="loadingMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
-        <triggerMarker node="refillMarkerDiesel"  filename="$data/shared/assets/marker/markerIconWrench.i3d" />
-
     </triggerMarkers>
 
     <infoTrigger triggerNode="infoTrigger"/>
@@ -267,26 +262,6 @@
         </storages>
     </silo>
 
-    <silo playerActionTrigger="refillPlayerTrigger" sellWarningText="$l10n_info_tankNotEmpty">
-        <loadingStation node="loadingTriggerDiesel" supportsExtension="false">
-            <loadTrigger triggerNode="loadingTriggerDiesel" fillTypes="DIESEL" fillLitersPerSecond="40" dischargeNode="dischargeNodeDiesel" startFillText="$l10n_action_refuel" stopFillText="$l10n_action_stopRefuel"/>
-        </loadingStation>
-
-        <unloadingStation supportsExtension="false">
-            <unloadTrigger exactFillRootNode="exactFillRootNodeDiesel" fillTypes="DIESEL"/>
-        </unloadingStation>
-
-        <storages>
-            <storage node="storageDiesel" fillTypes="DIESEL" capacity="10000" isExtension="false">
-                <startFillLevel fillType="DIESEL" fillLevel="200" />
-            </storage>
-        </storages>
-    </silo>
-
-    <workshop>
-        <sellingPoint playerTriggerNode="playerTrigger" iconNode="markerWrench" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
-    </workshop>
-
     <colorConfigurations>
         <material slotName="siloStorage02_mat" />
         <material slotName="mainColor_mat" />
@@ -325,12 +300,6 @@
         <i3dMapping id="indoorAreaStart01" node="0>2|0" />
         <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
         <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
-        <i3dMapping id="indoorAreaStart02" node="0>2|1" />
-        <i3dMapping id="indoorAreaWidth02" node="0>2|1|0" />
-        <i3dMapping id="indoorAreaHeight02" node="0>2|1|1" />
-        <i3dMapping id="indoorAreaStart03" node="0>2|2" />
-        <i3dMapping id="indoorAreaWidth03" node="0>2|2|0" />
-        <i3dMapping id="indoorAreaHeight03" node="0>2|2|1" />
         <i3dMapping id="testAreaStart01" node="0>3|0" />
         <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
         <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
@@ -443,16 +412,6 @@
         <i3dMapping id="teleportNode" node="0>7|6" />
         <i3dMapping id="aiSpline" node="0>7|7" />
         <i3dMapping id="infoTrigger" node="0>7|8" />
-        <i3dMapping id="vehicleTrigger" node="0>8|0" />
-        <i3dMapping id="playerTrigger" node="0>8|1" />
-        <i3dMapping id="markerWrench" node="0>8|1|0" />
-        <i3dMapping id="storageDiesel" node="0>9|0|0|0" />
-        <i3dMapping id="exactFillRootNodeDiesel" node="0>9|0|0|1|0" />
-        <i3dMapping id="loadingTriggerDiesel" node="0>9|0|0|2|0" />
-        <i3dMapping id="dischargeNodeDiesel" node="0>9|0|0|2|1" />
-        <i3dMapping id="loadingMarker" node="0>9|0|0|2|2" />
-        <i3dMapping id="refillPlayerTrigger" node="0>9|0|0|3" />
-        <i3dMapping id="refillMarkerDiesel" node="0>9|0|0|3|0" />
         <i3dMapping id="solarPanels" node="0>10|1" />
     </i3dMappings>
 </placeable>

@@ -715,7 +715,7 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="navigationRootNode" nodeId="463">
-        <Shape name="navMeshShape" shapeId="44" clipDistance="300" nodeId="464" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="14"/>
+        <Shape name="navigationMeshShape" shapeId="44" nodeId="526" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="14"/>
         <Shape name="walkingPlane" shapeId="45" static="true" collisionFilterGroup="0x400000" collisionFilterMask="0x1" nodeId="465" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
       </TransformGroup>
       <TransformGroup name="storage" nodeId="466"/>
@@ -785,7 +785,6 @@
         <Shape name="collisionStraw" translation="0 0.235766 -17.6704" shapeId="66" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="519" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="33"/>
       </TransformGroup>
     </TransformGroup>
-    <NavigationMesh name="NavMesh" nodeId="523" shapeId="67"/>
   </Scene>
 
   <UserAttributes>
@@ -855,8 +854,8 @@
     <UserAttribute nodeId="391">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="464">
-      <Attribute name="animalType" type="string" value="cow"/>
+    <UserAttribute nodeId="526">
+      <Attribute name="animalType" type="string" value=""/>
     </UserAttribute>
   </UserAttributes>
 

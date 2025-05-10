@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="bunkerSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_silageSilo</name>
+        <functions>
+            <function>$l10n_function_bunkerSilo</function>
+        </functions>
+        <image>store/store_silageSilo.dds</image>
+        <price>120000</price>
+        <dailyUpkeep>120</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>i3d/silageSilo.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <lights>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode01" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode02" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode03" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" activateTime="09:00" deactivateTime="21:00"/>
+    </lights>
+
+    <bunkerSilo isExtendable="true" acceptedFillTypes="chaff grass_windrow dryGrass_windrow" inputFillType="chaff" outputFillType="silage" distanceToCompactedFillLevel="100" openingLength="5" >
+        <area      startNode="siloAreaStart"      widthNode="siloAreaWidth"      heightNode="siloAreaHeight" />
+        <innerArea startNode="siloInnerAreaStart" widthNode="siloInnerAreaWidth" heightNode="siloInnerAreaHeight" />
+        <interactionTrigger node="siloAreaTrigger" />
+<!--         <wallLeft           node="wallLeft"  collision="wallLeftCollision" />
+        <wallRight          node="wallRight" collision="wallRightCollision" /> -->
+    </bunkerSilo>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>2|0"/>
+        <i3dMapping id="indoorArea1Width" node="0>2|0|0"/>
+        <i3dMapping id="indoorArea1Height" node="0>2|0|1"/>
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="lightNode01" node="0>5|0|0" />
+        <i3dMapping id="lightNode02" node="0>5|0|1" />
+        <i3dMapping id="lightNode03" node="0>5|0|2" />
+        <i3dMapping id="realLightsLow" node="0>5|1|0" />
+        <i3dMapping id="realLightsHigh" node="0>5|1|1" />
+
+        <i3dMapping id="siloAreaStart" node="0>6|0|0" />
+        <i3dMapping id="siloAreaWidth" node="0>6|0|1" />
+        <i3dMapping id="siloAreaHeight" node="0>6|0|2" />
+        <i3dMapping id="siloAreaTrigger" node="0>6|0|3" />
+        <i3dMapping id="siloInnerAreaStart" node="0>6|1|0" />
+        <i3dMapping id="siloInnerAreaWidth" node="0>6|1|1" />
+        <i3dMapping id="siloInnerAreaHeight" node="0>6|1|2" />
+        <i3dMapping id="wallLeft" node="0>6|2|0" />
+        <i3dMapping id="wallRight" node="0>6|2|1" />
+<!--         <i3dMapping id="wallLeftCollision" node="0>5|0" />
+        <i3dMapping id="wallRightCollision" node="0>5|1" /> -->
+    </i3dMappings>
+</placeable>
