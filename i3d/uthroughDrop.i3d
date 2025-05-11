@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="uthroughDrop.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/placeables/meridian/shared/meridianDecals_diffuse.png"/>
+    <File fileId="1" filename="$data/placeables/meridian/shared/uTrough_diffuse.png"/>
+    <File fileId="2" filename="$data/placeables/meridian/shared/uTrough_normal.png"/>
+    <File fileId="3" filename="$data/placeables/meridian/shared/uTrough_specular.png"/>
+    <File fileId="10" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="7" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="8" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="9" filename="$data/shared/assets/assetLibraryDecals_vmask.png"/>
+    <File fileId="12" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="6" alphaBlending="true" customShaderId="10">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="meridianDecals_mat" materialId="7" specularColor="0.25098 1 0" alphaBlending="true" customShaderId="10">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+    </Material>
+    <Material name="uTrough_mat" materialId="9" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="uthroughDrop.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="uTrough" translation="-3.73065 4.9779 -9.04048" rotation="0 -67.933 0" shapeId="1" clipDistance="300" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="9">
+      <Shape name="door" translation="-1.57845 -0.224147 0" shapeId="2" clipDistance="300" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      <Shape name="screwDecals" shapeId="3" clipDistance="30" nodeId="68" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6"/>
+      <Shape name="decals" shapeId="4" clipDistance="30" nodeId="69" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+    </Shape>
+  </Scene>
+
+</i3D>
