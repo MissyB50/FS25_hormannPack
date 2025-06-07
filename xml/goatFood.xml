@@ -20,7 +20,7 @@
 
 
 
-
+<animal>
 <subType subType="GOAT" fillTypeName="GOAT" statsBreeding="breedGoatsCount">
 <visuals>
 <visual minAge="0" visualAnimalIndex="13" image="$dataS/character/animals/domesticated/goat/store_goatBaby.png" canBeBought="true">

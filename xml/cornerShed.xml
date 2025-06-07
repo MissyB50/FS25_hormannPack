@@ -223,19 +223,19 @@
 
 
     <i3dMappings>
-        <i3dMapping id="clearArea1Start" node="1>0|0" />
-        <i3dMapping id="clearArea1Height" node="1>0|0|0" />
-        <i3dMapping id="clearArea1Width" node="1>0|0|1" />
-        <i3dMapping id="levelArea1Start" node="1>1|0" />
-        <i3dMapping id="levelArea1Height" node="1>1|0|0" />
-        <i3dMapping id="levelArea1Width" node="1>1|0|1" />
-        <i3dMapping id="indoorArea1Start" node="1>2|0" />
-        <i3dMapping id="indoorArea1Height" node="1>2|0|0" />
-        <i3dMapping id="indoorArea1Width" node="1>2|0|1" />
-        <i3dMapping id="testArea1Start" node="1>3|0" />
-        <i3dMapping id="testArea1End" node="1>3|0|0" />
-        <i3dMapping id="tipOcclusionUpdateArea1Start" node="1>4|0" />
-        <i3dMapping id="tipOcclusionUpdateArea1End" node="1>4|0|0" />
+        <i3dMapping id="clearArea1Start" node="0>0|0" />
+        <i3dMapping id="clearArea1Height" node="0>0|0|0" />
+        <i3dMapping id="clearArea1Width" node="0>0|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>1|0" />
+        <i3dMapping id="levelArea1Height" node="0>1|0|0" />
+        <i3dMapping id="levelArea1Width" node="0>1|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>2|0" />
+        <i3dMapping id="indoorArea1Height" node="0>2|0|0" />
+        <i3dMapping id="indoorArea1Width" node="0>2|0|1" />
+        <i3dMapping id="testArea1Start" node="0>3|0" />
+        <i3dMapping id="testArea1End" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
         <i3dMapping id="lightTrigger" node="0>6|1" />
         <i3dMapping id="realLightsLow" node="0>6|3|0" />
         <i3dMapping id="realLightsHigh" node="0>6|3|1" />

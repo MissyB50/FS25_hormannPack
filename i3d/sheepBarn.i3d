@@ -2,7 +2,7 @@
 
 <i3D name="sheepBarn.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
   </Asset>
 
   <Files>
@@ -85,16 +85,23 @@
     </Material>
     <Material name="fakeWater_mat" materialId="12" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
-    <Material name="goatBarn01_mat" materialId="13" customShaderId="4">
+    <Material name="goatBarn01_mat" materialId="343" customShaderId="4">
       <Texture fileId="13"/>
       <Normalmap fileId="14"/>
       <Glossmap fileId="15"/>
+      <CustomParameter name="snowScale" value="0"/>
     </Material>
     <Material name="goatBarn02_mat" materialId="14" customShaderId="4" customShaderVariation="colorScale">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
+    </Material>
+    <Material name="goatBarn02_mat" materialId="317" customShaderId="4" customShaderVariation="colorScale">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorScale0" value="0.46 0.55 0.05 1"/>
     </Material>
     <Material name="light150W_emissive_mat" materialId="15" specularColor="0.74902 1 0" customShaderId="28" customShaderVariation="additive_colorScale">
       <Texture fileId="25"/>
@@ -461,16 +468,16 @@
           <TransformGroup name="LOD0" nodeId="296">
             <Shape name="feedBarriers" translation="24.934 0 4.7" shapeId="38" clipDistance="600" nodeId="297" castsShadows="true" receiveShadows="true" materialIds="7"/>
             <Shape name="glassRoof" translation="0 7 0" shapeId="39" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="298" castsShadows="true" receiveShadows="true" materialIds="9"/>
-            <Shape name="goatShed01_vis" shapeId="40" clipDistance="400" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="13"/>
-            <Shape name="goatShed02_vis" shapeId="41" clipDistance="400" nodeId="300" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="14"/>
+            <Shape name="goatShed01_vis" shapeId="40" clipDistance="400" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="343"/>
+            <Shape name="goatShed02_vis" shapeId="41" clipDistance="400" nodeId="320" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="317"/>
             <Shape name="waterTroughFake" translation="-0.540678 0.05 -7.17929" rotation="0 -90 0" shapeId="42" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="24">
               <Shape name="waterPlaneFake" translation="0 0.453992 0" shapeId="43" clipDistance="250" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="10"/>
             </Shape>
             <Shape name="warningStripes" shapeId="44" clipDistance="600" nodeId="303" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="11"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="304">
-            <Shape name="goatShed01_vis_LOD" shapeId="45" clipDistance="600" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="13"/>
-            <Shape name="goatShed02_vis_LOD" shapeId="41" clipDistance="600" nodeId="306" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="14"/>
+            <Shape name="goatShed01_vis_LOD" shapeId="45" clipDistance="600" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="343"/>
+            <Shape name="goatShed02_vis_LOD" shapeId="41" clipDistance="600" nodeId="325" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="317"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="307">

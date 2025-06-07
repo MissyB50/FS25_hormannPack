@@ -2,7 +2,7 @@
 
 <i3D name="cornerShed.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
   </Asset>
 
   <Files>
@@ -25,7 +25,6 @@
     <File fileId="15" filename="$data/shared/default_normal.png"/>
     <File fileId="14" filename="$data/shared/window_diffuse.png"/>
     <File fileId="27" filename="../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/buildingShader.xml"/>
-    <File fileId="30" filename="../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/snowHeapShader.xml"/>
   </Files>
 
 
@@ -65,8 +64,6 @@
     <Material name="lambert1" materialId="11" diffuseColor="0.501961 0.501961 0.501961 1">
     </Material>
     <Material name="lambert1" materialId="12" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
-    </Material>
-    <Material name="snow_mat" materialId="13" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0" customShaderId="30">
     </Material>
     <Material name="UnnamedMaterial" materialId="14" diffuseColor="1 1 1 1">
     </Material>
@@ -325,12 +322,10 @@
             <Shape name="cornerShed02_vis_LOD" shapeId="17" clipDistance="600" nodeId="220" castsShadows="true" receiveShadows="true" materialIds="7"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="winter" nodeId="221">
-          <Shape name="snowMask" translation="-7.57159 8.40275 -7.58127" shapeId="18" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="13"/>
-        </TransformGroup>
+        <TransformGroup name="winter" nodeId="221"/>
       </TransformGroup>
       <TransformGroup name="collision" nodeId="223">
-        <Shape name="collision" shapeId="19" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="224" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+        <Shape name="collision" shapeId="18" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="224" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

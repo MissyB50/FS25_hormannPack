@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<i3D name="shed2door.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+<i3D name="shed2.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
   </Asset>
 
   <Files>
@@ -78,7 +78,7 @@
   </Materials>
 
 
-  <Shapes externalShapesFile="shed2door.i3d.shapes">
+  <Shapes externalShapesFile="shed2.i3d.shapes">
   </Shapes>
 
   <Scene>
@@ -201,5 +201,5 @@
   </Scene>
 
 
-  <Animation externalAnimFile="shed2door.i3d.anim" />
+  <Animation externalAnimFile="shed2.i3d.anim" />
 </i3D>

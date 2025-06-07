@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="openPigShed.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/placeables/rudolfHormann/barnProps/pigFeeder_diffuse.dds"/>
+    <File fileId="15" filename="$data/placeables/rudolfHormann/barnProps/pigFeeder_normal.dds"/>
+    <File fileId="16" filename="$data/placeables/rudolfHormann/barnProps/pigFeeder_specular.dds"/>
+    <File fileId="11" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
+    <File fileId="12" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
+    <File fileId="13" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="4" filename="$data/placeables/rudolfHormann/pigBarnMedium/pigBarnMedium_diffuse.dds"/>
+    <File fileId="5" filename="$data/placeables/rudolfHormann/pigBarnMedium/pigBarnMedium_normal.dds"/>
+    <File fileId="17" filename="$data/placeables/rudolfHormann/pigBarnMedium/pigBarnMedium_specular.dds"/>
+    <File fileId="10" filename="$data/placeables/rudolfHormann/shared/strawBed_diffuse.dds"/>
+    <File fileId="6" filename="$data/shared/fakeWater_diffuse.dds"/>
+    <File fileId="8" filename="../../../../../../Program Files (x86)/Farming Simulator 2025/data/shaders/alphabetShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="fakeWater_mat" materialId="6" specularColor="0.501961 1 0" customShaderId="8">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="feeder_mat" materialId="7">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="openPigShed01_mat" materialId="8">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="openPigShed01_mat" materialId="9" specularColor="1 1 0">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="openPigShed01_mat" materialId="10" diffuseColor="1 1 1 1" specularColor="1 1 0">
+    </Material>
+    <Material name="openPigShed02_mat" materialId="11">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="strawPlane_mat" materialId="12" specularColor="0.501961 1 0">
+      <Texture fileId="10"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="openPigShed.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="animalHusbandry" nodeId="31">
+      <TransformGroup name="1_clearAreas" nodeId="32">
+        <TransformGroup name="clearArea1Start" translation="18 0 10" nodeId="33">
+          <TransformGroup name="clearArea1Height" translation="0 0 -20" nodeId="34"/>
+          <TransformGroup name="clearArea1Width" translation="-40 0 0" nodeId="35"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="2_levelAreas" nodeId="36">
+        <TransformGroup name="levelArea1Start" translation="18 0 10" nodeId="37">
+          <TransformGroup name="levelArea1Height" translation="-40 0 0" nodeId="38"/>
+          <TransformGroup name="levelArea1Width" translation="0 0 -20" nodeId="39"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="3_indoorAreas" nodeId="40">
+        <TransformGroup name="indoorArea1Start" translation="16.35 0 7.2" nodeId="41">
+          <TransformGroup name="indoorArea1Height" translation="0 0 -14.7" nodeId="42"/>
+          <TransformGroup name="indoorArea1Width" translation="-32.6 0 0" nodeId="43"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="4_testAreas" nodeId="44">
+        <TransformGroup name="testArea1Start" translation="-22 0 10" nodeId="45">
+          <TransformGroup name="testArea1End" translation="36 7.5 -20" nodeId="46"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="5_tipOcclusionUpdateAreas" nodeId="47">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-22 0 10" nodeId="48">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="36 0 -20" nodeId="49"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="6_doors" nodeId="50">
+        <TransformGroup name="gate" nodeId="51">
+          <Shape name="gatePostMain" translation="-16.1 0.433045 4.44785" rotation="-0 90 0" shapeId="1" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          <Shape name="gateTrigger" translation="-16.1054 -0.01 0.829001" scale="0.4 1.8 1" shapeId="2" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="sideWindow" nodeId="54">
+          <Shape name="rope" translation="-12.9972 3.7384 7.313" shapeId="3" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          <Shape name="sideDoorRotor" translation="-7.3536 3.75116 7.325" shapeId="4" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          <Shape name="windowFrame" translation="-2.4067 1.2 7.325" scale="1 1.05541 1" shapeId="5" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          <Shape name="windowTrigger" translation="0 0 7.95" scale="1 2 1" shapeId="2" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="7_lights" nodeId="59">
+        <TransformGroup name="lightSwitch" nodeId="60"/>
+        <TransformGroup name="linkedLights" nodeId="61"/>
+        <TransformGroup name="realLights" nodeId="62">
+          <TransformGroup name="realLightsHigh" nodeId="63">
+            <Light name="spotLightHigh" rotation="-90 -0 0" nodeId="64" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+          </TransformGroup>
+          <TransformGroup name="realLightsLow" nodeId="65">
+            <Light name="pointLightLow" rotation="-90 -0 0" nodeId="66" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="7a_food" nodeId="67">
+        <Shape name="exactFillRootNodeFood" translation="-21.5 0 -3.5" scale="3 0.1 5" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="foodPlaces" nodeId="69">
+          <TransformGroup name="foodPlace1" nodeId="70"/>
+          <TransformGroup name="foodPlace10" nodeId="71"/>
+          <TransformGroup name="foodPlace2" nodeId="72"/>
+          <TransformGroup name="foodPlace3" nodeId="73"/>
+          <TransformGroup name="foodPlace4" nodeId="74"/>
+          <TransformGroup name="foodPlace5" nodeId="75"/>
+          <TransformGroup name="foodPlace6" nodeId="76"/>
+          <TransformGroup name="foodPlace7" nodeId="77"/>
+          <TransformGroup name="foodPlace8" nodeId="78"/>
+          <TransformGroup name="foodPlace9" nodeId="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="8_waterPlaces" nodeId="80">
+        <Shape name="waterPLane" translation="3.471 0.406388 -4" scale="1 1 1.8" shapeId="6" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <TransformGroup name="waterPlace1" nodeId="82"/>
+        <TransformGroup name="waterPlace2" nodeId="83"/>
+        <TransformGroup name="waterPlace3" nodeId="84"/>
+        <Shape name="waterTrigger" translation="8 0 9.5" shapeId="7" static="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="85" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="9_straw" nodeId="86">
+        <Shape name="exactFillRootNodeStraw" translation="13.6399 0 4.64752" shapeId="8" static="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="strawBaleTrigger" translation="13.0119 0 4.64752" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="strawPlane" shapeId="10" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      </TransformGroup>
+      <TransformGroup name="10_manure" nodeId="90">
+        <TransformGroup name="ManureClearArea" nodeId="91"/>
+        <Shape name="activactionTrigger" translation="12.5 -0.05 -3" scale="1 1.5 1" shapeId="11" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="loadingManureTrigger" translation="20.5 0 -3" scale="0.597004 1.5 0.536802" shapeId="11" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <TransformGroup name="manureTipAreas" nodeId="94"/>
+      </TransformGroup>
+      <TransformGroup name="11_liquidManureTank" nodeId="95">
+        <Shape name="liquidManureTankTrigger" translation="15 0 12" scale="3 4 3" shapeId="2" static="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="96" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="12_navigationRootNode" nodeId="97">
+        <Shape name="navigationMesh" shapeId="12" nodeId="98" castsShadows="true" receiveShadows="true" buildNavMeshMask="0xfe" materialIds="5"/>
+        <Shape name="walkingPlane" shapeId="12" static="true" collisionFilterGroup="0x400000" collisionFilterMask="0x1" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="13_fences" nodeId="100">
+        <TransformGroup name="fence1" nodeId="101">
+          <TransformGroup name="fence1Node1" translation="16.3383 0 -7.53" nodeId="102">
+            <TransformGroup name="fence1Node2" translation="-0.00031662 0 -12.47" nodeId="103"/>
+            <TransformGroup name="fence1Node3" translation="-32.3383 0 -12.47" nodeId="104"/>
+            <TransformGroup name="fence1Node4" translation="-32.3383 0 0" nodeId="105"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="14_storage" nodeId="106"/>
+      <Shape name="15_loadingTrigger" translation="-15.5 0 2.75" shapeId="13" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <Shape name="16_infoTrigger" shapeId="14" static="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="108" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="17_visuals" nodeId="109">
+        <TransformGroup name="visualLOD" nodeId="110">
+          <TransformGroup name="LOD0" nodeId="111">
+            <Shape name="openPigShed02_vis" shapeId="15" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="11"/>
+            <Shape name="feeder" translation="2.5791 0.05 -3.5" shapeId="16" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="114">
+            <Shape name="openPigShed01_vis_LOD" shapeId="17" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
