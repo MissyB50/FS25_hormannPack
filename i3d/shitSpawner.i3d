@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="shitSpawner.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="12" filename="$data/placeables/rudolfHormann/shared/alpsRoadFence01_diffuse.png"/>
+    <File fileId="13" filename="$data/placeables/rudolfHormann/shared/alpsRoadFence01_normal.png"/>
+    <File fileId="14" filename="$data/placeables/rudolfHormann/shared/alpsRoadFence01_specular.png"/>
+    <File fileId="6" filename="$data/placeables/vogelsang/fillmasterS/fillmasterS_diffuse.png"/>
+    <File fileId="7" filename="$data/placeables/vogelsang/fillmasterS/fillmasterS_normal.png"/>
+    <File fileId="8" filename="$data/placeables/vogelsang/fillmasterS/fillmasterS_specular.png"/>
+    <File fileId="2" filename="$data/placeables/vogelsang/fillmasterS/vogelsangLogo_diffuse.png"/>
+    <File fileId="5" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="9" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="3" filename="$data/shared/default_normal.png"/>
+    <File fileId="4" filename="$data/shared/default_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="alpsRoadFence01_mat" materialId="524">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="fillmasterS_mat" materialId="522" customShaderId="9">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="lambert1" materialId="13" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="vogelsangLogo_mat" materialId="523" alphaBlending="true" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shitSpawner.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="fillmasterS" translation="24.9438 0.234343 -5.5746" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1205" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13">
+      <Shape name="decals" translation="-0.34005 3.69872 0.02644" shapeId="2" clipDistance="50" nodeId="1206" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="523"/>
+      <Shape name="visual" translation="-0.000748 -0.00077 0.028678" shapeId="3" clipDistance="200" nodeId="1207" castsShadows="true" receiveShadows="true" materialIds="522"/>
+      <Shape name="fence" translation="-0.001849 -0.239672 1.28655" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1208" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13">
+        <Shape name="visual" translation="0 -0.026191 0.036924" shapeId="5" clipDistance="200" nodeId="1209" castsShadows="true" receiveShadows="true" materialIds="524"/>
+      </Shape>
+      <Shape name="grate" translation="0.012999 -0.249774 1.28093" shapeId="6" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1210" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
+    </Shape>
+  </Scene>
+
+</i3D>
