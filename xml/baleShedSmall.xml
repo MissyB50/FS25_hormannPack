@@ -6,7 +6,7 @@
             <function>$l10n_function_garageSolarPanels</function>
         </functions>
         <image>store/store_baleSmall.dds</image>
-        <price>152500</price>
+        <price>15000</price>
         <dailyUpkeep>110</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -19,6 +19,8 @@
 
     <base>
         <filename>i3d/baleShedSmall.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>false</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true">
@@ -54,6 +56,23 @@
             <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
         </updateAreas>
     </ai>
+
+    <colorConfigurations>
+        <material slotName="mainColor_mat" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BEIGE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_RED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BLUE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WHITEALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_GREYALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_OXIDRED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODDARK"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODBRIGHT"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
+    </colorConfigurations>
 
 <!--     <solarPanels>
         <solarPanelsConfigurations>

@@ -3,26 +3,28 @@
     <storeData>
         <name>$l10n_storeItem_cowBarnOpenRoof</name>
         <image>store/store_cowBarnAlternative.dds</image>
-        <price>212400</price>
+        <price>200000</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>
+            <function>$l10n_function_adjustableMeadow</function>
         </functions>
         <lifetime>1000</lifetime>
-        <dailyUpkeep>150</dailyUpkeep>
+        <dailyUpkeep>0</dailyUpkeep>
         <rotation>0</rotation>
         <brand>RUDOLFHOERMANN</brand>
-        <species>placeable</species>
+        <species>PLACEABLE</species>
         <category>animalpens</category>
         <brush>
-            <type>placeable</type>
+            <type>husbandry</type>
             <category>animals</category>
             <tab>cows</tab>
         </brush>
     </storeData>
 
     <base>
-        <filename>i3d/cowBarnAlternative.i3d</filename>
+        <filename>i3d/cowBarnOpen.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>false</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" placementRotationSnapAngle="90" placementPositionSnapSize="0.5" placementPositionSnapOffset="0.25" >
@@ -46,16 +48,7 @@
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="concrete"/>
         </levelAreas>
-
-        <paintAreas>
-            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass"/>
-            <paintArea startNode="paintArea2Start" widthNode="paintArea2Width" heightNode="paintArea2Height" groundType="dirt"/>
-        </paintAreas>
     </leveling>
-
-    <foliageAreas>
-        <foliageArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" decoFoliage="grassShort" />
-    </foliageAreas>
 
     <indoorAreas>
         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
@@ -63,11 +56,11 @@
     </indoorAreas>
 
     <triggerMarkers>
-        <triggerMarker node="markerMilk"         filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
-        <triggerMarker node="markerFood"         filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
-        <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
-        <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
-        <triggerMarker node="markerManure"       filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerFood"         filename="$data/shared/assets/marker/markerIconFood.i3d" adjustToGround="true"/>
+        <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIconAnimals.i3d"  adjustToGround="true"/>
+        <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIconSlurry.i3d"  adjustToGround="true"/>
+        <triggerMarker node="markerManure"       filename="$data/shared/assets/marker/markerIconLoad.i3d"  adjustToGround="true"/>
+        <triggerMarker node="markerMilk"         filename="$data/shared/assets/marker/markerIconMilk.i3d"  adjustToGround="true"/>
     </triggerMarkers>
 
     <tipOcclusionUpdateAreas>
@@ -387,7 +380,7 @@
 
         <liquidManure />
 
-        <food capacity="60000">
+        <food capacity="80000">
             <foodPlaces>
                 <foodPlace node="foodPlace1" />
                 <foodPlace node="foodPlace2" />
@@ -399,13 +392,12 @@
                 <foodPlace node="foodPlace8" />
             </foodPlaces>
             <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage"/>
-            <feedingTrough exactFillRootNode="exactFillRootNodeFood">
-                <baleTrigger triggerNode="baleTrigger"/>
-            </feedingTrough>
+            <feedingTrough exactFillRootNode="exactFillRootNodeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="80000"/>
+            <baleTrigger triggerNode="baleTrigger"/>
         </food>
 
         <fences>
-            <fence filename="$data/placeables/lizard/fencesFarm/cowFence/cowFenceSingleton.xml" hasStartPole="true" hasEndPole="true">
+            <fence filename="data/placeables/brandless/fences/husbandries/level03/fencesFarmLevel03.xml" hasStartPole="true" hasEndPole="true">
                 <node node="fence1Node1" />
                 <node node="fence1Node2" />
                 <node node="fence1Node3" />
@@ -414,7 +406,7 @@
         </fences>
     </husbandry>
 
-    <manureHeap node="manureHeap" capacity="100000" isExtension="false" >
+    <manureHeap node="manureHeap" capacity="2000000" isExtension="false" >
         <area startNode="tipAreaStart" widthNode="tipAreaWidth" heightNode="tipAreaHeight" activationTriggerNode="activationTrigger" />
         <clearArea startNode="clearAreaStart" widthNode="clearAreaWidth" heightNode="clearAreaHeight" />
 
@@ -433,12 +425,6 @@
         <i3dMapping id="levelArea1Start" node="0>1|0" />
         <i3dMapping id="levelArea1Width" node="0>1|0|0" />
         <i3dMapping id="levelArea1Height" node="0>1|0|1" />
-        <i3dMapping id="paintArea1Start" node="0>2|0" />
-        <i3dMapping id="paintArea1Width" node="0>2|0|0" />
-        <i3dMapping id="paintArea1Height" node="0>2|0|1" />
-        <i3dMapping id="paintArea2Start" node="0>2|1" />
-        <i3dMapping id="paintArea2Width" node="0>2|1|0" />
-        <i3dMapping id="paintArea2Height" node="0>2|1|1" />
         <i3dMapping id="indoorArea1Start" node="0>3|0" />
         <i3dMapping id="indoorArea1Width" node="0>3|0|0" />
         <i3dMapping id="indoorArea1Height" node="0>3|0|1" />

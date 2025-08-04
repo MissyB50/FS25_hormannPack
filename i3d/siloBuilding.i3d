@@ -2,7 +2,7 @@
 
 <i3D name="siloBuilding.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
   </Asset>
 
   <Files>
@@ -576,52 +576,48 @@
       </TransformGroup>
       <TransformGroup name="workshop" nodeId="353"/>
       <TransformGroup name="tanks" nodeId="354"/>
-      <TransformGroup name="visuals" nodeId="357">
-        <TransformGroup name="visual_lod" lodDistance="0 100" lodBlending="false" nodeId="358">
-          <TransformGroup name="LOD0" nodeId="359">
-            <Shape name="siloBuilding01_vis" shapeId="19" clipDistance="400" nodeId="360" castsShadows="true" receiveShadows="true" materialIds="15"/>
-            <Shape name="siloBuilding02_vis" shapeId="20" clipDistance="400" nodeId="361" castsShadows="true" receiveShadows="true" materialIds="16"/>
-            <Shape name="grainGrateNew" translation="8 0.025 9.5" shapeId="21" clipDistance="300" nodeId="362" castsShadows="true" receiveShadows="true" materialIds="14"/>
-            <Shape name="metalFrame" shapeId="22" clipDistance="300" nodeId="363" castsShadows="true" receiveShadows="true" materialIds="7"/>
-            <Shape name="warningStripes" translation="-3.60029 0.1 -11.8" rotation="1.91277e-10 90 0" shapeId="23" clipDistance="250" nodeId="364" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="warningStripes" translation="-3.6 0.1 11.8" rotation="1.91277e-10 0 0" shapeId="23" clipDistance="250" nodeId="365" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="warningStripes" translation="-9.4 0.1 11.8" rotation="1.91277e-10 -90 0" shapeId="23" clipDistance="250" nodeId="366" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="warningStripes" translation="-9.4 0.1 -11.8" rotation="1.91277e-10 180 0" shapeId="23" clipDistance="250" nodeId="367" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="warningStripes" translation="-17.9 0.1 17.14" rotation="1.91277e-10 0 0" shapeId="23" clipDistance="250" nodeId="368" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="warningStripes" translation="-22.9 0.1 17.14" rotation="0 -90 0" shapeId="23" clipDistance="250" nodeId="369" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="warningStripes" translation="22.9 0.1 17.14" rotation="1.91277e-10 0 0" shapeId="23" clipDistance="250" nodeId="370" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="warningStripes" translation="17.9 0.1 17.14" rotation="1.91277e-10 -90 0" shapeId="23" clipDistance="250" nodeId="371" castsShadows="false" receiveShadows="true" materialIds="25"/>
-            <Shape name="windows" shapeId="24" clipDistance="600" nodeId="372" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="26"/>
-            <TransformGroup name="seasons" nodeId="373">
-              <Shape name="snowMask" translation="0.013449 9.96271 0.00652912" shapeId="25" clipDistance="600" nodeId="374" castsShadows="true" receiveShadows="true" materialIds="13"/>
+      <TransformGroup name="visuals" nodeId="355">
+        <TransformGroup name="visual_lod" lodDistance="0 100" lodBlending="false" nodeId="356">
+          <TransformGroup name="LOD0" nodeId="357">
+            <Shape name="siloBuilding01_vis" shapeId="19" clipDistance="400" nodeId="358" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            <Shape name="siloBuilding02_vis" shapeId="20" clipDistance="400" nodeId="359" castsShadows="true" receiveShadows="true" materialIds="16"/>
+            <Shape name="grainGrateNew" translation="8 0.025 9.5" shapeId="21" clipDistance="300" nodeId="360" castsShadows="true" receiveShadows="true" materialIds="14"/>
+            <Shape name="metalFrame" shapeId="22" clipDistance="300" nodeId="361" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="warningStripes" translation="-3.60029 0.1 -11.8" rotation="1.91277e-10 90 0" shapeId="23" clipDistance="250" nodeId="362" castsShadows="false" receiveShadows="true" materialIds="25"/>
+            <Shape name="warningStripes" translation="-3.6 0.1 11.8" rotation="1.91277e-10 0 0" shapeId="23" clipDistance="250" nodeId="363" castsShadows="false" receiveShadows="true" materialIds="25"/>
+            <Shape name="warningStripes" translation="-9.4 0.1 11.8" rotation="1.91277e-10 -90 0" shapeId="23" clipDistance="250" nodeId="364" castsShadows="false" receiveShadows="true" materialIds="25"/>
+            <Shape name="warningStripes" translation="-9.4 0.1 -11.8" rotation="1.91277e-10 180 0" shapeId="23" clipDistance="250" nodeId="365" castsShadows="false" receiveShadows="true" materialIds="25"/>
+            <Shape name="windows" shapeId="24" clipDistance="600" nodeId="370" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="26"/>
+            <TransformGroup name="seasons" nodeId="371">
+              <Shape name="snowMask" translation="0.013449 9.96271 0.00652912" shapeId="25" clipDistance="600" nodeId="372" castsShadows="true" receiveShadows="true" materialIds="13"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="LOD1" nodeId="375">
-            <Shape name="siloBuilding01_vis_LOD" shapeId="26" clipDistance="600" nodeId="376" castsShadows="false" receiveShadows="true" materialIds="15"/>
-            <Shape name="siloBuilding02_vis_LOD" shapeId="20" clipDistance="600" nodeId="377" castsShadows="true" receiveShadows="true" materialIds="16"/>
+          <TransformGroup name="LOD1" nodeId="373">
+            <Shape name="siloBuilding01_vis_LOD" shapeId="26" clipDistance="600" nodeId="374" castsShadows="false" receiveShadows="true" materialIds="15"/>
+            <Shape name="siloBuilding02_vis_LOD" shapeId="20" clipDistance="600" nodeId="375" castsShadows="true" receiveShadows="true" materialIds="16"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="solarPanels" nodeId="378">
-          <TransformGroup name="panel01" nodeId="379">
-            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="380">
-              <Shape name="LOD0" shapeId="27" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="18"/>
-              <Shape name="LOD1" shapeId="28" nodeId="382" castsShadows="true" receiveShadows="true" materialIds="18"/>
+        <TransformGroup name="solarPanels" nodeId="376">
+          <TransformGroup name="panel01" nodeId="377">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="378">
+              <Shape name="LOD0" shapeId="27" nodeId="379" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD1" shapeId="28" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="18"/>
             </TransformGroup>
-            <Shape name="supports" shapeId="29" nodeId="383" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="supports" shapeId="29" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </TransformGroup>
-          <TransformGroup name="panel02" nodeId="384">
-            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="385">
-              <Shape name="LOD0" shapeId="30" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="18"/>
-              <Shape name="LOD1" shapeId="31" nodeId="387" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          <TransformGroup name="panel02" nodeId="382">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="383">
+              <Shape name="LOD0" shapeId="30" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD1" shapeId="31" nodeId="385" castsShadows="true" receiveShadows="true" materialIds="18"/>
             </TransformGroup>
-            <Shape name="supports" shapeId="32" nodeId="388" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="supports" shapeId="32" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </TransformGroup>
         </TransformGroup>
-        <Shape name="logoGreenDecal" translation="0 8.96796 0" shapeId="33" clipDistance="400" nodeId="389" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
+        <Shape name="logoGreenDecal" translation="0 8.96796 0" shapeId="33" clipDistance="400" nodeId="387" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
       </TransformGroup>
-      <TransformGroup name="collisions" nodeId="390">
-        <Shape name="collisionGrate" translation="-7 0.1 0" scale="2 1 10" shapeId="34" visibility="false" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="391" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="5"/>
-        <Shape name="collisionMain" shapeId="35" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="392" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+      <TransformGroup name="collisions" nodeId="388">
+        <Shape name="collisionGrate" translation="-7 0.1 0" scale="2 1 10" shapeId="34" visibility="false" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="389" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="collisionMain" shapeId="35" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="390" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

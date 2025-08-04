@@ -2,7 +2,7 @@
 <placeable type="horseHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/placeable.xsd">
     <storeData>
         <name>$l10n_storeItem_horseBarnLShape</name>
-        <image>placeables/rudolfHormann/horseBarnLShape/store_horsebarnLShape.png</image>
+        <image>store/store_horsebarnLShape.dds</image>
         <price>199000</price>
         <functions>
             <function>$l10n_function_animalPenHorse</function>
@@ -18,11 +18,6 @@
             <category>animals</category>
             <tab>horses</tab>
         </brush>
-        <vertexBufferMemoryUsage>4340992</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>881408</indexBufferMemoryUsage>
-        <textureMemoryUsage>5898240</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
         <storeIconRendering>
             <settings cameraXRot="-20" cameraYRot="50" advancedBoundingBox="true"/>
@@ -31,7 +26,7 @@
     </storeData>
 
     <base>
-        <filename>placeables/rudolfHormann/horseBarnLShape/horsebarnLShape.i3d</filename>
+        <filename>i3d/horsebarnLShape.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
 
