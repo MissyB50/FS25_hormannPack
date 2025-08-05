@@ -2,7 +2,7 @@
 
 <i3D name="objectStorage01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
   </Asset>
 
   <Files>
@@ -27,17 +27,17 @@
       <Normalmap fileId="6"/>
       <Glossmap fileId="7"/>
     </Material>
-    <Material name="objectStorage02_mat" materialId="8" customShaderId="11" customShaderVariation="colorScale">
+    <Material name="objectStorage02_mat" materialId="84" customShaderId="11" customShaderVariation="colorScale">
       <Texture fileId="8"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
-      <CustomParameter name="colorScale0" value="0.75 0.55 0.05 1"/>
+      <CustomParameter name="colorScale0" value="0.069 0.259 0.169 1"/>
     </Material>
-    <Material name="objectStorage02_mat" materialId="7" customShaderId="11" customShaderVariation="colorScale" shadingRate="2x1">
+    <Material name="objectStorage02_mat" materialId="74" customShaderId="11" customShaderVariation="colorScale" shadingRate="2x1">
       <Texture fileId="8"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
-      <CustomParameter name="colorScale0" value="0.75 0.55 0.05 1"/>
+      <CustomParameter name="colorScale0" value="0.069 0.259 0.169 1"/>
     </Material>
     <Material name="objectStorage02_mat" materialId="9" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
@@ -53,72 +53,72 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="objectStorage" nodeId="21">
-      <TransformGroup name="clearAreas" nodeId="22">
-        <TransformGroup name="clearArea1Start" translation="-9 0 -4" nodeId="23">
-          <TransformGroup name="clearArea1Height" translation="18 0 0" nodeId="24"/>
-          <TransformGroup name="clearArea1Width" translation="0 0 8" nodeId="25"/>
+    <TransformGroup name="objectStorage" nodeId="20">
+      <TransformGroup name="clearAreas" nodeId="21">
+        <TransformGroup name="clearArea1Start" translation="-9 0 -4" nodeId="22">
+          <TransformGroup name="clearArea1Height" translation="18 0 0" nodeId="23"/>
+          <TransformGroup name="clearArea1Width" translation="0 0 8" nodeId="24"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="levelAreas" nodeId="26">
-        <TransformGroup name="levelArea1Start" translation="-9 0 -4" nodeId="27">
-          <TransformGroup name="levelArea1Height" translation="18 0 0" nodeId="28"/>
-          <TransformGroup name="levelArea1Width" translation="0 0 8" nodeId="29"/>
+      <TransformGroup name="levelAreas" nodeId="25">
+        <TransformGroup name="levelArea1Start" translation="-9 0 -4" nodeId="26">
+          <TransformGroup name="levelArea1Height" translation="18 0 0" nodeId="27"/>
+          <TransformGroup name="levelArea1Width" translation="0 0 8" nodeId="28"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="indoorAreas" nodeId="30">
-        <TransformGroup name="indoorArea1Start" translation="-8.1 0.05 -3.1" nodeId="31">
-          <TransformGroup name="indoorArea1Height" translation="16.2 0 0" nodeId="32"/>
-          <TransformGroup name="indoorArea1Width" translation="0 0 6.2" nodeId="33"/>
+      <TransformGroup name="indoorAreas" nodeId="29">
+        <TransformGroup name="indoorArea1Start" translation="-8.1 0.05 -3.1" nodeId="30">
+          <TransformGroup name="indoorArea1Height" translation="16.2 0 0" nodeId="31"/>
+          <TransformGroup name="indoorArea1Width" translation="0 0 6.2" nodeId="32"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="testAreas" nodeId="34">
-        <TransformGroup name="testArea1Start" translation="-9 0 -4" nodeId="35">
-          <TransformGroup name="testArea1End" translation="18 0 8" nodeId="36"/>
+      <TransformGroup name="testAreas" nodeId="33">
+        <TransformGroup name="testArea1Start" translation="-9 0 -4" nodeId="34">
+          <TransformGroup name="testArea1End" translation="18 0 8" nodeId="35"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="37">
-        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9 0 -4" nodeId="38">
-          <TransformGroup name="tipOcclusionUpdateArea1End" translation="18 0 8" nodeId="39"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="36">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9 0 -4" nodeId="37">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="18 0 8" nodeId="38"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="objectStorage" nodeId="53">
-        <TransformGroup name="areas" nodeId="54">
-          <TransformGroup name="spawnAreaStart01" translation="3 -0.01 18.041" rotation="0 -90 0" nodeId="55">
-            <TransformGroup name="spawnAreaEnd01" translation="6 0 8.5" nodeId="56"/>
+      <TransformGroup name="objectStorage" nodeId="39">
+        <TransformGroup name="areas" nodeId="40">
+          <TransformGroup name="spawnAreaStart01" translation="3 -0.01 18.041" rotation="0 -90 0" nodeId="41">
+            <TransformGroup name="spawnAreaEnd01" translation="6 0 8.5" nodeId="42"/>
           </TransformGroup>
-          <TransformGroup name="storageAreaStart01" translation="-7.87391 0.05 -2.86894" nodeId="57">
-            <TransformGroup name="storageAreaEnd01" translation="15.74 0 5.66" nodeId="58"/>
+          <TransformGroup name="storageAreaStart01" translation="-7.87391 0.05 -2.86894" nodeId="43">
+            <TransformGroup name="storageAreaEnd01" translation="15.74 0 5.66" nodeId="44"/>
           </TransformGroup>
         </TransformGroup>
-        <Shape name="objectTrigger" translation="4 0 7.5" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x50000" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
-        <Shape name="playerTrigger" translation="-9.367 0.5 2" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
-          <TransformGroup name="playerTriggerMarker" nodeId="61"/>
+        <Shape name="objectTrigger" translation="4 0 7.5" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x50000" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="playerTrigger" translation="-9.367 0.5 2" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+          <TransformGroup name="playerTriggerMarker" nodeId="47"/>
         </Shape>
-        <Shape name="infoTrigger" translation="0 0 4" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
-        <TransformGroup name="objectTriggerMarker" translation="5 0 7" nodeId="63"/>
-        <TransformGroup name="warning" nodeId="64">
-          <Shape name="warningStripes" translation="-8 0 4" shapeId="4" clipDistance="200" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="10"/>
-          <Shape name="warningStripes" translation="0 0 4" rotation="0 -90 0" shapeId="4" clipDistance="200" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="10"/>
-          <Shape name="warningStripes" translation="-0.0442368 0 11" rotation="0 -180 0" shapeId="4" clipDistance="200" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="10"/>
-          <Shape name="warningStripes" translation="-8 0 11" rotation="0 90 0" shapeId="4" clipDistance="200" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="infoTrigger" translation="0 0 4" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="objectTriggerMarker" translation="5 0 7" nodeId="49"/>
+        <TransformGroup name="warning" nodeId="50">
+          <Shape name="warningStripes" translation="-8 0 4" shapeId="4" clipDistance="200" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          <Shape name="warningStripes" translation="0 0 4" rotation="0 -90 0" shapeId="4" clipDistance="200" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          <Shape name="warningStripes" translation="-0.0442368 0 11" rotation="0 -180 0" shapeId="4" clipDistance="200" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          <Shape name="warningStripes" translation="-8 0 11" rotation="0 90 0" shapeId="4" clipDistance="200" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="10"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="visuals" nodeId="69">
-        <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="70">
-          <TransformGroup name="LOD0" nodeId="71">
-            <Shape name="objectStorage01_vis" shapeId="5" clipDistance="400" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis" shapeId="6" clipDistance="400" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      <TransformGroup name="visuals" nodeId="55">
+        <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="56">
+          <TransformGroup name="LOD0" nodeId="57">
+            <Shape name="objectStorage01_vis" shapeId="5" clipDistance="400" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="objectStorage02_vis" shapeId="6" clipDistance="400" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="74"/>
           </TransformGroup>
-          <TransformGroup name="LOD1" nodeId="74">
-            <Shape name="objectStorage01_vis_LOD" shapeId="7" clipDistance="600" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis_LOD" shapeId="6" clipDistance="600" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          <TransformGroup name="LOD1" nodeId="60">
+            <Shape name="objectStorage01_vis_LOD" shapeId="7" clipDistance="600" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="objectStorage02_vis_LOD" shapeId="6" clipDistance="600" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="84"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="winter" nodeId="77"/>
+        <TransformGroup name="winter" nodeId="63"/>
       </TransformGroup>
-      <TransformGroup name="collisions" nodeId="78">
-        <Shape name="collision" shapeId="8" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <TransformGroup name="collisions" nodeId="64">
+        <Shape name="collision" shapeId="8" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

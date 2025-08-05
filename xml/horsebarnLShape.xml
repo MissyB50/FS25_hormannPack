@@ -48,14 +48,9 @@
     </clearAreas>
 
     <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
-         <levelAreas>
-             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
-         </levelAreas>
-        <paintAreas>
-             <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="asphalt"/>
-             <paintArea startNode="paintArea2Start" widthNode="paintArea2Width" heightNode="paintArea2Height" groundType="grass"/>
-             <paintArea startNode="paintArea3Start" widthNode="paintArea3Width" heightNode="paintArea3Height" groundType="asphalt"/>
-        </paintAreas>
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
+        </levelAreas>
     </leveling>
 
     <foliageAreas>
@@ -63,9 +58,9 @@
     </foliageAreas>
 
     <indoorAreas>
-         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
-         <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height"/>
-         <indoorArea startNode="indoorArea3Start" widthNode="indoorArea3Width" heightNode="indoorArea3Height"/>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height"/>
+        <indoorArea startNode="indoorArea3Start" widthNode="indoorArea3Width" heightNode="indoorArea3Height"/>
     </indoorAreas>
 
     <tipOcclusionUpdateAreas>
@@ -228,10 +223,6 @@
         <dynamicallyLoadedPart node="0" linkNode="lightSwitch"   filename="$data/shared/assets/lights/terraLed/switch.i3d" />
         <dynamicallyLoadedPart node="0" linkNode="lightSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
         <dynamicallyLoadedPart node="0" linkNode="lightSwitch02" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
-        <!-- <dynamicallyLoadedPart node="0" linkNode="controlBox" filename="$data/placeables/rudolfHormann/controlPanel/controlPanel.i3d"> -->
-            <!-- <objectChange node="0|0" rotationActive="0 -75 0" /> -->
-            <!-- <objectChange node="0|1" rotationActive="0 80 0"/> -->
-        <!-- </dynamicallyLoadedPart> -->
     </dynamicallyLoadedParts>
 
     <lights>
@@ -297,7 +288,7 @@
             </deliveryAreas>
         </animals>
 
-        <food capacity="11500" >
+        <food capacity="20000" >
             <foodPlane node="foodPlane01" changeVisibility="true" defaultFillType="OAT"/>
             <feedingTrough exactFillRootNode="exactFillRootNodeFood">
                 <baleTrigger triggerNode="foodTrigger"/>
