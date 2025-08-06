@@ -21,19 +21,19 @@
         <storeItem xmlFilename="xml/cowBarnAlternative.xml" /><!--done-->
         <storeItem xmlFilename="xml/cowBarnLarge.xml" /><!--done-->
         <storeItem xmlFilename="xml/grainSilo.xml" /><!--done-->
-        <storeItem xmlFilename="xml/grainStore.xml" />
-        <storeItem xmlFilename="xml/horsebarnLShape.xml" /><!--done-->
-        <storeItem xmlFilename="xml/objectStorage01.xml" />
-        <storeItem xmlFilename="xml/openShed.xml" />
+        <storeItem xmlFilename="xml/grainStore.xml" /><!--done-->
+<!--         <storeItem xmlFilename="xml/horsebarnLShape.xml" /> grab exterally -->
+        <storeItem xmlFilename="xml/objectStorage01.xml" /><!--done-->
+<!--         <storeItem xmlFilename="xml/openPigShed.xml" /> -->
         <storeItem xmlFilename="xml/shed2.xml" />
         <storeItem xmlFilename="xml/shed3.xml" />
         <storeItem xmlFilename="xml/shed5.xml" />
-        <storeItem xmlFilename="xml/shedWorkshop.xml" />
+<!--         <storeItem xmlFilename="xml/shedWorkshop.xml" />
         <storeItem xmlFilename="xml/sheepBarn.xml" />
         <storeItem xmlFilename="xml/silageSilo.xml" />
-        <storeItem xmlFilename="xml/siloStorage.xml" />
-
-<!--    
+        <storeItem xmlFilename="xml/siloStorage.xml" /> -->
+        <storeItem xmlFilename="xml/workshop.xml" />
+<!--   
     
 
         <storeItem xmlFilename="xml/.xml" />
@@ -71,16 +71,6 @@
         </type>
 
 
-
-
-
-
-
-
-
-
-
-
     </placeableTypes>
 
     <l10n>
@@ -112,5 +102,11 @@
             <en>5 Door vehicle Shed</en>
             <de></de>
         </text>
+        <text name="storeItem_hoermannWorkshop">
+            <en>Vehicle Workshop</en>
+            <de></de>
+        </text>
+
+
     </l10n>
 </modDesc>

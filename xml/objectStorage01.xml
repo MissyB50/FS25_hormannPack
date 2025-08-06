@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_objectStorage</function>
         </functions>
-        <image>store/store_objectStorage.png</image>
+        <image>store/store_baleSmall.dds</image>
         <price>49000</price>
         <dailyUpkeep>30</dailyUpkeep>
         <lifetime>1000</lifetime>

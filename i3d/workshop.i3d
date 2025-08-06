@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<i3D name="shedWorkshop.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+<i3D name="workShopStorage.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
     <Export program="GIANTS Editor 64bit" version="10.0.6"/>
   </Asset>
@@ -55,11 +55,11 @@
   </Materials>
 
 
-  <Shapes externalShapesFile="shedWorkshop.i3d.shapes">
+  <Shapes externalShapesFile="workshop.i3d.shapes">
   </Shapes>
 
   <Scene>
-    <TransformGroup name="workshop " nodeId="27">
+    <TransformGroup name="storageWorkshop " nodeId="27">
       <TransformGroup name="clearAreas" nodeId="28">
         <TransformGroup name="clearArea1Start" translation="-13 0 -8" nodeId="29">
           <TransformGroup name="clearArea1Height" translation="26 0 0" nodeId="30"/>
@@ -94,18 +94,33 @@
           <TransformGroup name="playerTriggerMarker" nodeId="49"/>
         </Shape>
       </TransformGroup>
-      <TransformGroup name="empty" nodeId="50"/>
+      <TransformGroup name="objectStorage" nodeId="50">
+        <TransformGroup name="areas" nodeId="51">
+          <TransformGroup name="spawnAreaStart01" translation="-11.7 -0.01 8.3" nodeId="52">
+            <TransformGroup name="spawnAreaEnd01" translation="11.4248 0 6.4" nodeId="53"/>
+          </TransformGroup>
+          <TransformGroup name="storageAreaStart01" translation="-11.8343 0 -6.82572" nodeId="54">
+            <TransformGroup name="storageAreaEnd01" translation="14.7 5.2 13.7" nodeId="55"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="objectTrigger" translation="6 0 12" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x50000" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="playerTrigger" translation="3 0.5 8" shapeId="4" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
+          <TransformGroup name="playerTriggerMarker" nodeId="58"/>
+        </Shape>
+        <Shape name="infoTrigger" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <TransformGroup name="objectTriggerMarker" translation="6 0 12" nodeId="60"/>
+      </TransformGroup>
       <TransformGroup name="doors" nodeId="61">
         <TransformGroup name="rollingDoor1Base" translation="7.5 2.47432 7.10999" nodeId="62">
-          <Shape name="rollingDoor1" shapeId="3" clipDistance="300" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="5"/>
-          <Shape name="rollingDoor1ColPartBottom" shapeId="4" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
-          <Shape name="rollingDoor1ColPartTop" shapeId="5" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
-          <Shape name="rollingDoor1Trigger" translation="4.27843 -1.24929 0.719349" shapeId="6" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="rollingDoor1" shapeId="6" clipDistance="300" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="rollingDoor1ColPartBottom" shapeId="7" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="rollingDoor1ColPartTop" shapeId="8" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="rollingDoor1Trigger" translation="4.27843 -1.24929 0.719349" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="lights" nodeId="67">
         <TransformGroup name="lightSwitch" nodeId="68"/>
-        <Shape name="lightTrigger" translation="11.4999 0 5.5" shapeId="7" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="lightTrigger" translation="11.4999 0 5.5" shapeId="10" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="6"/>
         <TransformGroup name="linkedLights" nodeId="70">
           <TransformGroup name="linkedLights" translation="-0.504302 6.21144 -3.53032" rotation="-90.0001 75 -90.0001" nodeId="71"/>
           <TransformGroup name="linkedLights" translation="-8.5 6.21144 -3.53032" rotation="-90.0001 75 -90.0001" nodeId="72"/>
@@ -133,24 +148,24 @@
       <TransformGroup name="visuals" nodeId="89">
         <TransformGroup name="visual" lodDistance="0 800" nodeId="90">
           <TransformGroup name="LOD0" nodeId="91">
-            <Shape name="workShop01_vis" shapeId="8" clipDistance="400" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="8"/>
-            <Shape name="workShop02_vis" shapeId="9" clipDistance="400" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="workShop01_vis" shapeId="11" clipDistance="400" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="workShop02_vis" shapeId="12" clipDistance="400" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="10"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="94">
-            <Shape name="workShop01_vis_LOD" shapeId="10" clipDistance="600" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="9"/>
-            <Shape name="workShop02_vis_LOD" shapeId="9" clipDistance="600" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="workShop01_vis_LOD" shapeId="13" clipDistance="600" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            <Shape name="workShop02_vis_LOD" shapeId="12" clipDistance="600" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="10"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="97"/>
         <TransformGroup name="warning" nodeId="98">
-          <Shape name="warningStripes" translation="-12 0 8" shapeId="11" clipDistance="200" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="7"/>
-          <Shape name="warningStripes" translation="-2.60423e-07 0 8" rotation="0 -90 0" shapeId="11" clipDistance="200" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="7"/>
-          <Shape name="warningStripes" translation="0 0 15" rotation="0 -180 0" shapeId="11" clipDistance="200" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="7"/>
-          <Shape name="warningStripes" translation="-12 0 15" rotation="0 90 0" shapeId="11" clipDistance="200" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="warningStripes" translation="-12 0 8" shapeId="14" clipDistance="200" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="warningStripes" translation="-2.60423e-07 0 8" rotation="0 -90 0" shapeId="14" clipDistance="200" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="warningStripes" translation="0 0 15" rotation="0 -180 0" shapeId="14" clipDistance="200" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="warningStripes" translation="-12 0 15" rotation="0 90 0" shapeId="14" clipDistance="200" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="7"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="103">
-        <Shape name="collision" shapeId="12" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="collision" shapeId="15" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

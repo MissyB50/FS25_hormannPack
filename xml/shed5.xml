@@ -56,7 +56,7 @@
     </ai>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch01" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
     </dynamicallyLoadedParts>
 
     <lights>
@@ -194,19 +194,19 @@
 
 
     <i3dMappings>
-        <i3dMapping id="clearArea1Start" node="0>0|0" />
-        <i3dMapping id="clearArea1Height" node="0>0|0|0" />
-        <i3dMapping id="clearArea1Width" node="0>0|0|1" />
-        <i3dMapping id="levelArea1Start" node="0>1|0" />
-        <i3dMapping id="levelArea1Height" node="0>1|0|0" />
-        <i3dMapping id="levelArea1Width" node="0>1|0|1" />
-        <i3dMapping id="indoorArea1Start" node="0>2|0" />
-        <i3dMapping id="indoorArea1Height" node="0>2|0|0" />
-        <i3dMapping id="indoorArea1Width" node="0>2|0|1" />
-        <i3dMapping id="testArea1Start" node="0>3|0" />
-        <i3dMapping id="testArea1End" node="0>3|0|0" />
-        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
-        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
         <i3dMapping id="rollingDoor1Panel1" node="0>5|0|0" />
         <i3dMapping id="rollingDoor1Panel2" node="0>5|0|0|0" />
         <i3dMapping id="rollingDoor1Panel3" node="0>5|0|0|0|0" />

@@ -110,7 +110,7 @@
             </sounds>
         </animatedObject>
 
-        <animatedObject saveId="sideWidowBackTop" >
+        <animatedObject saveId="sideWindowTop" >
             <animation duration="10.0">
                 <part node="window1">
                     <keyFrame time="0.0" translation="0 3.9 -18.21"/>
@@ -125,11 +125,11 @@
             </sounds>
         </animatedObject>
 
-        <animatedObject saveId="sideWidowBack" >
-            <animation duration="8.0">
+        <animatedObject saveId="sideWindowFront1" >
+            <animation duration="10.0">
                 <part node="window2">
-                    <keyFrame time="0.0" translation="0 1.65 -18.219"/>
-                    <keyFrame time="1.0" translation="0 2.9 -18.219"/>
+                    <keyFrame time="0.0" translation="23 1.65 18.219"/>
+                    <keyFrame time="1.0" translation="23 2.90 18.219"/>
                 </part>
             </animation>
             <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
@@ -137,6 +137,111 @@
                 <moving linkNode="side2Base" template="plasitcVentilationGateLoop"/>
                 <posEnd linkNode="side2Base" template="plasticDoorOpen" />
                 <negEnd linkNode="side2Base" template="plasticDoorClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="sideWindowFront2" >
+            <animation duration="10.0">
+                <part node="window3">
+                    <keyFrame time="0.0" translation="-23 1.65 18.219"/>
+                    <keyFrame time="1.0" translation="-23 2.90 18.219"/>
+                </part>
+            </animation>
+            <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving linkNode="side3Base" template="plasitcVentilationGateLoop"/>
+                <posEnd linkNode="side3Base" template="plasticDoorOpen" />
+                <negEnd linkNode="side3Base" template="plasticDoorClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="sideWindow01" >
+            <animation duration="10.0">
+                <part node="window4">
+                    <keyFrame time="0.0" translation="40.167 2.215 -10.55"/>
+                    <keyFrame time="1.0" translation="40.167 3.4 -10.55"/>
+                </part>
+            </animation>
+            <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving linkNode="side4Base" template="plasitcVentilationGateLoop"/>
+                <posEnd linkNode="side4Base" template="plasticDoorOpen" />
+                <negEnd linkNode="side4Base" template="plasticDoorClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="sideWindow02" >
+            <animation duration="10.0">
+                <part node="window5">
+                    <keyFrame time="0.0" translation="40.167 2.215 10.68"/>
+                    <keyFrame time="1.0" translation="40.167 3.40 10.68"/>
+                </part>
+            </animation>
+            <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving linkNode="side5Base" template="plasitcVentilationGateLoop"/>
+                <posEnd linkNode="side5Base" template="plasticDoorOpen" />
+                <negEnd linkNode="side5Base" template="plasticDoorClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="sideWindow03" >
+            <animation duration="10.0">
+                <part node="window6">
+                    <keyFrame time="0.0" translation="-40.167 2.215 10.55"/>
+                    <keyFrame time="1.0" translation="-40.167 3.40 10.55"/>
+                </part>
+            </animation>
+            <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving linkNode="side6Base" template="plasitcVentilationGateLoop"/>
+                <posEnd linkNode="side6Base" template="plasticDoorOpen" />
+                <negEnd linkNode="side6Base" template="plasticDoorClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="sideWindow04" >
+            <animation duration="10.0">
+                <part node="window7">
+                    <keyFrame time="0.0" translation="-40.167 2.215 -10.66"/>
+                    <keyFrame time="1.0" translation="-40.167 3.40 -10.66"/>
+                </part>
+            </animation>
+            <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving linkNode="side7Base" template="plasitcVentilationGateLoop"/>
+                <posEnd linkNode="side7Base" template="plasticDoorOpen" />
+                <negEnd linkNode="side7Base" template="plasticDoorClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="sideWindowBack1" >
+            <animation duration="8.0">
+                <part node="window8">
+                    <keyFrame time="0.0" translation="-32.455 2.215 -18.216" rotation="0 90 0"/>
+                    <keyFrame time="1.0" translation="-32.455 3.40 -18.216" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving linkNode="side8Base" template="plasitcVentilationGateLoop"/>
+                <posEnd linkNode="side8Base" template="plasticDoorOpen" />
+                <negEnd linkNode="side8Base" template="plasticDoorClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="sideWindowBack2" >
+            <animation duration="8.0">
+                <part node="window9">
+                    <keyFrame time="0.0" translation="32.848 2.215 -18.222"/>
+                    <keyFrame time="1.0" translation="32.848 3.40 -18.222"/>
+                </part>
+            </animation>
+            <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving linkNode="side9Base" template="plasitcVentilationGateLoop"/>
+                <posEnd linkNode="side9Base" template="plasticDoorOpen" />
+                <negEnd linkNode="side9Base" template="plasticDoorClose" />
             </sounds>
         </animatedObject>
     </animatedObjects>
@@ -211,7 +316,7 @@
                 <foodPlace node="foodPlace6" />
                 <foodPlace node="foodPlace7" />
             </foodPlaces>
-            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="50000"/>
+            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="250000"/>
             <unloadTrigger exactFillRootNode="exactFillRootNodeFood" />
             <baleTrigger triggerNode="baleTrigger" />
         </food>
@@ -302,21 +407,25 @@
         <i3dMapping id="gateTrigger02" node="0>5|1|1"/>
 		<i3dMapping id="door2Sound" node="0>5|1|2"/>
 
-		<i3dMapping id="sideWidowBack" node="0>5|2|1"/>
+		<i3dMapping id="window1" node="0>5|2|0|0"/>
+		<i3dMapping id="side1Base" node="0>5|2|0|1"/>
 		<i3dMapping id="window2" node="0>5|2|1|0"/>
 		<i3dMapping id="side2Base" node="0>5|2|1|1"/>
-
-<!-- 		<i3dMapping id="" node=""/> -->
-
-
-
-
-
-
-
-
-
-
+		<i3dMapping id="window3" node="0>5|2|2|0"/>
+		<i3dMapping id="side3Base" node="0>5|2|2|1"/>
+		<i3dMapping id="window4" node="0>5|2|3|0"/>
+		<i3dMapping id="side4Base" node="0>5|2|3|1"/>
+		<i3dMapping id="window5" node="0>5|2|4|0"/>
+		<i3dMapping id="side5Base" node="0>5|2|4|1"/>
+		<i3dMapping id="window6" node="0>5|2|5|0"/>
+		<i3dMapping id="side6Base" node="0>5|2|5|1"/>
+		<i3dMapping id="window7" node="0>5|2|6|0"/>
+		<i3dMapping id="side7Base" node="0>5|2|6|1"/>
+		<i3dMapping id="window8" node="0>5|2|7|0"/>
+		<i3dMapping id="side8Base" node="0>5|2|7|1"/>
+		<i3dMapping id="window9" node="0>5|2|8|0"/>
+		<i3dMapping id="side9Base" node="0>5|2|8|1"/>
+		<i3dMapping id="windowTrigger" node="0>5|2|9"/>
 
         <i3dMapping id="fillVolumeFood" node="0>7|0" />
         <i3dMapping id="exactFillRootNodeFood" node="0>7|1" />
@@ -367,10 +476,6 @@
         <i3dMapping id="fenceNode7" node="0>13|0|6" />
         <i3dMapping id="fenceNode8" node="0>13|0|7" />
 
-
-
-
-
         <i3dMapping id="navMeshShape" node="0>14|0" />
         <i3dMapping id="walkingPlane" node="0>14|1" />
         <i3dMapping id="storage" node="0>15" />
@@ -386,11 +491,6 @@
         <i3dMapping id="markerBale" node="0>20|5" />
         <i3dMapping id="markerMilk" node="0>20|6" />
         <i3dMapping id="markerAnimals" node="0>20|7" />
-        <i3dMapping id="door01" node="0>5|0|0" />
-        <i3dMapping id="door02" node="0>5|1|0" />
-        <i3dMapping id="largeCowBarn_02_vis" node="0>21|0|0|1" />
-        <i3dMapping id="metalFrame" node="0>21|0|0|2" />
-        <i3dMapping id="largeCowBarn_02_vis_LOD" node="0>21|0|1|1" />
 <!--         <i3dMapping id="solarPanels" node="0>23|1" /> -->
 
     </i3dMappings>
