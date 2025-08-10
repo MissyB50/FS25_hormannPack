@@ -22,19 +22,16 @@
         <storeItem xmlFilename="xml/cowBarnLarge.xml" /><!--done-->
         <storeItem xmlFilename="xml/grainSilo.xml" /><!--done-->
         <storeItem xmlFilename="xml/grainStore.xml" /><!--done-->
-<!--         <storeItem xmlFilename="xml/horsebarnLShape.xml" /> grab exterally -->
         <storeItem xmlFilename="xml/objectStorage01.xml" /><!--done-->
-<!--         <storeItem xmlFilename="xml/openPigShed.xml" /> -->
-        <storeItem xmlFilename="xml/shed2.xml" />
-
-<!--         <storeItem xmlFilename="xml/shed2.xml" />
-        <storeItem xmlFilename="xml/shed3.xml" />
-        <storeItem xmlFilename="xml/shed5.xml" />
-<!--         <storeItem xmlFilename="xml/shedWorkshop.xml" />
-        <storeItem xmlFilename="xml/sheepBarn.xml" />
-        <storeItem xmlFilename="xml/silageSilo.xml" />
-        <storeItem xmlFilename="xml/siloStorage.xml" /> -->
-        <storeItem xmlFilename="xml/workshop.xml" />
+        <!-- <storeItem xmlFilename="xml/openPigShed.xml" /> -->
+        <storeItem xmlFilename="xml/shed2.xml" /><!--done-->
+        <storeItem xmlFilename="xml/shed3.xml" /><!--done-->
+        <storeItem xmlFilename="xml/shed5.xml" /><!--done-->
+        <storeItem xmlFilename="xml/sheepBarn.xml" /><!--done-->
+        <storeItem xmlFilename="xml/silageSilo.xml" /><!--done-->
+        <storeItem xmlFilename="xml/siloStorage.xml" />
+        <!-- <storeItem xmlFilename="xml/workshopStorage.xml" /> -->
+        <storeItem xmlFilename="xml/workshop.xml" /><!--done-->
 
 
 
@@ -75,14 +72,9 @@
             <specialization name="husbandryMeadow" />
         </type>
 
-<<<<<<< HEAD
-=======
-<!--         <type name="workshopStorageSolarPanels" parent="workshop" filename="$dataS/scripts/vehicles/Vehicle.lua">
-            <specialization name="ObjectStorage" />
+<!--         <type name="objectWorkshop" parent="objectStorage" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="workshop" />
         </type> -->
-
->>>>>>> d09410800dba9619eae966328d0a42d52fb18a19
-
     </placeableTypes>
 
     <l10n>

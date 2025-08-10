@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="workshopStorageSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_storeItem_hoermannWorkshopStorage</name>
         <functions>
-            <function>$l10n_function_garageService</function>
+            <function>$l10n_function_objectStorage</function>
+            <function>$l10n_function_workshop</function>
         </functions>
         <image>store/store_workshop.dds</image>
-        <price>374500</price>
+        <price>0</price>
         <dailyUpkeep>10</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -19,13 +20,14 @@
 
     <base>
         <filename>i3d/workshopStorage.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>false</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
         </testAreas>
-
         <sounds>
             <place template="largeImp" />
         </sounds>
@@ -54,29 +56,30 @@
         <updateAreas>
             <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
         </updateAreas>
-<!--         <obstacles>
-            <obstacle node="door01" size="1 4 7" >
-                <animatedObject index="1" startTime="0" endTime="0.95" />
-            </obstacle>
-        </obstacles> -->
     </ai>
 
     <dynamicallyLoadedParts>
         <dynamicallyLoadedPart node="0" linkNode="powerSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch02" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch03" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch04" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch05" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch06" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
     </dynamicallyLoadedParts>
 
     <lights>
         <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode01" groupIndex="1">
             <rotationNode name="rotationNode01" rotation="0 0 -15" />
         </sharedLight>
-
         <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode02" groupIndex="1">
-            <rotationNode name="rotationNode01" rotation="0 0 15" />
+            <rotationNode name="rotationNode01" rotation="0 0 -15" />
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode03" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 -15" />
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode04" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 -15" />
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode05" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 -15" />
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode06" groupIndex="1">
+            <rotationNode name="rotationNode01" rotation="0 0 -15" />
         </sharedLight>
 
         <realLights>
@@ -96,17 +99,57 @@
     </lights>
 
     <animatedObjects>
-
-
+        <animatedObject saveId="rollingDoor1" >
+            <animation duration="5">
+                <part node="rollingDoor1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                </part>
+                <part node="rollingDoor1ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                </part>
+                <part node="rollingDoor1ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.114 0"/>
+                </part>
+                <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - -" />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor1Base" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor1Base" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor1Base" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
     </animatedObjects>
+
+    <infoTrigger triggerNode="infoTrigger"/>
 
     <triggerMarkers>
         <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d"   adjustToGround="true" />
+        <triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
     </triggerMarkers>
 
     <workshop>
         <sellingPoint playerTriggerNode="playerTrigger" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
     </workshop>
+
+    <objectStorage supportsBales="true" supportsPallets="true" maxLength="8.5" maxWidth="6" maxHeight="3.5">
+        <playerTrigger node="playerTrigger" />
+        <objectTrigger node="objectTrigger" />
+        <spawnAreas>
+            <spawnArea startNode="spawnAreaStart01" endNode="spawnAreaEnd01"/>
+        </spawnAreas>
+        <storageAreas>
+            <storageArea startNode="storageAreaStart01" endNode="storageAreaEnd01"/>
+        </storageAreas>
+    </objectStorage>
 
     <colorConfigurations>
         <material slotName="color_mat" />
@@ -139,33 +182,51 @@
         <i3dMapping id="clearAreaStart01" node="0>0|0" />
         <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
         <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
-
         <i3dMapping id="levelAreaStart01" node="0>1|0" />
         <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
         <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
-
         <i3dMapping id="indoorAreaStart01" node="0>2|0" />
         <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
         <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="testAreaStart01" node="0>4|0" />
+        <i3dMapping id="testAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="vehicleTrigger" node="0>5|0" />
+        <i3dMapping id="playerTrigger" node="0>5|1" />
+        <i3dMapping id="markerWrench" node="0>5|1|0" />
 
-        <i3dMapping id="lightNode01" node="0>3|0" />
-        <i3dMapping id="lightNode02" node="0>3|1" />
+        <i3dMapping id="objectStorage" node="0>6" />
+        <i3dMapping id="spawnAreaStart01" node="0>6|0|0" />
+        <i3dMapping id="spawnAreaEnd01" node="0>6|0|0|0" />
+        <i3dMapping id="storageAreaStart01" node="0>6|0|1" />
+        <i3dMapping id="storageAreaEnd01" node="0>6|0|1|0" />
+        <i3dMapping id="objectTrigger" node="0>6|1" />
+        <i3dMapping id="objectTriggerMarker" node="0>6|1|0" />
+        <i3dMapping id="playerTrigger" node="0>6|2" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|2|0" />
+        <i3dMapping id="infoTrigger" node="0>6|3" />
 
-        <i3dMapping id="lightTrigger" node="0>3|19" />
-        <i3dMapping id="realLightsLow" node="0>3|20|0" />
-        <i3dMapping id="realLightsHigh" node="0>3|20|1" />
-        <i3dMapping id="powerSwitch01" node="0>3|21" />
 
-        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
-        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
 
-        <i3dMapping id="testAreaStart01" node="0>5|0" />
-        <i3dMapping id="testAreaEnd01" node="0>5|0|0" />
 
-        <i3dMapping id="vehicleTrigger" node="0>6|0" />
-        <i3dMapping id="playerTrigger" node="0>6|1" />
-        <i3dMapping id="markerWrench" node="0>6|2" />
 
+
+        <i3dMapping id="rollingDoor1Base" node="0>7|0" />
+        <i3dMapping id="rollingDoor1" node="0>7|0|0" />
+        <i3dMapping id="rollingDoor1ColPartBottom" node="0>7|0|1" />
+        <i3dMapping id="rollingDoor1ColPartTop" node="0>7|0|2" />
+        <i3dMapping id="rollingDoor1Trigger" node="0>7|0|3" />
+        <i3dMapping id="powerSwitch01" node="0>8|0" />
+        <i3dMapping id="lightTrigger" node="0>8|1" />
+        <i3dMapping id="lightNode01" node="0>8|2|0" />
+        <i3dMapping id="lightNode02" node="0>8|2|1" />
+        <i3dMapping id="lightNode03" node="0>8|2|2" />
+        <i3dMapping id="lightNode04" node="0>8|2|3" />
+        <i3dMapping id="lightNode05" node="0>8|2|4" />
+        <i3dMapping id="lightNode06" node="0>8|2|5" />
+        <i3dMapping id="realLightsLow" node="0>8|3|0" />
+        <i3dMapping id="realLightsHigh" node="0>8|3|1" />
 <!--         <i3dMapping id="solarPanels" node="0>8|1" /> -->
     </i3dMappings>
 </placeable>

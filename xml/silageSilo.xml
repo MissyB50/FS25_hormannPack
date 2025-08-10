@@ -110,9 +110,9 @@
         <i3dMapping id="siloInnerAreaStart" node="0>6|1|0" />
         <i3dMapping id="siloInnerAreaWidth" node="0>6|1|1" />
         <i3dMapping id="siloInnerAreaHeight" node="0>6|1|2" />
-        <i3dMapping id="wallLeft" node="0>6|2|0" />
+<!--         <i3dMapping id="wallLeft" node="0>6|2|0" />
         <i3dMapping id="wallRight" node="0>6|2|1" />
-<!--         <i3dMapping id="wallLeftCollision" node="0>5|0" />
+        <i3dMapping id="wallLeftCollision" node="0>5|0" />
         <i3dMapping id="wallRightCollision" node="0>5|1" /> -->
     </i3dMappings>
 </placeable>
