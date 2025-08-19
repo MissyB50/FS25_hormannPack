@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>Grain Silo</name>
+        <name>$l10n_storeItem_hoermannGrainSilo</name>
         <functions>
             <function>$l10n_function_farmSilo</function>
         </functions>
@@ -10,7 +10,7 @@
         <dailyUpkeep>1</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
-        <brand>RUDOLFHORMANN</brand>
+        <brand>RUDOLFHOERMANN</brand>
         <species>PLACEABLE</species>
         <category>silos</category>
         <brush>

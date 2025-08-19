@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="garageSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_hoermannGarageSolarPanels</name>
+        <name>$l10n_storeItem_hoermannBaleShed</name>
         <functions>
             <function>$l10n_function_garageSolarPanels</function>
         </functions>
         <image>store/store_baleSmall.dds</image>
         <price>15000</price>
-        <dailyUpkeep>110</dailyUpkeep>
+        <dailyUpkeep>0</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>RUDOLFHOERMANN</brand>

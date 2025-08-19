@@ -27,13 +27,13 @@
       <Normalmap fileId="6"/>
       <Glossmap fileId="7"/>
     </Material>
-    <Material name="objectStorage02_mat" materialId="84" customShaderId="11" customShaderVariation="colorScale">
+    <Material name="objectStorage02_mat" materialId="7" customShaderId="11" customShaderVariation="colorScale">
       <Texture fileId="8"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="colorScale0" value="0.069 0.259 0.169 1"/>
     </Material>
-    <Material name="objectStorage02_mat" materialId="74" customShaderId="11" customShaderVariation="colorScale" shadingRate="2x1">
+    <Material name="objectStorage02_mat" materialId="8" customShaderId="11" customShaderVariation="colorScale" shadingRate="2x1">
       <Texture fileId="8"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
@@ -58,6 +58,10 @@
         <TransformGroup name="clearArea1Start" translation="-9 0 -4" nodeId="22">
           <TransformGroup name="clearArea1Height" translation="18 0 0" nodeId="23"/>
           <TransformGroup name="clearArea1Width" translation="0 0 8" nodeId="24"/>
+        </TransformGroup>
+        <TransformGroup name="clearArea1Start" translation="-9 0 3" nodeId="67">
+          <TransformGroup name="clearArea1Width" translation="0 0 9" nodeId="69"/>
+          <TransformGroup name="clearArea1Height" translation="10 0 0" nodeId="68"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="levelAreas" nodeId="25">
@@ -84,8 +88,8 @@
       </TransformGroup>
       <TransformGroup name="objectStorage" nodeId="39">
         <TransformGroup name="areas" nodeId="40">
-          <TransformGroup name="spawnAreaStart01" translation="3 -0.01 18.041" rotation="0 -90 0" nodeId="41">
-            <TransformGroup name="spawnAreaEnd01" translation="6 0 8.5" nodeId="42"/>
+          <TransformGroup name="spawnAreaStart01" translation="0 0 4" rotation="0 -90 0" nodeId="41">
+            <TransformGroup name="spawnAreaEnd01" translation="7 0 8" nodeId="42"/>
           </TransformGroup>
           <TransformGroup name="storageAreaStart01" translation="-7.87391 0.05 -2.86894" nodeId="43">
             <TransformGroup name="storageAreaEnd01" translation="15.74 0 5.66" nodeId="44"/>
@@ -108,11 +112,11 @@
         <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="56">
           <TransformGroup name="LOD0" nodeId="57">
             <Shape name="objectStorage01_vis" shapeId="5" clipDistance="400" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis" shapeId="6" clipDistance="400" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="74"/>
+            <Shape name="objectStorage02_vis" shapeId="6" clipDistance="400" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="8"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="60">
             <Shape name="objectStorage01_vis_LOD" shapeId="7" clipDistance="600" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis_LOD" shapeId="6" clipDistance="600" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="84"/>
+            <Shape name="objectStorage02_vis_LOD" shapeId="6" clipDistance="600" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="7"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="63"/>

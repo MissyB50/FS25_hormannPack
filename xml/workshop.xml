@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_hoermannWorkshopStorage</name>
+        <name>$l10n_storeItem_hoermannWorkshop</name>
         <functions>
             <function>$l10n_function_garageService</function>
         </functions>
@@ -58,7 +58,8 @@
     </ai>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="doorSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
     </dynamicallyLoadedParts>
 
     <lights>
@@ -99,19 +100,19 @@
 
     <animatedObjects>
         <animatedObject saveId="rollingDoor1" >
-            <animation duration="5">
+            <animation duration="7">
                 <part node="rollingDoor1">
                     <keyFrame time="0.0" translation="0 0 0"/>
-                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                    <keyFrame time="1.0" translation="0 4.825 0"/>
                 </part>
                 <part node="rollingDoor1ColPartBottom">
                     <keyFrame time="0.0" translation="0 0 0"/>
-                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                    <keyFrame time="1.0" translation="0 5 0"/>
                 </part>
                 <part node="rollingDoor1ColPartTop">
                     <keyFrame time="0.0" translation="0 0 0"/>
                     <keyFrame time="0.5" translation="0 0 0"/>
-                    <keyFrame time="1.0" translation="0 2.114 0"/>
+                    <keyFrame time="1.0" translation="0 2.3 0"/>
                 </part>
                 <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
                     <keyFrame time="0.0" values="0 - - -" />
@@ -209,7 +210,8 @@
         <i3dMapping id="rollingDoor1ColPartBottom" node="0>7|0|1" />
         <i3dMapping id="rollingDoor1ColPartTop" node="0>7|0|2" />
         <i3dMapping id="rollingDoor1Trigger" node="0>7|0|3" />
-        <i3dMapping id="powerSwitch01" node="0>8|0" />
+        <i3dMapping id="doorSwitch" node="0>7|0|4"/>
+        <i3dMapping id="lightSwitch01" node="0>8|0" />
         <i3dMapping id="lightTrigger" node="0>8|1" />
         <i3dMapping id="lightNode01" node="0>8|2|0" />
         <i3dMapping id="lightNode02" node="0>8|2|1" />

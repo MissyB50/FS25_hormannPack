@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="garageSolarPanels" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_hoermannGarageSmall</name>
+        <name>$l10n_storeItem_hoermannGarage</name>
         <functions>
             <function>$l10n_function_garage</function>
         </functions>
         <image>store/store_cornerShed.dds</image>
         <price>106000</price>
-        <dailyUpkeep>40</dailyUpkeep>
+        <dailyUpkeep>0</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>RUDOLFHOERMANN</brand>
@@ -56,12 +56,12 @@
 
     <ai>
         <updateAreas>
-            <updateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
         </updateAreas>
     </ai>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart node="0" linkNode="lightTrigger" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
     </dynamicallyLoadedParts>
 
     <lights>
@@ -243,13 +243,14 @@
         <i3dMapping id="indoorArea1Start" node="0>2|0" />
         <i3dMapping id="indoorArea1Width" node="0>2|0|0" />
         <i3dMapping id="indoorArea1Height" node="0>2|0|1" />
-        <i3dMapping id="indoorArea1Start" node="0>2|1" />
-        <i3dMapping id="indoorArea1Width" node="0>2|1|0" />
-        <i3dMapping id="indoorArea1Height" node="0>2|1|1" />
+        <i3dMapping id="indoorArea2Start" node="0>2|1" />
+        <i3dMapping id="indoorArea2Width" node="0>2|1|0" />
+        <i3dMapping id="indoorArea2Height" node="0>2|1|1" />
         <i3dMapping id="testArea1Start" node="0>3|0" />
         <i3dMapping id="testArea1End" node="0>3|0|0" />
         <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
         <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+        <i3dMapping id="lightSwitch" node="0>6|0"/>
         <i3dMapping id="lightTrigger" node="0>6|1" />
         <i3dMapping id="realLightsLow" node="0>6|3|0" />
         <i3dMapping id="realLightsHigh" node="0>6|3|1" />

@@ -362,7 +362,7 @@
         </loadingStation>
 
         <animals type="COW" maxNumAnimals="45" >
-            <navigation rootNode="navigationRootNode" filename="navMesh/navigationMeshCow.i3d" />
+            <navigation shape="navMeshShape" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
 
@@ -397,15 +397,28 @@
             <baleTrigger triggerNode="baleTrigger"/>
         </food>
 
-        <fences>
-            <fence filename="data/placeables/brandless/fences/husbandries/level03/fencesFarmLevel03.xml" hasStartPole="true" hasEndPole="true">
-                <node node="fence1Node1" />
-                <node node="fence1Node2" />
-                <node node="fence1Node3" />
-                <node node="fence1Node4" />
-            </fence>
-        </fences>
-    </husbandry>
+        <fence xmlFilename="$data/placeables/brandless/fences/husbandries/cowFence/cowFence.xml">
+            <sections>
+                <section segmentId="SEGMENT" customizable="true">
+                    <node node="fence1Node1" />
+                    <node node="fence1Node2" />
+                    <node node="fence1Node3" />
+                    <node node="fence1Node4" />
+                </section>
+            </sections>
+        </fence>
+
+        <meadow>
+            <fruitType name="GRASS" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall" />
+            <fruitType name="MEADOW" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall" />
+
+            <createTask weedState="0">
+                <fruit type="MEADOW" growthState="greenSmall" />
+                <ground type="NONE" />
+                <terrainGroundType name="grass" />
+            </createTask>
+        </meadow>
+   </husbandry>
 
     <manureHeap node="manureHeap" capacity="2000000" isExtension="false" >
         <area startNode="tipAreaStart" widthNode="tipAreaWidth" heightNode="tipAreaHeight" activationTriggerNode="activationTrigger" />
@@ -477,7 +490,7 @@
         <i3dMapping id="waterPlace3" node="0>12|2" />
         <i3dMapping id="waterPlace4" node="0>12|3" />
         <i3dMapping id="navigationRootNode" node="0>13" />
-        <i3dMapping id="navigationMesh" node="0>13|0" />
+        <i3dMapping id="navMeshShape" node="0>13|0" />
         <i3dMapping id="walkingPlane" node="0>13|1" />
         <i3dMapping id="fence1Node1" node="0>14|0|0" />
         <i3dMapping id="fence1Node2" node="0>14|0|1" />

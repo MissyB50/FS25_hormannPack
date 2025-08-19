@@ -3,8 +3,8 @@
     <author>MISSYB</author>
     <version>1.0.0.0</version>
     <title>
-        <en>Hormann Building Pack</en>
-        <de>Hormann Gebäudepaket</de>
+        <en>Hoermann Building Pack</en>
+        <de>Hoermann-Gebäudepaket</de>
     </title>
     <description>
         <en><![CDATA[
@@ -30,7 +30,6 @@
         <storeItem xmlFilename="xml/sheepBarn.xml" /><!--done-->
         <storeItem xmlFilename="xml/silageSilo.xml" /><!--done-->
         <storeItem xmlFilename="xml/siloStorage.xml" />
-        <!-- <storeItem xmlFilename="xml/workshopStorage.xml" /> -->
         <storeItem xmlFilename="xml/workshop.xml" /><!--done-->
 
 
@@ -78,22 +77,41 @@
     </placeableTypes>
 
     <l10n>
-        <text name="shopItem_storage">
-            <en>Silo Storage With Workshop</en>
-            <de>Silolager mit Werkstatt</de>
+        <text name="storeItem_hoermannBaleShed">
+            <en>Small bale shed</en>
+            <de></de>
         </text>
+
+        <text name="storeItem_hoermannGarage">
+            <en>Corner Shed</en>
+            <de></de>
+        </text>
+
         <text name="storeItem_cowBarnOpenRoof">
             <en>Cow Barn With Open Roof</en>
             <de>Kuhstall Mit Offenem Dach</de>
         </text>
-        <text name="storeItem_horseBarnLShape">
-            <en>Horse Barn In L Shape</en>
-            <de>Pferdestall In L-Form</de>
+
+        <text name="storeItem_cowBarnPasture">
+            <en>Large cow barn with pasture</en>
+            <de></de>
         </text>
-        <text name="storeItem_cowPasture">
-            <en>Cow pasture</en>
-            <de>Kuh mit Weide</de>
+
+        <text name="storeItem_hoermannGrainSilo">
+            <en>Grain silo</en>
+            <de></de>
         </text>
+
+        <text name="storeItem_hoermannGrainStore">
+            <en>Store grain to rootcrops</en>
+            <de></de>
+        </text>
+
+        <text name="storeItem_objectStorage">
+            <en>For storing bales to pallets</en>
+            <de></de>
+        </text>
+
         <text name="storeItem_hoermannGarage2">
             <en>2 Door vehicle Shed</en>
             <de></de>
@@ -106,11 +124,54 @@
             <en>5 Door vehicle Shed</en>
             <de></de>
         </text>
+
+        <text name="storeItem_sheepBig">
+            <en>Large sheep barn</en>
+            <de></de>
+        </text>
+
+        <text name="storeItem_silageSilo">
+            <en>Bunker silo</en>
+            <de></de>
+        </text>
+
+        <text name="shopItem_siloStorage">
+            <en>Large vehicle storage with silo</en>
+            <de></de>
+        </text>
+
         <text name="storeItem_hoermannWorkshop">
             <en>Vehicle Workshop</en>
             <de></de>
         </text>
 
+<!--         <text name="storeItem_hoermannWorkshopStorage">
+            <en>Workshop</en>
+            <de></de>
+        </text>
 
+
+        <text name="">
+            <en></en>
+            <de></de>
+        </text>
+
+        <text name="">
+            <en></en>
+            <de></de>
+        </text>
+
+        <text name="">
+            <en></en>
+            <de></de>
+        </text>
+        <text name="">
+            <en></en>
+            <de></de>
+        </text>
+        <text name="">
+            <en></en>
+            <de></de>
+        </text> -->
     </l10n>
 </modDesc>

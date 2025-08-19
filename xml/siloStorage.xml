@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_shopItem_storage</name>
+        <name>$l10n_shopItem_siloStorage</name>
         <functions>
             <function>$l10n_function_farmSilo</function>
         </functions>
@@ -251,15 +251,16 @@
             <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="farmSilo" aiNode="aiUnloadingNode"/>
         </unloadingStation>
 
-        <storages>
-			<storage node="storage" fillTypes="BARLEY" capacity="5000000" isExtension="false"/>
-			<storage node="storage" fillTypes="WHEAT" capacity="5000000" isExtension="false"/>
-			<storage node="storage" fillTypes="OAT" capacity="5000000" isExtension="false"/>
-			<storage node="storage" fillTypes="CANOLA" capacity="5000000" isExtension="false"/>
-			<storage node="storage" fillTypes="" capacity="5000000" isExtension="false"/>
-			<storage node="storage" fillTypes="" capacity="5000000" isExtension="false"/>			
-			<storage node="storage" fillTypes="" capacity="5000000" isExtension="false"/>
-        </storages>
+		<storage isExtension="false" fillLevelSyncThreshold="100">
+			<capacity fillType="WHEAT" capacity="5000000" />
+			<capacity fillType="BARLEY" capacity="5000000" />
+			<capacity fillType="OAT" capacity="5000000"  />
+			<capacity fillType="CANOLA" capacity="5000000"  />
+			<capacity fillType="SUNFLOWER" capacity="5000000"  />
+			<capacity fillType="SOYBEAN" capacity="5000000"  />
+			<capacity fillType="MAIZE" capacity="5000000"  />
+            <capacity fillType="SORGHUM" capacity="5000000"  />
+		</storage>
     </silo>
 
     <colorConfigurations>

@@ -17,13 +17,13 @@
 
 
   <Materials>
-    <Material name="bukerSilo02_mat" materialId="108" customShaderId="5" customShaderVariation="colorScale">
+    <Material name="bukerSilo02_mat" materialId="5" customShaderId="5" customShaderVariation="colorScale">
       <Texture fileId="11"/>
       <Normalmap fileId="12"/>
       <Glossmap fileId="13"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.167 1"/>
     </Material>
-    <Material name="bukerSilo02_mat" materialId="5" customShaderId="5" customShaderVariation="colorScale">
+    <Material name="bukerSilo02_mat" materialId="6" customShaderId="5" customShaderVariation="colorScale">
       <Texture fileId="11"/>
       <Normalmap fileId="12"/>
       <Glossmap fileId="13"/>
@@ -34,7 +34,7 @@
       <Normalmap fileId="3"/>
       <Glossmap fileId="4"/>
     </Material>
-    <Material name="bunkerSilo01_mat" materialId="93" customShaderId="5">
+    <Material name="bunkerSilo01_mat" materialId="8" customShaderId="5">
       <Texture fileId="2"/>
       <Normalmap fileId="3"/>
       <Glossmap fileId="4"/>
@@ -118,12 +118,12 @@
       <TransformGroup name="visuals" nodeId="65">
         <TransformGroup name="visual" lodDistance="0 600" clipDistance="600" nodeId="66">
           <TransformGroup name="LOD0" nodeId="67">
-            <Shape name="bunkerSilo01_vis" shapeId="2" clipDistance="400" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="93"/>
-            <Shape name="bunkerSilo02_vis" shapeId="3" clipDistance="400" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="108"/>
+            <Shape name="bunkerSilo01_vis" shapeId="2" clipDistance="400" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="bunkerSilo02_vis" shapeId="3" clipDistance="400" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="5"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="70">
             <Shape name="bunkerSilo01_vis_LOD" shapeId="4" clipDistance="600" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="7"/>
-            <Shape name="bunkerSilo02_vis_LOD" shapeId="3" clipDistance="600" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="bunkerSilo02_vis_LOD" shapeId="3" clipDistance="600" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
@@ -131,6 +131,8 @@
         <Shape name="collision" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="74" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
         <Shape name="groundTipCollision" scale="9.8 1 15" shapeId="6" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="75" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
         <Shape name="tipCollision" shapeId="7" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="rightWallCollision" translation="-10 0 0" shapeId="8" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="leftWallCollision" translation="10 0 0" shapeId="8" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

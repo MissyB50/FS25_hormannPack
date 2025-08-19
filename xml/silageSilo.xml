@@ -10,7 +10,7 @@
         <dailyUpkeep>120</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
-        <brand>NONE</brand>
+        <brand>RUDOLFHOERMANN</brand>
         <species>PLACEABLE</species>
         <category>silos</category>
         <brush>
@@ -24,7 +24,7 @@
         <filename>i3d/silageSilo.i3d</filename>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="45" >
         <testAreas>
             <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
         </testAreas>
@@ -75,12 +75,12 @@
         <group name="$l10n_action_placeableLightShed" activateTime="09:00" deactivateTime="21:00"/>
     </lights>
 
-    <bunkerSilo isExtendable="true" acceptedFillTypes="chaff grass_windrow dryGrass_windrow" inputFillType="chaff" outputFillType="silage" distanceToCompactedFillLevel="100" openingLength="5" >
+    <bunkerSilo isExtendable="true" siloToSiloDistance="2" acceptedFillTypes="chaff grass_windrow dryGrass_windrow" inputFillType="chaff" outputFillType="silage" distanceToCompactedFillLevel="100" openingLength="5" >
         <area      startNode="siloAreaStart"      widthNode="siloAreaWidth"      heightNode="siloAreaHeight" />
         <innerArea startNode="siloInnerAreaStart" widthNode="siloInnerAreaWidth" heightNode="siloInnerAreaHeight" />
         <interactionTrigger node="siloAreaTrigger" />
-<!--         <wallLeft           node="wallLeft"  collision="wallLeftCollision" />
-        <wallRight          node="wallRight" collision="wallRightCollision" /> -->
+        <wallLeft           node="wallLeft"  collision="wallLeftCollision" />
+        <wallRight          node="wallRight" collision="wallRightCollision" />
     </bunkerSilo>
 
     <i3dMappings>
@@ -102,7 +102,6 @@
         <i3dMapping id="lightNode03" node="0>5|0|2" />
         <i3dMapping id="realLightsLow" node="0>5|1|0" />
         <i3dMapping id="realLightsHigh" node="0>5|1|1" />
-
         <i3dMapping id="siloAreaStart" node="0>6|0|0" />
         <i3dMapping id="siloAreaWidth" node="0>6|0|1" />
         <i3dMapping id="siloAreaHeight" node="0>6|0|2" />
@@ -110,9 +109,9 @@
         <i3dMapping id="siloInnerAreaStart" node="0>6|1|0" />
         <i3dMapping id="siloInnerAreaWidth" node="0>6|1|1" />
         <i3dMapping id="siloInnerAreaHeight" node="0>6|1|2" />
-<!--         <i3dMapping id="wallLeft" node="0>6|2|0" />
-        <i3dMapping id="wallRight" node="0>6|2|1" />
-        <i3dMapping id="wallLeftCollision" node="0>5|0" />
-        <i3dMapping id="wallRightCollision" node="0>5|1" /> -->
+        <i3dMapping id="wallLeft" node="0>8|4" />
+        <i3dMapping id="wallRight" node="0>8|3" />
+        <i3dMapping id="wallLeftCollision" node="0>8|4" />
+        <i3dMapping id="wallRightCollision" node="0>8|3" />
     </i3dMappings>
 </placeable>
