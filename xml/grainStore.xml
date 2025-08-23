@@ -129,7 +129,7 @@
                 <negEnd linkNode="rollingDoor1Sound" template="slidingGateMetalClose" />
             </sounds>
         </animatedObject>
-        <animatedObject>
+        <animatedObject saveId="door02">
             <animation duration="3.5">
                 <clip rootNode="rollingDoor2Panel1" name="gate5Panels1Source" filename="$data/placeables/rudolfHormann/garageBigStorageService/gate5Panels_animation.i3d" />
             </animation>
@@ -138,6 +138,21 @@
                 <moving linkNode="rollingDoor2Sound" template="slidingGateMetalLoop" />
                 <posEnd linkNode="rollingDoor2Sound" template="slidingGateMetalOpen" />
                 <negEnd linkNode="rollingDoor2Sound" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="door03" >
+            <animation duration="1.5">
+                <part node="doorMain">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -165 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="doorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="doorBase" template="woodBigDoorLoop" />
+                <posEnd linkNode="doorBase" template="metalDoorsOpen" />
+                <negEnd linkNode="doorBase" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
     </animatedObjects>
@@ -215,6 +230,9 @@
         <i3dMapping id="rollingDoor2Panel5" node="0>6|3|0|0|0|0|0" />
         <i3dMapping id="rollingDoor2Trigger" node="0>6|3|1" />
         <i3dMapping id="rollingDoor2Sound" node="0>6|3|2" />
+        <i3dMapping id="doorMain" node="0>6|4|0" />
+        <i3dMapping id="doorTrigger" node="0>6|4|1" />
+        <i3dMapping id="doorBase" node="0>6|4|2" />
 
 <!--         <i3dMapping id="solarPanels" node="0>7|1" /> -->
     </i3dMappings>

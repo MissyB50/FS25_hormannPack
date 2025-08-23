@@ -75,7 +75,7 @@
         <group name="$l10n_action_placeableLightShed" activateTime="09:00" deactivateTime="21:00"/>
     </lights>
 
-    <bunkerSilo isExtendable="true" siloToSiloDistance="2" acceptedFillTypes="chaff grass_windrow dryGrass_windrow" inputFillType="chaff" outputFillType="silage" distanceToCompactedFillLevel="100" openingLength="5" >
+    <bunkerSilo isExtendable="false" acceptedFillTypes="chaff grass_windrow dryGrass_windrow" inputFillType="chaff" outputFillType="silage" distanceToCompactedFillLevel="100" openingLength="5" >
         <area      startNode="siloAreaStart"      widthNode="siloAreaWidth"      heightNode="siloAreaHeight" />
         <innerArea startNode="siloInnerAreaStart" widthNode="siloInnerAreaWidth" heightNode="siloInnerAreaHeight" />
         <interactionTrigger node="siloAreaTrigger" />

@@ -81,9 +81,6 @@
       <Glossmap fileId="3"/>
       <Custommap name="mMaskMap" fileId="5"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
-      <CustomParameter name="colorScale2" value="0 1 0.1 1"/>
-      <CustomParameter name="colorScale3" value="0 0.1 1 1"/>
-      <CustomParameter name="colorScale5" value="0 0.05 0.05 1"/>
     </Material>
     <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="12">
     </Material>
@@ -580,7 +577,7 @@
         <TransformGroup name="visual_lod" lodDistance="0 100" lodBlending="false" nodeId="356">
           <TransformGroup name="LOD0" nodeId="357">
             <Shape name="siloBuilding01_vis" shapeId="19" clipDistance="400" nodeId="358" castsShadows="true" receiveShadows="true" materialIds="15"/>
-            <Shape name="siloBuilding02_vis" shapeId="20" clipDistance="400" nodeId="359" castsShadows="true" receiveShadows="true" materialIds="16"/>
+            <Shape name="siloBuilding_02_vis" rotation="0 180 0" shapeId="20" clipDistance="400" nodeId="406" castsShadows="true" receiveShadows="true" materialIds="16"/>
             <Shape name="grainGrateNew" translation="8 0.025 9.5" shapeId="21" clipDistance="300" nodeId="360" castsShadows="true" receiveShadows="true" materialIds="14"/>
             <Shape name="metalFrame" shapeId="22" clipDistance="300" nodeId="361" castsShadows="true" receiveShadows="true" materialIds="7"/>
             <Shape name="warningStripes" translation="-3.60029 0.1 -11.8" rotation="1.91277e-10 90 0" shapeId="23" clipDistance="250" nodeId="362" castsShadows="false" receiveShadows="true" materialIds="25"/>
@@ -594,7 +591,6 @@
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="369">
             <Shape name="siloBuilding01_vis_LOD" shapeId="26" clipDistance="600" nodeId="370" castsShadows="false" receiveShadows="true" materialIds="15"/>
-            <Shape name="siloBuilding02_vis_LOD" shapeId="20" clipDistance="600" nodeId="371" castsShadows="true" receiveShadows="true" materialIds="16"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="solarPanels" nodeId="372">
@@ -618,6 +614,11 @@
       <TransformGroup name="collisions" nodeId="384">
         <Shape name="collisionGrate" translation="-7 0.1 0" scale="2 1 10" shapeId="34" visibility="false" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="385" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="5"/>
         <Shape name="collisionMain" shapeId="35" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="386" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="siloBuilding" nodeId="403">
+      <TransformGroup name="9_visuals" nodeId="404">
+        <TransformGroup name="LOD0" nodeId="405"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

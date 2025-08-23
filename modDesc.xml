@@ -16,45 +16,26 @@
     <multiplayer supported="true" />
 
     <storeItems>
-        <storeItem xmlFilename="xml/baleShedSmall.xml" /><!--done-->
-        <storeItem xmlFilename="xml/cornerShed.xml" /><!--done-->
-        <storeItem xmlFilename="xml/cowBarnAlternative.xml" /><!--done-->
-        <storeItem xmlFilename="xml/cowBarnLarge.xml" /><!--done-->
-        <storeItem xmlFilename="xml/grainSilo.xml" /><!--done-->
-        <storeItem xmlFilename="xml/grainStore.xml" /><!--done-->
-        <storeItem xmlFilename="xml/objectStorage01.xml" /><!--done-->
-        <!-- <storeItem xmlFilename="xml/openPigShed.xml" /> -->
-        <storeItem xmlFilename="xml/shed2.xml" /><!--done-->
-        <storeItem xmlFilename="xml/shed3.xml" /><!--done-->
-        <storeItem xmlFilename="xml/shed5.xml" /><!--done-->
-        <storeItem xmlFilename="xml/sheepBarn.xml" /><!--done-->
-        <storeItem xmlFilename="xml/silageSilo.xml" /><!--done-->
+        <storeItem xmlFilename="xml/baleShedSmall.xml" />
+        <storeItem xmlFilename="xml/cornerShed.xml" />
+        <storeItem xmlFilename="xml/cowBarnAlternative.xml" />
+        <storeItem xmlFilename="xml/cowBarnLarge.xml" />
+        <storeItem xmlFilename="xml/grainSilo.xml" />
+        <storeItem xmlFilename="xml/grainStore.xml" />
+        <storeItem xmlFilename="xml/objectStorage01.xml" />
+        <storeItem xmlFilename="xml/openPigShed.xml" />
+        <storeItem xmlFilename="xml/shed2.xml" />
+        <storeItem xmlFilename="xml/shed3.xml" />
+        <storeItem xmlFilename="xml/shed5.xml" />
+        <storeItem xmlFilename="xml/sheepBarn.xml" />
+        <storeItem xmlFilename="xml/silageSilo.xml" />
         <storeItem xmlFilename="xml/siloStorage.xml" />
-        <storeItem xmlFilename="xml/workshop.xml" /><!--done-->
-
-
-
-
-
-<!--    <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" />
-        <storeItem xmlFilename="xml/.xml" /> -->
+        <storeItem xmlFilename="xml/workshop.xml" />
+        <storeItem xmlFilename="xml/workshopStorage.xml" />
     </storeItems>
 
     <placeableTypes>
-        <type name="cowHusbandryBarnMilkManure" parent="baseHusbandry" filename="$dataS/scripts/vehicles/Vehicle.lua">
+        <type name="cowHusbandryBarnMilkManure" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
             <specialization name="husbandryWater" />
             <specialization name="husbandryMilk" />
             <specialization name="husbandryStraw" />
@@ -62,18 +43,25 @@
             <specialization name="manureHeap" />
             <specialization name="husbandryMeadow" />
         </type>
-
-        <type name="cowHusbandryManure" parent="baseHusbandry" filename="$dataS/scripts/vehicles/Vehicle.lua">
+        <type name="cowHusbandryManure" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
             <specialization name="husbandryMilk" />
             <specialization name="husbandryStraw" />
             <specialization name="husbandryLiquidManure" />
             <specialization name="manureHeap" />
             <specialization name="husbandryMeadow" />
         </type>
-
-<!--         <type name="objectWorkshop" parent="objectStorage" filename="$dataS/scripts/vehicles/Vehicle.lua">
-            <specialization name="workshop" />
-        </type> -->
+        <type name="pigManureShed" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="husbandryWater" />
+            <specialization name="husbandryStraw" />
+            <specialization name="husbandryLiquidManure" />
+            <specialization name="manureHeap" />
+            <specialization name="husbandryMeadow" />
+        </type>
+		<type name="Workshop" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
+		    <specialization name="workshop" />
+			<specialization name="infoTrigger" />	
+			<specialization name="objectStorage" />	
+	    </type>
     </placeableTypes>
 
     <l10n>
@@ -81,97 +69,61 @@
             <en>Small bale shed</en>
             <de></de>
         </text>
-
         <text name="storeItem_hoermannGarage">
-            <en>Corner Shed</en>
+            <en>Corner shed</en>
             <de></de>
         </text>
-
         <text name="storeItem_cowBarnOpenRoof">
-            <en>Cow Barn With Open Roof</en>
+            <en>Cow barn with open roof</en>
             <de>Kuhstall Mit Offenem Dach</de>
         </text>
-
         <text name="storeItem_cowBarnPasture">
             <en>Large cow barn with pasture</en>
             <de></de>
         </text>
-
         <text name="storeItem_hoermannGrainSilo">
             <en>Grain silo</en>
             <de></de>
         </text>
-
         <text name="storeItem_hoermannGrainStore">
             <en>Store grain to rootcrops</en>
             <de></de>
         </text>
-
         <text name="storeItem_objectStorage">
             <en>For storing bales to pallets</en>
             <de></de>
         </text>
-
         <text name="storeItem_hoermannGarage2">
-            <en>2 Door vehicle Shed</en>
+            <en>2 Door vehicle shed</en>
             <de></de>
         </text>
         <text name="storeItem_hoermannGarage3">
-            <en>3 Door vehicle Shed</en>
+            <en>3 Door vehicle shed</en>
             <de></de>
         </text>
         <text name="storeItem_hoermannGarage5">
-            <en>5 Door vehicle Shed</en>
+            <en>5 Door vehicle shed</en>
             <de></de>
         </text>
-
         <text name="storeItem_sheepBig">
             <en>Large sheep barn</en>
             <de></de>
         </text>
-
         <text name="storeItem_silageSilo">
             <en>Bunker silo</en>
             <de></de>
         </text>
-
         <text name="shopItem_siloStorage">
             <en>Large vehicle storage with silo</en>
             <de></de>
         </text>
-
         <text name="storeItem_hoermannWorkshop">
-            <en>Vehicle Workshop</en>
+            <en>Vehicle workshop</en>
             <de></de>
         </text>
-
-<!--         <text name="storeItem_hoermannWorkshopStorage">
+        <text name="storeItem_hoermannWorkshopStorage">
             <en>Workshop</en>
             <de></de>
         </text>
-
-
-        <text name="">
-            <en></en>
-            <de></de>
-        </text>
-
-        <text name="">
-            <en></en>
-            <de></de>
-        </text>
-
-        <text name="">
-            <en></en>
-            <de></de>
-        </text>
-        <text name="">
-            <en></en>
-            <de></de>
-        </text>
-        <text name="">
-            <en></en>
-            <de></de>
-        </text> -->
     </l10n>
 </modDesc>

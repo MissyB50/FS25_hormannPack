@@ -7,6 +7,9 @@
 
   <Files>
     <File fileId="10" filename="$data/maps/textures/shared/assetLibraryDecals_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="28" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="8" filename="$data/maps/textures/shared/snow_specular.png"/>
     <File fileId="20" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_diffuse.dds"/>
     <File fileId="21" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_normal.dds"/>
     <File fileId="22" filename="$data/placeables/rudolfHormann/garageBig/garageBig01_specular.dds"/>
@@ -20,6 +23,7 @@
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
     <File fileId="13" filename="$data/shaders/decalShader.xml"/>
     <File fileId="17" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="29" filename="$data/shaders/snowHeapShader.xml"/>
     <File fileId="11" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
     <File fileId="12" filename="$data/shared/assets/assetLibraryDecals_vmask.png"/>
     <File fileId="15" filename="$data/shared/default_normal.png"/>
@@ -61,6 +65,11 @@
     <Material name="lambert1" materialId="10" diffuseColor="0.501961 0.501961 0.501961 1">
     </Material>
     <Material name="lambert1" materialId="11" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="snow_mat" materialId="226" customShaderId="29">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="8"/>
     </Material>
     <Material name="UnnamedMaterial" materialId="12" diffuseColor="1 1 1 1">
     </Material>
@@ -307,7 +316,7 @@
         <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="206">
           <TransformGroup name="LOD0" nodeId="207">
             <Shape name="cornerShed01_vis" shapeId="12" clipDistance="400" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="cornerShed02_vis" shapeId="13" clipDistance="400" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cornerShed02_vis" shapeId="13" clipDistance="400" nodeId="232" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="7"/>
             <Shape name="metalDoorFrame" shapeId="14" clipDistance="600" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="8"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="211">
@@ -315,12 +324,15 @@
             <Shape name="cornerShed02_vis_LOD" shapeId="16" clipDistance="600" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="7"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="winter" nodeId="214"/>
+        <TransformGroup name="winter" nodeId="214">
+          <Shape name="snowMask" translation="-7.57159 8.40275 -7.58127" shapeId="17" clipDistance="600" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="226"/>
+        </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collision" nodeId="215">
-        <Shape name="collision" shapeId="17" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="216" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+        <Shape name="collision" shapeId="18" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="216" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
       </TransformGroup>
     </TransformGroup>
+    <TransformGroup name="winter" nodeId="230"/>
   </Scene>
 
 

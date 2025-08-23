@@ -277,7 +277,7 @@
             <loadTrigger triggerNode="milkTrigger" fillTypes="MILK BUFFALOMILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
         </loadingStation>
 
-        <animals type="COW" maxNumAnimals="350" > <!--350bedsBase-->
+        <animals type="COW" maxNumAnimals="350" maxNumVisualAnimals="40" > <!--350bedsBase-->
             <navigation shape="navMeshShape" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
@@ -316,7 +316,8 @@
                 <foodPlace node="foodPlace6" />
                 <foodPlace node="foodPlace7" />
             </foodPlaces>
-            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="250000"/>
+<!--             <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="250000"/> -->
+                <fillPlane node="fillVolumeFood" minY="0" maxY="0.3" colorChange="true" defaultFillType="forage" capacity="250000"/> -->
             <unloadTrigger exactFillRootNode="exactFillRootNodeFood" />
             <baleTrigger triggerNode="baleTrigger" />
         </food>

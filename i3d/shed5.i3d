@@ -113,7 +113,7 @@
       </TransformGroup>
       <TransformGroup name="doors" nodeId="52">
         <TransformGroup name="rollingDoor1" translation="7.0594 0.14 -23.2647" rotation="0 -90 0" nodeId="53">
-          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="300" nodeId="54" castsShadows="true" receiveShadows="true" skinBindNodeIds="54 55 56 57 58" materialIds="10">
+          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="600" nodeId="54" castsShadows="true" receiveShadows="true" skinBindNodeIds="54 55 56 57 58" materialIds="10">
             <TransformGroup name="rollingDoor1Panel2" translation="-2.27374e-15 0.848488 -0.048076" clipDistance="300" nodeId="55">
               <TransformGroup name="rollingDoor1Panel3" translation="-1.7053e-15 0.8913 -5.68434e-15" clipDistance="300" nodeId="56">
                 <TransformGroup name="rollingDoor1Panel4" translation="1.7053e-15 0.8913 -1.47793e-14" clipDistance="300" nodeId="57">
@@ -135,7 +135,7 @@
           <TransformGroup name="rollingDoor1Sound" translation="3.30901 2.51212 0" nodeId="68"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor2" translation="7.0594 0.14 -13.2734" rotation="0 -90 0" nodeId="69">
-          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="300" nodeId="70" castsShadows="true" receiveShadows="true" skinBindNodeIds="70 71 72 73 74" materialIds="10">
+          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="600" nodeId="70" castsShadows="true" receiveShadows="true" skinBindNodeIds="70 71 72 73 74" materialIds="10">
             <TransformGroup name="rollingDoor1Panel2" translation="-2.27374e-15 0.848488 -0.048076" clipDistance="300" nodeId="71">
               <TransformGroup name="rollingDoor1Panel3" translation="-1.7053e-15 0.8913 -5.68434e-15" clipDistance="300" nodeId="72">
                 <TransformGroup name="rollingDoor1Panel4" translation="1.7053e-15 0.8913 -1.47793e-14" clipDistance="300" nodeId="73">
@@ -157,7 +157,7 @@
           <TransformGroup name="rollingDoor1Sound" translation="3.30901 2.51212 0" nodeId="84"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor3" translation="7.0594 0.14 -3.27188" rotation="0 -90 0" nodeId="85">
-          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="300" nodeId="86" castsShadows="true" receiveShadows="true" skinBindNodeIds="86 87 88 89 90" materialIds="10">
+          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="600" nodeId="86" castsShadows="true" receiveShadows="true" skinBindNodeIds="86 87 88 89 90" materialIds="10">
             <TransformGroup name="rollingDoor1Panel2" translation="-2.27374e-15 0.848488 -0.048076" clipDistance="300" nodeId="87">
               <TransformGroup name="rollingDoor1Panel3" translation="-1.7053e-15 0.8913 -5.68434e-15" clipDistance="300" nodeId="88">
                 <TransformGroup name="rollingDoor1Panel4" translation="1.7053e-15 0.8913 -1.47793e-14" clipDistance="300" nodeId="89">
@@ -179,7 +179,7 @@
           <TransformGroup name="rollingDoor1Sound" translation="3.30901 2.51212 0" nodeId="100"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor4" translation="7.0594 0.14 6.73004" rotation="0 -90 0" nodeId="101">
-          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="300" nodeId="102" castsShadows="true" receiveShadows="true" skinBindNodeIds="102 103 104 105 106" materialIds="10">
+          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="600" nodeId="102" castsShadows="true" receiveShadows="true" skinBindNodeIds="102 103 104 105 106" materialIds="10">
             <TransformGroup name="rollingDoor1Panel2" translation="-2.27374e-15 0.848488 -0.048076" clipDistance="300" nodeId="103">
               <TransformGroup name="rollingDoor1Panel3" translation="-1.7053e-15 0.8913 -5.68434e-15" clipDistance="300" nodeId="104">
                 <TransformGroup name="rollingDoor1Panel4" translation="1.7053e-15 0.8913 -1.47793e-14" clipDistance="300" nodeId="105">
@@ -201,7 +201,7 @@
           <TransformGroup name="rollingDoor1Sound" translation="3.30901 2.51212 0" nodeId="116"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor5" translation="7.0594 0.14 16.7346" rotation="0 -90 0" nodeId="117">
-          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="300" nodeId="118" castsShadows="true" receiveShadows="true" skinBindNodeIds="118 119 120 121 122" materialIds="10">
+          <Shape name="rollingDoor1Panel1" translation="0.0174428 1.42109e-16 1.13687e-15" shapeId="1" clipDistance="600" nodeId="118" castsShadows="true" receiveShadows="true" skinBindNodeIds="118 119 120 121 122" materialIds="10">
             <TransformGroup name="rollingDoor1Panel2" translation="-2.27374e-15 0.848488 -0.048076" clipDistance="300" nodeId="119">
               <TransformGroup name="rollingDoor1Panel3" translation="-1.7053e-15 0.8913 -5.68434e-15" clipDistance="300" nodeId="120">
                 <TransformGroup name="rollingDoor1Panel4" translation="1.7053e-15 0.8913 -1.47793e-14" clipDistance="300" nodeId="121">
@@ -264,7 +264,7 @@
         <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="166">
           <TransformGroup name="LOD0" nodeId="167">
             <Shape name="5bayShed01_vis" shapeId="12" clipDistance="400" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="5"/>
-            <Shape name="5bayShed02_vis" shapeId="13" clipDistance="400" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="5bayShed02_vis" shapeId="13" clipDistance="400" nodeId="191" castsShadows="true" receiveShadows="true" materialIds="6"/>
             <Shape name="metalFrame" shapeId="14" clipDistance="600" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="9"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="171">
@@ -273,7 +273,7 @@
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="174">
-          <Shape name="snowMask" translation="0.0111481 7.39 0.015302" shapeId="17" clipDistance="600" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="11"/>
+          <Shape name="snowMask" translation="0.0111481 7.39 0.015302" shapeId="17" clipDistance="600" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="11" weatherRequiredMask="0x8"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="176">

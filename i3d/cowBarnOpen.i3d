@@ -172,7 +172,7 @@
         <TransformGroup name="aiLoadingNodeMilk" translation="-20.0226 -0.13 -6.84744" rotation="0 180 0" nodeId="137"/>
       </TransformGroup>
       <TransformGroup name="manureHeap" translation="20.9903 0 -4.93217" nodeId="138">
-        <Shape name="loadingTriggerManure" translation="4.56255 2 -7.3773" shapeId="8" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="139" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
+        <Shape name="loadingTriggerManure" translation="4.56255 2 -0.170134" shapeId="8" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="139" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
         <TransformGroup name="loadingTriggerAINodeManure" translation="4.51528 -0 -0.00915" rotation="0 175 0" nodeId="140"/>
         <TransformGroup name="tipArea" translation="-2.6 0 0" nodeId="141">
           <TransformGroup name="tipAreaStart" translation="-0.051443 0 -3.418" nodeId="142">
@@ -197,15 +197,15 @@
         <TransformGroup name="waterPlace4" translation="-12.8427 0.557353 -1.04005" nodeId="156"/>
       </TransformGroup>
       <TransformGroup name="navigationRootNode" translation="0 0.01 0" nodeId="157">
-        <Shape name="navigationMesh" shapeId="11" clipDistance="300" nodeId="158" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="13"/>
+        <Shape name="navigationMesh" shapeId="11" nodeId="158" castsShadows="true" receiveShadows="true" nonRenderable="true" buildNavMeshMask="0xfe" materialIds="13"/>
         <Shape name="walkingPlane" shapeId="12" static="true" collisionFilterGroup="0x400000" collisionFilterMask="0x1" nodeId="159" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
       </TransformGroup>
       <TransformGroup name="fence" nodeId="160">
         <TransformGroup name="fence1" nodeId="161">
           <TransformGroup name="fence1Node1" translation="-16.7256 0 -9.19366" nodeId="162"/>
           <TransformGroup name="fence1Node2" translation="-16.7256 0 -32.1937" nodeId="163"/>
-          <TransformGroup name="fence1Node3" translation="18.2744 0 -32.194" nodeId="164"/>
-          <TransformGroup name="fence1Node4" translation="18.2744 0 -9.19366" nodeId="165"/>
+          <TransformGroup name="fence1Node3" translation="22.717 0 -32.194" nodeId="164"/>
+          <TransformGroup name="fence1Node4" translation="22.717 0 -9.28479" nodeId="165"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="doors" translation="0 0.01 0" nodeId="166">
@@ -419,7 +419,7 @@
         <TransformGroup name="markerAnimals" translation="-18.1387 0.02 3.90581" nodeId="317"/>
         <TransformGroup name="markerLiquidManure" translation="21.8923 0.02 2.07825" nodeId="318"/>
         <TransformGroup name="markerFood" translation="-0.021144 0.269954 7.82984" rotation="0 -90 0" nodeId="319"/>
-        <TransformGroup name="markerManure" translation="24.4611 -0.18 -12.4168" nodeId="320"/>
+        <TransformGroup name="markerManure" translation="24.4611 0 -5.20418" nodeId="320"/>
         <Shape name="infoTrigger" translation="2.19719 0.05 -20.7701" shapeId="46" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" nodeId="321" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
       </TransformGroup>
       <Shape name="loadingTrigger" translation="-19.286 0.14 3.78437" shapeId="47" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" nodeId="322" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
@@ -655,7 +655,7 @@
 
   <UserAttributes>
     <UserAttribute nodeId="158">
-      <Attribute name="animalType" type="string" value="Cow"/>
+      <Attribute name="aninalType" type="string" value="cow"/>
     </UserAttribute>
     <UserAttribute nodeId="474">
       <Attribute name="collisionHeight" type="float" value="4"/>

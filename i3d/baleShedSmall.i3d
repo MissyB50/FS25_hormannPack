@@ -30,11 +30,11 @@
     </Material>
     <Material name="objectStorage01_mat" materialId="7" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
-    <Material name="objectStorage02_mat" materialId="8" customShaderId="4" customShaderVariation="colorScale">
+    <Material name="objectStorage02_mat" materialId="48" customShaderId="4" customShaderVariation="colorScale">
       <Texture fileId="10"/>
       <Normalmap fileId="11"/>
       <Glossmap fileId="12"/>
-      <CustomParameter name="colorScale0" value="0.067 0.259 0.169 1"/>
+      <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
   </Materials>
 
@@ -75,12 +75,12 @@
       <TransformGroup name="visuals" nodeId="33">
         <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="34">
           <TransformGroup name="LOD0" nodeId="35">
-            <Shape name="objectStorage01_vis" shapeId="1" clipDistance="400" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis" shapeId="2" clipDistance="400" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="objectStorage01_vis" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="400" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="objectStorage02_vis" shapeId="2" clipDistance="400" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="48"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="38">
             <Shape name="objectStorage01_vis_LOD" shapeId="3" clipDistance="600" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="5"/>
-            <Shape name="objectStorage02_vis_LOD" shapeId="2" clipDistance="600" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="objectStorage02_vis_LOD" shapeId="2" clipDistance="600" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="48"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="41"/>

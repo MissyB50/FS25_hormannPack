@@ -91,23 +91,11 @@
       <Glossmap fileId="15"/>
       <CustomParameter name="snowScale" value="0"/>
     </Material>
-    <Material name="goatBarn02_mat" materialId="14" customShaderId="4" customShaderVariation="colorScale">
-      <Texture fileId="1"/>
-      <Normalmap fileId="2"/>
-      <Glossmap fileId="3"/>
-      <CustomParameter name="colorScale0" value="0.067 0.259 0.169 1"/>
-    </Material>
     <Material name="goatBarn02_mat" materialId="15" customShaderId="4" customShaderVariation="colorScale">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
-    </Material>
-    <Material name="goatBarn02_mat" materialId="16" customShaderId="4" customShaderVariation="colorScale">
-      <Texture fileId="1"/>
-      <Normalmap fileId="2"/>
-      <Glossmap fileId="3"/>
-      <CustomParameter name="colorScale0" value="0.069 0.259 0.169 1"/>
     </Material>
     <Material name="light150W_emissive_mat" materialId="17" specularColor="0.74902 1 0" customShaderId="28" customShaderVariation="additive_colorScale">
       <Texture fileId="25"/>
@@ -200,7 +188,7 @@
       </TransformGroup>
       <TransformGroup name="doors" nodeId="98">
         <TransformGroup name="sideDoorBase" translation="25.2213 0.02 -2.3" nodeId="99">
-          <Shape name="sideDoor" translation="0 0.06 -1.8" shapeId="1" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="15"/>
+          <Shape name="sideDoor" translation="0 0.06 1.4" shapeId="1" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="15"/>
           <Shape name="sideDoorTrigger" translation="0 0.03 0" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="101" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
           <TransformGroup name="soundNode" nodeId="102"/>
         </TransformGroup>
@@ -476,7 +464,7 @@
             <Shape name="feedBarriers" translation="24.934 0 4.7" shapeId="39" clipDistance="600" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="7"/>
             <Shape name="glassRoof" translation="0 7 0" shapeId="40" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="600" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="9"/>
             <Shape name="goatShed01_vis" shapeId="41" clipDistance="400" nodeId="303" castsShadows="true" receiveShadows="true" materialIds="13"/>
-            <Shape name="goatShed02_vis" shapeId="42" clipDistance="400" nodeId="304" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="14"/>
+            <Shape name="goatShed02_vis" shapeId="42" clipDistance="400" nodeId="304" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="15"/>
             <Shape name="waterTroughFake" translation="-0.540678 0.05 -7.17929" rotation="0 -90 0" shapeId="43" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="26">
               <Shape name="waterPlaneFake" translation="0 0.453992 0" shapeId="44" clipDistance="250" nodeId="306" castsShadows="true" receiveShadows="true" materialIds="10"/>
             </Shape>
@@ -484,7 +472,7 @@
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="308">
             <Shape name="goatShed01_vis_LOD" shapeId="46" clipDistance="600" nodeId="309" castsShadows="true" receiveShadows="true" materialIds="13"/>
-            <Shape name="goatShed02_vis_LOD" shapeId="42" clipDistance="600" nodeId="310" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="16"/>
+            <Shape name="goatShed02_vis_LOD" shapeId="42" clipDistance="600" nodeId="310" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="15"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="311">

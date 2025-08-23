@@ -78,8 +78,8 @@
         <animatedObject saveId="door1" >
             <animation duration="5">
                 <part node="door1">
-                    <keyFrame time="0.0" rotation="0 0.06 1.4"/>
-                    <keyFrame time="1.0" rotation="0 0.06 -1.8"/>
+                    <keyFrame time="0.0" translation="0 0.06 1.4"/>
+                    <keyFrame time="1.0" translation="0 0.06 -1.8"/>
                 </part>
             </animation>
             <controls triggerNode="door1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
