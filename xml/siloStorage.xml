@@ -74,7 +74,8 @@
     <triggerMarkers>
         <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" />
         <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
-        <triggerMarker node="loadingMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+<!--         <triggerMarker node="warningStripes01"/> -->
     </triggerMarkers>
 
     <infoTrigger triggerNode="infoTrigger"/>
