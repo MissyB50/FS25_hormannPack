@@ -375,15 +375,15 @@
         <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
     </colorConfigurations>
 
-<!--     <solarPanels>
+    <solarPanels>
         <solarPanelsConfigurations>
             <solarPanelsConfiguration name="$l10n_ui_no" isActive="false">
                 <objectChange node="solarPanels" visibilityActive="false"/>
             </solarPanelsConfiguration>
 
-            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="187500" incomePerHour="652" />
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="90000" incomePerHour="800" />
         </solarPanelsConfigurations>
-    </solarPanels> -->
+    </solarPanels>
 
     <i3dMappings>
         <i3dMapping id="clearArea1Start" node="0>0|0" />
@@ -407,7 +407,6 @@
         <i3dMapping id="door02" node="0>5|1|0"/>
         <i3dMapping id="gateTrigger02" node="0>5|1|1"/>
 		<i3dMapping id="door2Sound" node="0>5|1|2"/>
-
 		<i3dMapping id="window1" node="0>5|2|0|0"/>
 		<i3dMapping id="side1Base" node="0>5|2|0|1"/>
 		<i3dMapping id="window2" node="0>5|2|1|0"/>
@@ -427,7 +426,6 @@
 		<i3dMapping id="window9" node="0>5|2|8|0"/>
 		<i3dMapping id="side9Base" node="0>5|2|8|1"/>
 		<i3dMapping id="windowTrigger" node="0>5|2|9"/>
-
         <i3dMapping id="fillVolumeFood" node="0>7|0" />
         <i3dMapping id="exactFillRootNodeFood" node="0>7|1" />
         <i3dMapping id="baleTrigger" node="0>7|2" />
@@ -476,7 +474,6 @@
         <i3dMapping id="fenceNode6" node="0>13|0|5" />
         <i3dMapping id="fenceNode7" node="0>13|0|6" />
         <i3dMapping id="fenceNode8" node="0>13|0|7" />
-
         <i3dMapping id="navMeshShape" node="0>14|0" />
         <i3dMapping id="walkingPlane" node="0>14|1" />
         <i3dMapping id="storage" node="0>15" />
@@ -492,7 +489,6 @@
         <i3dMapping id="markerBale" node="0>20|5" />
         <i3dMapping id="markerMilk" node="0>20|6" />
         <i3dMapping id="markerAnimals" node="0>20|7" />
-<!--         <i3dMapping id="solarPanels" node="0>23|1" /> -->
-
+        <i3dMapping id="solarPanels" node="0>21|2" />
     </i3dMappings>
 </placeable>

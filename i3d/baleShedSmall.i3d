@@ -12,7 +12,11 @@
     <File fileId="10" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
     <File fileId="11" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
     <File fileId="12" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="13" filename="$data/placeables/rudolfHormann/shared/solarPanels_diffuse.dds"/>
+    <File fileId="14" filename="$data/placeables/rudolfHormann/shared/solarPanels_normal.dds"/>
+    <File fileId="15" filename="$data/placeables/rudolfHormann/shared/solarPanels_specular.dds"/>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="16" filename="$data/shaders/placeableShader.xml"/>
   </Files>
 
 
@@ -30,11 +34,16 @@
     </Material>
     <Material name="objectStorage01_mat" materialId="7" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
-    <Material name="objectStorage02_mat" materialId="48" customShaderId="4" customShaderVariation="colorScale">
+    <Material name="objectStorage02_mat" materialId="8" customShaderId="4" customShaderVariation="colorScale">
       <Texture fileId="10"/>
       <Normalmap fileId="11"/>
       <Glossmap fileId="12"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
+    </Material>
+    <Material name="solarPanel_mat" materialId="95" customShaderId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
     </Material>
   </Materials>
 
@@ -76,17 +85,24 @@
         <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="34">
           <TransformGroup name="LOD0" nodeId="35">
             <Shape name="objectStorage01_vis" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="400" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis" shapeId="2" clipDistance="400" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="48"/>
+            <Shape name="objectStorage02_vis" shapeId="2" clipDistance="400" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="8"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="38">
             <Shape name="objectStorage01_vis_LOD" shapeId="3" clipDistance="600" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="5"/>
-            <Shape name="objectStorage02_vis_LOD" shapeId="2" clipDistance="600" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="48"/>
+            <Shape name="objectStorage02_vis_LOD" shapeId="2" clipDistance="600" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="8"/>
           </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="solarPanels" nodeId="51">
+          <TransformGroup name="visuals_LOD" lodDistance="0 600" lodBlending="false" nodeId="78">
+            <Shape name="solarPanelsLOD0" translation="0 4.57997 0.00248148" rotation="-5 -0 0" shapeId="4" clipDistance="400" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="95"/>
+            <Shape name="solarPanelsLOD1" translation="0 4.61091 -0.00497573" rotation="-5 -0 0" shapeId="5" clipDistance="600" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="95"/>
+          </TransformGroup>
+          <Shape name="supports" translation="0 4.57427 0.00457395" rotation="-5.5 -0 0" shapeId="6" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="5"/>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="41"/>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="42">
-        <Shape name="collision" shapeId="4" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="collision" shapeId="7" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

@@ -6,7 +6,7 @@
             <function>$l10n_function_garageService</function>
         </functions>
         <image>store/store_workshop.dds</image>
-        <price>0</price>
+        <price>65000</price>
         <dailyUpkeep>10</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -128,28 +128,14 @@
         </animatedObject>
     </animatedObjects>
 
-<!--     <infoTrigger triggerNode="infoTrigger"/> -->
 
     <triggerMarkers>
         <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
-<!--         <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d"   adjustToGround="true" />
-        <triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" /> -->
     </triggerMarkers>
 
     <workshop>
         <sellingPoint playerTriggerNode="playerTrigger" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
     </workshop>
-
-<!--     <objectStorage supportsBales="true" supportsPallets="true" maxLength="8.5" maxWidth="6" maxHeight="3.5">
-        <playerTrigger node="playerTrigger" />
-        <objectTrigger node="objectTrigger" />
-        <spawnAreas>
-            <spawnArea startNode="spawnAreaStart01" endNode="spawnAreaEnd01"/>
-        </spawnAreas>
-        <storageAreas>
-            <storageArea startNode="storageAreaStart01" endNode="storageAreaEnd01"/>
-        </storageAreas>
-    </objectStorage> -->
 
     <colorConfigurations>
         <material slotName="color_mat" />
@@ -195,16 +181,6 @@
         <i3dMapping id="vehicleTrigger" node="0>5|0" />
         <i3dMapping id="playerTrigger" node="0>5|1" />
         <i3dMapping id="markerWrench" node="0>5|1|0" />
-<!--         <i3dMapping id="objectStorage" node="0>6" />
-        <i3dMapping id="spawnAreaStart01" node="0>6|0|0" />
-        <i3dMapping id="spawnAreaEnd01" node="0>6|0|0|0" />
-        <i3dMapping id="storageAreaStart01" node="0>6|0|1" />
-        <i3dMapping id="storageAreaEnd01" node="0>6|0|1|0" />
-        <i3dMapping id="objectTrigger" node="0>6|1" />
-        <i3dMapping id="playerTrigger" node="0>6|2" />
-        <i3dMapping id="playerTriggerMarker" node="0>6|2|0" />
-        <i3dMapping id="infoTrigger" node="0>6|3" />
-        <i3dMapping id="objectTriggerMarker" node="0>6|4" /> -->
         <i3dMapping id="rollingDoor1Base" node="0>7|0" />
         <i3dMapping id="rollingDoor1" node="0>7|0|0" />
         <i3dMapping id="rollingDoor1ColPartBottom" node="0>7|0|1" />

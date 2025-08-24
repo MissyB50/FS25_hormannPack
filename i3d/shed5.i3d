@@ -16,10 +16,17 @@
     <File fileId="24" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
     <File fileId="25" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
     <File fileId="26" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="34" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor01_diffuse.png"/>
+    <File fileId="35" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor01_normal.png"/>
+    <File fileId="36" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor01_specular.png"/>
+    <File fileId="37" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor_mask.png"/>
     <File fileId="1" filename="$data/placeables/rudolfHormann/shared/garageDoors_diffuse.dds"/>
     <File fileId="5" filename="$data/placeables/rudolfHormann/shared/garageDoors_mask.png"/>
     <File fileId="2" filename="$data/placeables/rudolfHormann/shared/garageDoors_normal.dds"/>
     <File fileId="3" filename="$data/placeables/rudolfHormann/shared/garageDoors_specular.dds"/>
+    <File fileId="31" filename="$data/placeables/rudolfHormann/shared/solarPanels_diffuse.png"/>
+    <File fileId="32" filename="$data/placeables/rudolfHormann/shared/solarPanels_normal.png"/>
+    <File fileId="33" filename="$data/placeables/rudolfHormann/shared/solarPanels_specular.png"/>
     <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
     <File fileId="13" filename="$data/shaders/decalShader.xml"/>
     <File fileId="17" filename="$data/shaders/placeableShader.xml"/>
@@ -51,6 +58,13 @@
     </Material>
     <Material name="default" materialId="8" diffuseColor="0.501961 0.501961 0.501961 1">
     </Material>
+    <Material name="garageContractor01_mat" materialId="184" customShaderId="4" customShaderVariation="colorScale">
+      <Texture fileId="34"/>
+      <Normalmap fileId="35"/>
+      <Glossmap fileId="36"/>
+      <Custommap name="mMaskMap" fileId="37"/>
+      <CustomParameter name="colorScale0" value="0.0667 0.2588 0.1961 1"/>
+    </Material>
     <Material name="garageDoor_mat" materialId="9" customShaderId="4" customShaderVariation="colorScale">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
@@ -68,6 +82,11 @@
       <Texture fileId="27"/>
       <Normalmap fileId="28"/>
       <Glossmap fileId="8"/>
+    </Material>
+    <Material name="solarPanels_mat" materialId="185" customShaderId="17">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
     </Material>
     <Material name="UnnamedMaterial" materialId="12" diffuseColor="1 1 1 1">
     </Material>
@@ -264,7 +283,7 @@
         <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="166">
           <TransformGroup name="LOD0" nodeId="167">
             <Shape name="5bayShed01_vis" shapeId="12" clipDistance="400" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="5"/>
-            <Shape name="5bayShed02_vis" shapeId="13" clipDistance="400" nodeId="191" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="5bayShed02_vis" shapeId="13" clipDistance="400" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="6"/>
             <Shape name="metalFrame" shapeId="14" clipDistance="600" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="9"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="171">
@@ -275,9 +294,53 @@
         <TransformGroup name="winter" nodeId="174">
           <Shape name="snowMask" translation="0.0111481 7.39 0.015302" shapeId="17" clipDistance="600" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="11" weatherRequiredMask="0x8"/>
         </TransformGroup>
+        <TransformGroup name="solarPanels" clipDistance="300" nodeId="190">
+          <TransformGroup name="panel01" translation="0 0 17.1" nodeId="191">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="192">
+              <Shape name="LOD0" shapeId="18" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="185"/>
+              <Shape name="LOD1" shapeId="19" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="185"/>
+            </TransformGroup>
+            <Shape name="supports" shapeId="20" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="184"/>
+          </TransformGroup>
+          <TransformGroup name="panel02" translation="0 0 17.1" nodeId="214">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="215">
+              <Shape name="LOD0" shapeId="21" nodeId="216" castsShadows="true" receiveShadows="true" materialIds="185"/>
+              <Shape name="LOD1" shapeId="22" nodeId="217" castsShadows="true" receiveShadows="true" materialIds="185"/>
+            </TransformGroup>
+            <Shape name="supports" shapeId="23" nodeId="218" castsShadows="true" receiveShadows="true" materialIds="184"/>
+          </TransformGroup>
+          <TransformGroup name="panel03" nodeId="201">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="202">
+              <Shape name="LOD0" shapeId="24" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="185"/>
+              <Shape name="LOD1" shapeId="25" nodeId="204" castsShadows="true" receiveShadows="true" materialIds="185"/>
+            </TransformGroup>
+            <Shape name="supports" shapeId="26" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="184"/>
+          </TransformGroup>
+          <TransformGroup name="panel04" nodeId="196">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="197">
+              <Shape name="LOD0" shapeId="21" nodeId="198" castsShadows="true" receiveShadows="true" materialIds="185"/>
+              <Shape name="LOD1" shapeId="22" nodeId="199" castsShadows="true" receiveShadows="true" materialIds="185"/>
+            </TransformGroup>
+            <Shape name="supports" shapeId="23" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="184"/>
+          </TransformGroup>
+          <TransformGroup name="panel05" translation="0 0 -17.1" nodeId="206">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="207">
+              <Shape name="LOD0" shapeId="18" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="185"/>
+              <Shape name="LOD1" shapeId="19" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="185"/>
+            </TransformGroup>
+            <Shape name="supports" shapeId="20" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="184"/>
+          </TransformGroup>
+          <TransformGroup name="panel06" translation="0 0 -17.1" nodeId="219">
+            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="220">
+              <Shape name="LOD0" shapeId="21" nodeId="221" castsShadows="true" receiveShadows="true" materialIds="185"/>
+              <Shape name="LOD1" shapeId="22" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="185"/>
+            </TransformGroup>
+            <Shape name="supports" shapeId="23" nodeId="223" castsShadows="true" receiveShadows="true" materialIds="184"/>
+          </TransformGroup>
+        </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="176">
-        <Shape name="collision" shapeId="18" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="177" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        <Shape name="collision" shapeId="27" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="177" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

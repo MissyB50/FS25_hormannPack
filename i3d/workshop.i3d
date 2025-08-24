@@ -48,7 +48,7 @@
       <Normalmap fileId="12"/>
       <CustomParameter name="snowScale" value="0"/>
     </Material>
-    <Material name="workshop02_mat" materialId="141" customShaderId="5" customShaderVariation="colorScale">
+    <Material name="workshop02_mat" materialId="10" customShaderId="5" customShaderVariation="colorScale">
       <Texture fileId="15"/>
       <Normalmap fileId="16" bumpDepth="1.4"/>
       <Glossmap fileId="17"/>
@@ -119,17 +119,17 @@
         </TransformGroup>
         <TransformGroup name="realLights" nodeId="85">
           <TransformGroup name="realLightsHigh" nodeId="86">
-            <Light name="spotLightHigh" translation="-0.5 6.12422 3.5" rotation="-75 -0 0" nodeId="87" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.001" translation="-0.5 6.12422 -3.5" rotation="-105 -0 0" nodeId="88" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.002" translation="-8.5 6.12422 -3.5" rotation="-105 -0 0" nodeId="89" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.003" translation="-8.5 6.12422 3.5" rotation="-75 -0 0" nodeId="90" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.004" translation="7.5 6.12422 3.5" rotation="-75 -0 0" nodeId="91" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.005" translation="7.5 6.12422 -3.5" rotation="-105 -0 0" nodeId="92" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh" translation="-0.5 6.12422 3.5" rotation="-75 -0 0" clipDistance="200" nodeId="87" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.001" translation="-0.5 6.12422 -3.5" rotation="-105 -0 0" clipDistance="200" nodeId="88" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.002" translation="-8.5 6.12422 -3.5" rotation="-105 -0 0" clipDistance="200" nodeId="89" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.003" translation="-8.5 6.12422 3.5" rotation="-75 -0 0" clipDistance="200" nodeId="90" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.004" translation="7.5 6.12422 3.5" rotation="-75 -0 0" clipDistance="200" nodeId="91" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.005" translation="7.5 6.12422 -3.5" rotation="-105 -0 0" clipDistance="200" nodeId="92" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
           </TransformGroup>
           <TransformGroup name="realLightsLow" nodeId="93">
-            <Light name="pointLightLow" translation="-8.5 3 0" rotation="-90 -0 0" nodeId="94" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.001" translation="-0.5 3 0" rotation="-90 -0 0" nodeId="95" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.002" translation="7.5 3 0" rotation="-90 -0 0" nodeId="96" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow" translation="-8.5 3 0" rotation="-90 -0 0" clipDistance="200" nodeId="94" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.001" translation="-0.5 3 0" rotation="-90 -0 0" clipDistance="200" nodeId="95" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.002" translation="7.5 3 0" rotation="-90 -0 0" clipDistance="200" nodeId="96" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
@@ -137,7 +137,7 @@
         <TransformGroup name="visual" lodDistance="0 800" nodeId="98">
           <TransformGroup name="LOD0" nodeId="99">
             <Shape name="workShop01_vis" shapeId="8" clipDistance="400" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="8"/>
-            <Shape name="workShop02_vis" shapeId="9" clipDistance="400" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="141"/>
+            <Shape name="workShop02_vis" shapeId="9" clipDistance="400" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="10"/>
             <TransformGroup name="props" nodeId="102">
               <TransformGroup name="cabinetWorkbench05Rot" translation="11.8567 0 -0.0867535" rotation="0 -90 0" nodeId="103">
                 <Shape name="visual" shapeId="10" clipDistance="100" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="5">
@@ -170,7 +170,7 @@
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="126">
             <Shape name="workShop01_vis_LOD" shapeId="31" clipDistance="600" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="9"/>
-            <Shape name="workShop02_vis_LOD" shapeId="9" clipDistance="600" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="141"/>
+            <Shape name="workShop02_vis_LOD" shapeId="9" clipDistance="600" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="10"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="129"/>

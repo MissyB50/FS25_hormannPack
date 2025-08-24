@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="WorkshopSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_shopItem_siloStorage</name>
         <functions>
@@ -251,7 +251,7 @@
             <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="farmSilo" aiNode="aiUnloadingNode"/>
         </unloadingStation>
 
-		<storage isExtension="false" fillLevelSyncThreshold="100">
+        <storage node="storage" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" isExtension="true">
 			<capacity fillType="WHEAT" capacity="5000000" />
 			<capacity fillType="BARLEY" capacity="5000000" />
 			<capacity fillType="OAT" capacity="5000000"  />
@@ -262,6 +262,10 @@
             <capacity fillType="SORGHUM" capacity="5000000"  />
 		</storage>
     </silo>
+
+    <workshop>
+        <sellingPoint playerTriggerNode="playerTrigger" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
+    </workshop>
 
     <colorConfigurations>
         <material slotName="color_mat" />
@@ -412,6 +416,12 @@
         <i3dMapping id="teleportNode" node="0>7|6" />
         <i3dMapping id="aiSpline" node="0>7|7" />
         <i3dMapping id="infoTrigger" node="0>7|8" />
+
+        <i3dMapping id="vehicleTrigger" node="0>8|0" />
+        <i3dMapping id="playerTrigger" node="0>8|1" />
+        <i3dMapping id="markerWrench" node="0>8|1|0" />
+
+
         <i3dMapping id="solarPanels" node="0>10|1" />
     </i3dMappings>
 </placeable>

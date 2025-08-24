@@ -85,7 +85,7 @@
       <Normalmap fileId="20"/>
       <Glossmap fileId="21"/>
     </Material>
-    <Material name="grainStorage02_mat (color_mat)" materialId="301" customShaderId="4" customShaderVariation="colorScale">
+    <Material name="grainStorage02_mat (color_mat)" materialId="14" customShaderId="4" customShaderVariation="colorScale">
       <Texture fileId="24"/>
       <Normalmap fileId="25"/>
       <Glossmap fileId="26"/>
@@ -278,16 +278,16 @@
         </TransformGroup>
         <TransformGroup name="realLights" nodeId="162">
           <TransformGroup name="realLightsHigh" nodeId="163">
-            <Light name="spotLightHigh" translation="3.5 7.36339 -4" rotation="-106 -0 0" nodeId="164" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.001" translation="-3.5 7.36339 -4" rotation="-106 -0 0" nodeId="165" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.002" translation="-3.5 7.36339 4" rotation="-74 -0 0" nodeId="166" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
-            <Light name="spotLightHigh.003" translation="3.5 7.40406 4" rotation="-74 -0 0" nodeId="167" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh" translation="3.5 7.36339 -4" rotation="-106 -0 0" clipDistance="200" nodeId="164" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.001" translation="-3.5 7.36339 -4" rotation="-106 -0 0" clipDistance="200" nodeId="165" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.002" translation="-3.5 7.36339 4" rotation="-74 -0 0" clipDistance="200" nodeId="166" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
+            <Light name="spotLightHigh.003" translation="3.5 7.40406 4" rotation="-74 -0 0" clipDistance="200" nodeId="167" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="5"/>
           </TransformGroup>
           <TransformGroup name="realLightsLow" nodeId="168">
-            <Light name="pointLightLow" translation="3.5 2.58977 -4" rotation="-90 -0 0" nodeId="169" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.001" translation="-3.5 2.58977 -4" rotation="-90 -0 0" nodeId="170" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.002" translation="-3.5 2.58977 4" rotation="-90 -0 0" nodeId="171" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
-            <Light name="pointLightLow.003" translation="3.5 2.58977 4" rotation="-90 -0 0" nodeId="172" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow" translation="3.5 2.58977 -4" rotation="-90 -0 0" clipDistance="200" nodeId="169" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.001" translation="-3.5 2.58977 -4" rotation="-90 -0 0" clipDistance="200" nodeId="170" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.002" translation="-3.5 2.58977 4" rotation="-90 -0 0" clipDistance="200" nodeId="171" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLightLow.003" translation="3.5 2.58977 4" rotation="-90 -0 0" clipDistance="200" nodeId="172" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="18"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
@@ -316,7 +316,7 @@
         <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="192">
           <TransformGroup name="LOD0" nodeId="193">
             <Shape name="grainStorage01_vis" shapeId="18" nodeId="194" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="13,11"/>
-            <Shape name="grainStorage02_vis" shapeId="19" clipDistance="400" nodeId="267" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="301"/>
+            <Shape name="grainStorage02_vis" shapeId="19" clipDistance="400" nodeId="195" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="14"/>
             <Shape name="grainInlet" translation="-3.46009 0.0491019 -0.00203991" rotation="-0 90 0" scale="0.990295 1 1.05" shapeId="20" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="18"/>
             <Shape name="metalFrame" shapeId="21" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="17"/>
           </TransformGroup>
@@ -335,7 +335,7 @@
             <Shape name="stickers" translation="0.000975 2.99794 1.34451" shapeId="28" clipDistance="30" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="7"/>
             <Shape name="rivets" translation="-4e-06 5.5284 -0.38015" shapeId="29" clipDistance="50" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </Shape>
-          <Shape name="siloPipework" translation="-9.49586 9.63729 0" shapeId="30" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="19"/>
+          <Shape name="siloPipework" translation="-9.49586 9.63729 0" shapeId="30" clipDistance="600" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="19"/>
           <TransformGroup name="uniFarma150" translation="-14.2201 0 3.41086" nodeId="210">
             <TransformGroup name="visuals_lod" lodDistance="0 100" nodeId="211">
               <TransformGroup name="uniFarma150_lod0" nodeId="212">

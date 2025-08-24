@@ -23,6 +23,7 @@
 
     <base>
         <filename>i3d/sheepBarn.i3d</filename>
+        <boughtWithFarmland>false</boughtWithFarmland>
         <canBeRenamed>true</canBeRenamed>
     </base>
 

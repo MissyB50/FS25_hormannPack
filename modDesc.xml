@@ -22,7 +22,7 @@
         <storeItem xmlFilename="xml/cowBarnLarge.xml" />
         <storeItem xmlFilename="xml/grainSilo.xml" />
         <storeItem xmlFilename="xml/grainStore.xml" />
-        <storeItem xmlFilename="xml/objectStorage01.xml" />
+        <storeItem xmlFilename="xml/objectStorage.xml" />
         <storeItem xmlFilename="xml/openPigShed.xml" />
         <storeItem xmlFilename="xml/shed2.xml" />
         <storeItem xmlFilename="xml/shed3.xml" />
@@ -57,6 +57,13 @@
             <specialization name="manureHeap" />
             <specialization name="husbandryMeadow" />
         </type>
+
+		<type name="WorkshopSilo" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
+		    <specialization name="workshop" />
+			<specialization name="infoTrigger" />	
+			<specialization name="silo" />	
+	    </type>
+
 		<type name="Workshop" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
 		    <specialization name="workshop" />
 			<specialization name="infoTrigger" />	

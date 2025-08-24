@@ -80,8 +80,8 @@
         <animatedObject saveId="sideDoor" >
             <animation duration="3.0">
                 <part node="sideDoor1">
-                    <keyFrame time="0.0" translation="0 0 0"/>
-                    <keyFrame time="1.0" translation="0 -0.971 0"/>
+                    <keyFrame time="0.0" translation="-2.407 1.2 7.325"/>
+                    <keyFrame time="1.0" translation="-2.407 2.3 7.325"/>
                 </part>
                 <part node="sideDoor1Rotor">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -89,7 +89,7 @@
                 </part>
                 <part node="sideDoor1Rope">
                     <keyFrame time="0.0" scale="1 1 1"/>
-                    <keyFrame time="1.0" scale="1 12.7 1"/>
+                    <keyFrame time="1.0" scale="1 0.185 1"/>
                 </part>
             </animation>
             <controls triggerNode="sideDoorsTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
@@ -149,26 +149,6 @@
         <dynamicallyLoadedPart node="0" linkNode="doorSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
         <dynamicallyLoadedPart node="0" linkNode="windowSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
     </dynamicallyLoadedParts>
-
-    <lights>
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight01" groupIndex="1" color="1 0 0" />
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight02" groupIndex="1" color="1 0 0" />
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight03" groupIndex="1" color="1 0 0" />
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight04" groupIndex="1" color="1 0 0" />
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight05" groupIndex="1"/>
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight06" groupIndex="1"/>
-
-        <realLights>
-            <low>
-                <light node="realLightsLow" groupIndex="1"/>
-            </low>
-            <high>
-                <light node="realLightsHigh" groupIndex="1"/>
-            </high>
-        </realLights>
-
-        <group name="$l10n_action_placeableLightShed" activateTime="17:30" deactivateTime="8:20"/>
-    </lights>
 
     <infoTrigger triggerNode="infoTrigger" />
 

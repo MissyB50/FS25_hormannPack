@@ -6,7 +6,7 @@
             <function>$l10n_function_farmSilo</function>
         </functions>
         <image>store/store_grainSilo.dds</image>
-        <price>0</price>
+        <price>125000</price>
         <dailyUpkeep>1</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -71,7 +71,7 @@
     </hotspots>
 
     <triggerMarkers>
-        <triggerMarker node="markerUnLoading" filename="marker/markerUnLoad.i3d" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
     </triggerMarkers>
 
     <infoTrigger triggerNode="infoTrigger"/>
@@ -169,14 +169,14 @@
 
         <storages>
 			<storage node="storage" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" isExtension="true">
-				<capacity fillType="WHEAT" capacity="10000000"  />
-				<capacity fillType="BARLEY" capacity="1000000"  />
-				<capacity fillType="OAT" capacity="1000000"  />
-				<capacity fillType="CANOLA" capacity="10000000"  />
-				<capacity fillType="SUNFLOWER" capacity="10000000"  />
-				<capacity fillType="SOYBEAN" capacity="10000000"  />
-				<capacity fillType="MAIZE" capacity="10000000"  />
-				<capacity fillType="SORGHUM" capacity="10000000"  />
+				<capacity fillType="WHEAT" capacity="1200000"  />
+				<capacity fillType="BARLEY" capacity="120000"  />
+				<capacity fillType="OAT" capacity="120000"  />
+				<capacity fillType="CANOLA" capacity="1200000"  />
+				<capacity fillType="SUNFLOWER" capacity="1200000"  />
+				<capacity fillType="SOYBEAN" capacity="1200000"  />
+				<capacity fillType="MAIZE" capacity="1200000"  />
+				<capacity fillType="SORGHUM" capacity="1200000"  />
 			</storage>
         </storages>
     </silo>
