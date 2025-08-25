@@ -239,29 +239,28 @@
 
     <silo>
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
-            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypeCategories="farmSilo" aiNode="aiLoadingNode">
-                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
-                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
-                <sounds>
-                    <loading template="silosActive" />
-                </sounds>
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="3000" dischargeNode="dischargeNode" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.8" maxBending="0" controlPoint="4.8 0 0 0" />
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.8" />
             </loadTrigger>
         </loadingStation>
 
         <unloadingStation supportsExtension="true" storageRadius="50">
-            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="farmSilo" aiNode="aiUnloadingNode"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" />
         </unloadingStation>
 
-        <storage node="storage" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" isExtension="true">
-			<capacity fillType="WHEAT" capacity="5000000" />
-			<capacity fillType="BARLEY" capacity="5000000" />
-			<capacity fillType="OAT" capacity="5000000"  />
-			<capacity fillType="CANOLA" capacity="5000000"  />
-			<capacity fillType="SUNFLOWER" capacity="5000000"  />
-			<capacity fillType="SOYBEAN" capacity="5000000"  />
-			<capacity fillType="MAIZE" capacity="5000000"  />
-            <capacity fillType="SORGHUM" capacity="5000000"  />
-		</storage>
+		<storages>
+			<storage node="storage" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" isExtension="true">
+				<capacity fillType="WHEAT" capacity="800000"  />
+				<capacity fillType="BARLEY" capacity="800000" />
+				<capacity fillType="OAT" capacity="800000"  />
+				<capacity fillType="CANOLA" capacity="800000"  />
+				<capacity fillType="SUNFLOWER" capacity="800000"  />
+				<capacity fillType="SOYBEAN" capacity="800000"  />
+				<capacity fillType="MAIZE" capacity="800000"  />
+				<capacity fillType="SORGHUM" capacity="800000"  />
+			</storage>
+		</storages>
     </silo>
 
     <workshop>

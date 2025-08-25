@@ -58,10 +58,10 @@
             <specialization name="husbandryMeadow" />
         </type>
 
-		<type name="WorkshopSilo" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
-		    <specialization name="workshop" />
-			<specialization name="infoTrigger" />	
+ 		<type name="WorkshopSilo" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
+		    <specialization name="workshop" />	
 			<specialization name="silo" />	
+			<specialization name="infoTrigger" />
 	    </type>
 
 		<type name="Workshop" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
