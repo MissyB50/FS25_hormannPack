@@ -82,7 +82,7 @@
       <Custommap name="mMaskMap" fileId="5"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
-    <Material name="lambert1" materialId="405" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
     <Material name="lambert2_mat" materialId="10" diffuseColor="0.501961 0.501961 0.501961 1">
       <Normalmap fileId="23"/>
@@ -218,7 +218,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor1Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor1Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="99"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor2" translation="2.59799 0.1 -11.924" nodeId="100">
@@ -240,7 +240,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="112" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor2Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor2Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="114"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor3" translation="-4.41357 0.1 -11.924" nodeId="115">
@@ -262,7 +262,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="127" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor2Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor2Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="129"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor4" translation="33.3957 0.1 11.924" rotation="0 180 0" nodeId="130">
@@ -284,7 +284,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="142" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor4Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor4Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="144"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor5" translation="22.8978 0.1 11.924" rotation="0 180 0" nodeId="145">
@@ -306,7 +306,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="157" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor5Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor5Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="159"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor6" translation="14.8603 0.1 11.924" rotation="0 180 0" nodeId="160">
@@ -328,7 +328,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="172" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor6Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor6Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" rotation="0 180 0" nodeId="174"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor7" translation="8.39655 0.1 11.924" rotation="0 180 0" nodeId="175">
@@ -350,7 +350,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="187" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor7Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="188" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor7Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="188" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="189"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor8" translation="1.38973 0.1 11.924" rotation="0 180 0" nodeId="190">
@@ -372,7 +372,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="202" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor8Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor8Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" rotation="0 180 0" nodeId="204"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor9" translation="-7.1009 0.1 11.924" rotation="0 180 0" nodeId="205">
@@ -394,7 +394,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="217" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor9Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="218" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor9Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="218" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="219"/>
         </TransformGroup>
         <TransformGroup name="rollingDoor10" translation="-17.5995 0.1 11.924" rotation="0 180 0" nodeId="220">
@@ -416,7 +416,7 @@
             </TransformGroup>
             <Shape name="collision" shapeId="3" visibility="false" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="232" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="24"/>
           </Shape>
-          <Shape name="rollingDoor10Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="233" castsShadows="true" receiveShadows="true" materialIds="405"/>
+          <Shape name="rollingDoor10Trigger" translation="2.93 2.50774 -0.291096" rotation="0 -90 0" shapeId="4" visibility="false" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" clipDistance="300" nodeId="233" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <TransformGroup name="rollingDoor1Sound" translation="3.168 2.50774 -0.291096" nodeId="234"/>
         </TransformGroup>
         <TransformGroup name="transform" nodeId="235">
@@ -551,7 +551,7 @@
       </TransformGroup>
       <TransformGroup name="silo" nodeId="336">
         <TransformGroup name="loadingTriggers" nodeId="337">
-          <Shape name="loadingTrigger" translation="0 4.81046 -0.013935" scale="1 1.31701 1" shapeId="13" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="338" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="loadingTrigger" translation="0 4.81046 -0.013935" shapeId="13" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="338" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
           <TransformGroup name="dischargeNode" translation="0 5.5 0" nodeId="339"/>
           <TransformGroup name="dischargeEffect" translation="0 3.82791 0" nodeId="340">
             <Shape name="pipeEffect" translation="0 0.908079 -0.013935" rotation="90 0 0" shapeId="14" clipDistance="300" nodeId="341" castsShadows="true" receiveShadows="true" materialIds="10"/>
@@ -579,7 +579,7 @@
       </TransformGroup>
       <TransformGroup name="tanks" nodeId="359"/>
       <TransformGroup name="visuals" nodeId="360">
-        <TransformGroup name="visual_lod" lodDistance="0 100" lodBlending="false" nodeId="361">
+        <TransformGroup name="visual_lod" lodDistance="0 800" nodeId="361">
           <TransformGroup name="LOD0" nodeId="362">
             <Shape name="siloBuilding01_vis" shapeId="21" clipDistance="400" nodeId="363" castsShadows="true" receiveShadows="true" materialIds="14"/>
             <Shape name="siloBuilding_02_vis" rotation="0 180 0" shapeId="22" clipDistance="400" nodeId="364" castsShadows="true" receiveShadows="true" materialIds="15"/>
@@ -596,29 +596,30 @@
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="374">
             <Shape name="siloBuilding01_vis_LOD" shapeId="28" clipDistance="600" nodeId="375" castsShadows="false" receiveShadows="true" materialIds="14"/>
+            <Shape name="siloBuilding_02_vis" shapeId="29" clipDistance="600" nodeId="424" castsShadows="true" receiveShadows="true" materialIds="15"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="solarPanels" nodeId="376">
           <TransformGroup name="panel01" nodeId="377">
             <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="378">
-              <Shape name="LOD0" shapeId="29" nodeId="379" castsShadows="true" receiveShadows="true" materialIds="18"/>
-              <Shape name="LOD1" shapeId="30" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD0" shapeId="30" nodeId="379" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD1" shapeId="31" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="18"/>
             </TransformGroup>
-            <Shape name="supports" shapeId="31" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="supports" shapeId="32" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </TransformGroup>
           <TransformGroup name="panel02" nodeId="382">
             <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="383">
-              <Shape name="LOD0" shapeId="32" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="18"/>
-              <Shape name="LOD1" shapeId="33" nodeId="385" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD0" shapeId="33" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD1" shapeId="34" nodeId="385" castsShadows="true" receiveShadows="true" materialIds="18"/>
             </TransformGroup>
-            <Shape name="supports" shapeId="34" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="supports" shapeId="35" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </TransformGroup>
         </TransformGroup>
-        <Shape name="logoGreenDecal" translation="0 8.96796 0" shapeId="35" clipDistance="400" nodeId="387" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
+        <Shape name="logoGreenDecal" translation="0 8.96796 0" shapeId="36" clipDistance="400" nodeId="387" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="388">
-        <Shape name="collisionGrate" translation="-7 0.1 0" scale="2 1 10" shapeId="36" visibility="false" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="389" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="5"/>
-        <Shape name="collisionMain" shapeId="37" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="390" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        <Shape name="collisionGrate" translation="7.01557 0.1 0" shapeId="37" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="389" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="collisionMain" shapeId="38" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="390" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>
