@@ -67,7 +67,7 @@
         <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIconAnimals.i3d" />
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIconSlurry.i3d" />
         <triggerMarker node="markerWater" filename="$data/shared/assets/marker/markerIconWater.i3d" />
-        <triggerMarker node="markerBale" filename="$data/shared/assets/marker/markerIconBale.i3d" />
+        <triggerMarker node="markerBales" filename="$data/shared/assets/marker/markerIconBale.i3d" />
         <triggerMarker node="markerLoad" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
     </triggerMarkers>
 
@@ -167,7 +167,7 @@
             <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure"/>
          </loadingStation>
 
-        <animals type="PIG" baseMaxNumAnimals="100"  maxNumVisualAnimals="25">
+        <animals type="PIG" baseMaxNumAnimals="100"  maxNumVisualAnimals="50">
             <navigation shape="navigationMeshShape"/>
             <loadingTrigger node="loadingTrigger" />
         </animals>
@@ -294,13 +294,13 @@
         <i3dMapping id="manureHeap" node="0>11" />
         <i3dMapping id="activationTrigger" node="0>11|0" />
         <i3dMapping id="loadingTriggerManure" node="0>11|1" />
-        <i3dMapping id="loadingTriggerAINodeManure" node="0>11|1|0" />
         <i3dMapping id="tipAreaStart" node="0>11|2|0" />
         <i3dMapping id="tipAreaWidth" node="0>11|2|1" />
         <i3dMapping id="tipAreaHeight" node="0>11|2|2" />
         <i3dMapping id="clearAreaStart" node="0>11|3|0" />
         <i3dMapping id="clearAreaWidth" node="0>11|3|1" />
         <i3dMapping id="clearAreaHeight" node="0>11|3|2" />
+        <i3dMapping id="loadingTriggerAINodeManure" node="0>11|4" />
         <i3dMapping id="navigationRootNode" node="0>12" />
         <i3dMapping id="navigationMeshShape" node="0>12|0" />
         <i3dMapping id="fence1Node1" node="0>13|0|0" />
@@ -311,14 +311,13 @@
         <i3dMapping id="storage" node="0>15" />
         <i3dMapping id="loadingTrigger" node="0>16" />
         <i3dMapping id="infoTrigger" node="0>17" />
-
+        <i3dMapping id="solarPanels" node="0>18|1" />
         <i3dMapping id="markerLiquidManure" node="0>20|0" />
         <i3dMapping id="markerFood" node="0>20|5" />
         <i3dMapping id="markerAnimals" node="0>20|3" />
         <i3dMapping id="markerLoad" node="0>20|2" />
         <i3dMapping id="markerWater" node="0>20|4" />
-        <i3dMapping id="markerBale" node="0>20|1" />
+        <i3dMapping id="markerBales" node="0>20|1" />
 
-<!--         <i3dMapping id="solarPanels" node="0>18|1" /> -->
     </i3dMappings>
 </placeable>

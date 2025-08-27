@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pigFixsManure" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="i3dConverter" version="1.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="1" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pigFixsManure.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="animalHusbandry" nodeId="4">
+      <TransformGroup name="10_manure" nodeId="5">
+        <TransformGroup name="ManureClearArea" nodeId="6">
+          <TransformGroup name="height.001" translation="16.5 0.05 2.09" nodeId="7"/>
+          <Shape name="manurePlate" translation="12.5 -0.05 -3" scale="1 0.0500001 1" shapeId="1" nodeId="8" castsShadows="true" receiveShadows="true" materialIds="1"/>
+          <TransformGroup name="start.001" translation="9.5 0.05 2.24" nodeId="9"/>
+          <TransformGroup name="width.001" translation="9.5 0.05 -7.36" nodeId="10"/>
+        </TransformGroup>
+        <TransformGroup name="manureTipAreas" nodeId="11">
+          <TransformGroup name="height" translation="16.2853 0.05 2.09" nodeId="12"/>
+          <TransformGroup name="start" translation="9.66 0.05 2.09004" nodeId="13"/>
+          <TransformGroup name="width" translation="9.66 0.05 -7.18527" nodeId="14"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
