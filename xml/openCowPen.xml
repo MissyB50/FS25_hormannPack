@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="cowHusbandryManure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/placeable.xsd">
+<placeable type="cowHusbandryManure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_storeItem_cowBarnOpenRoof</name>
         <image>store/store_cowBarnAlternative.dds</image>
@@ -9,7 +9,7 @@
             <function>$l10n_function_adjustableMeadow</function>
         </functions>
         <lifetime>1000</lifetime>
-        <dailyUpkeep>0</dailyUpkeep>
+        <dailyUpkeep>150</dailyUpkeep>
         <rotation>0</rotation>
         <brand>RUDOLFHOERMANN</brand>
         <species>PLACEABLE</species>
@@ -341,27 +341,26 @@
     <infoTrigger triggerNode="infoTrigger" />
 
     <husbandry saveId="Animals_COW" hasStatistics="false">
-        <storage node="storage" fillTypes="LIQUIDMANURE MILK STRAW MANURE" isExtension="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE MILK BUFFALOMILK STRAW" isExtension="false">
             <capacity fillType="LIQUIDMANURE" capacity="100000" />
             <capacity fillType="MILK"         capacity="60000" />
             <capacity fillType="BUFFALOMILK"  capacity="60000" />
-            <capacity fillType="STRAW"        capacity="38000" />
-            <capacity fillType="MANURE"       capacity="100000" />
+            <capacity fillType="STRAW"        capacity="40000" />
+            <capacity fillType="MANURE"       capacity="2000000" />
         </storage>
 
-        <unloadingStation supportsExtension="true" storageRadius="65" hideFromPricesMenu="true">
-            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" >
-                <baleTrigger triggerNode="baleTriggerStraw"/>
-            </unloadTrigger>
+        <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
             <unloadTrigger fillTypes="MANURE MILK BUFFALOMILK LIQUIDMANURE" />
+            <baleTrigger triggerNode="baleTriggerStraw" fillTypes="STRAW" />
         </unloadingStation>
 
-        <loadingStation supportsExtension="true" storageRadius="50" fillTypes="MANURE">
-            <loadTrigger triggerNode="lqiuidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure" />
+        <loadingStation supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure" />
             <loadTrigger triggerNode="milkTrigger" fillTypes="MILK BUFFALOMILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
         </loadingStation>
 
-        <animals type="COW" maxNumAnimals="45" >
+        <animals type="COW" baseMaxNumAnimals="50" maxNumVisualAnimals="30">
             <navigation shape="navMeshShape" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
@@ -372,16 +371,16 @@
             </milkingRobots>
         </milk>
 
+        <water automaticWaterSupply="true" />
+
         <straw>
             <manure factor="1.5" />
             <strawPlane node="strawPlane" minY="0.015" maxY="0.14" colorChange="false" />
         </straw>
 
-        <water automaticWaterSupply="true" />
-
         <liquidManure />
 
-        <food capacity="80000">
+        <food capacity="100000" >
             <foodPlaces>
                 <foodPlace node="foodPlace1" />
                 <foodPlace node="foodPlace2" />
@@ -392,8 +391,8 @@
                 <foodPlace node="foodPlace7" />
                 <foodPlace node="foodPlace8" />
             </foodPlaces>
-            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage"/>
-            <feedingTrough exactFillRootNode="exactFillRootNodeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="80000"/>
+            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage" maxAllowedHeapAngle="60" maxSubDivEdgeLength="0.5" capacity="10000"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNodeFood" />
             <baleTrigger triggerNode="baleTrigger"/>
         </food>
 
@@ -408,7 +407,6 @@
             </sections>
         </fence>
 
-
         <meadow>
             <fruitType name="GRASS" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall" />
             <fruitType name="MEADOW" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall" />
@@ -419,7 +417,7 @@
                 <terrainGroundType name="grass" />
             </createTask>
         </meadow>
-   </husbandry>
+    </husbandry>
 
     <manureHeap node="manureHeap" capacity="2000000" isExtension="false" >
         <area startNode="tipAreaStart" widthNode="tipAreaWidth" heightNode="tipAreaHeight" activationTriggerNode="activationTrigger" />
@@ -429,6 +427,24 @@
             <loadTrigger triggerNode="loadingTriggerManure" aiNode="loadingTriggerAINodeManure" fillTypes="MANURE" fillLitersPerSecond="2000" />
         </loadingStation>
     </manureHeap>
+
+    <colorConfigurations>
+        <material slotName="mainColor_mat" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BEIGE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_RED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_BLUE"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WHITEALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_GREYALU"/>
+        <colorConfiguration color="RUDOLFHOERMANN_OXIDRED"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODDARK"/>
+        <colorConfiguration color="RUDOLFHOERMANN_WOODBRIGHT"/>
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREEN"/>
+        <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
+    </colorConfigurations>
+
 
     <i3dMappings>
         <i3dMapping id="clearArea1Start" node="0>0|0" />
@@ -485,7 +501,7 @@
         <i3dMapping id="clearAreaWidth" node="0>10|4|0" />
         <i3dMapping id="clearAreaHeight" node="0>10|4|1" />
         <i3dMapping id="aiLoadingNodeLiquidManure" node="0>11|0" />
-        <i3dMapping id="lqiuidManureTrigger" node="0>11|1" />
+        <i3dMapping id="liquidManureTrigger" node="0>11|1" />
         <i3dMapping id="waterPlace1" node="0>12|0" />
         <i3dMapping id="waterPlace2" node="0>12|1" />
         <i3dMapping id="waterPlace3" node="0>12|2" />

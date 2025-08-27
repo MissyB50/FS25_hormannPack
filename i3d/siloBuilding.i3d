@@ -560,7 +560,7 @@
           <TransformGroup name="aiLoadingNode" translation="0 0 -5.80073e-07" nodeId="344"/>
         </TransformGroup>
         <TransformGroup name="unloadTriggers" nodeId="345">
-          <Shape name="exactFillRootNode" translation="7 0.263748 0.460561" shapeId="16" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="471" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="exactFillRootNode" translation="7 0.263748 0.460561" shapeId="16" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="346" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
           <TransformGroup name="aiUnloaingNode" translation="7 0 -1.23296e-06" nodeId="347"/>
         </TransformGroup>
         <TransformGroup name="mapPosition" nodeId="348"/>
@@ -579,7 +579,7 @@
       </TransformGroup>
       <TransformGroup name="tanks" nodeId="360"/>
       <TransformGroup name="visuals" nodeId="361">
-        <TransformGroup name="visual_lod" lodDistance="0 800" nodeId="362">
+        <TransformGroup name="visual_lod" lodDistance="0 600" nodeId="362">
           <TransformGroup name="LOD0" nodeId="363">
             <Shape name="siloBuilding01_vis" shapeId="21" clipDistance="400" nodeId="364" castsShadows="true" receiveShadows="true" materialIds="14"/>
             <Shape name="siloBuilding_02_vis" rotation="0 180 0" shapeId="22" clipDistance="400" nodeId="365" castsShadows="true" receiveShadows="true" materialIds="15"/>
@@ -601,18 +601,18 @@
         </TransformGroup>
         <TransformGroup name="solarPanels" nodeId="378">
           <TransformGroup name="panel01" nodeId="379">
-            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="380">
-              <Shape name="LOD0" shapeId="30" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="18"/>
-              <Shape name="LOD1" shapeId="31" nodeId="382" castsShadows="true" receiveShadows="true" materialIds="18"/>
+            <TransformGroup name="visual_lod" lodDistance="0 600" nodeId="380">
+              <Shape name="LOD0" shapeId="30" clipDistance="400" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD1" shapeId="31" clipDistance="600" nodeId="382" castsShadows="true" receiveShadows="true" materialIds="18"/>
             </TransformGroup>
-            <Shape name="supports" shapeId="32" nodeId="383" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="supports" shapeId="32" clipDistance="100" nodeId="383" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </TransformGroup>
           <TransformGroup name="panel02" nodeId="384">
-            <TransformGroup name="visual_lod" lodDistance="0 100" nodeId="385">
-              <Shape name="LOD0" shapeId="33" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="18"/>
-              <Shape name="LOD1" shapeId="34" nodeId="387" castsShadows="true" receiveShadows="true" materialIds="18"/>
+            <TransformGroup name="visual_lod" lodDistance="0 600" nodeId="385">
+              <Shape name="LOD0" shapeId="33" clipDistance="400" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="18"/>
+              <Shape name="LOD1" shapeId="34" clipDistance="600" nodeId="387" castsShadows="true" receiveShadows="true" materialIds="18"/>
             </TransformGroup>
-            <Shape name="supports" shapeId="35" nodeId="388" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="supports" shapeId="35" clipDistance="100" nodeId="388" castsShadows="true" receiveShadows="true" materialIds="6"/>
           </TransformGroup>
         </TransformGroup>
         <Shape name="logoGreenDecal" translation="0 8.96796 0" shapeId="36" clipDistance="400" nodeId="389" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>

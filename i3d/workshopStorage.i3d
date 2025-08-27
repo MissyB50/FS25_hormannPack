@@ -123,7 +123,7 @@
           <Shape name="rollingDoor1ColPartBottom" shapeId="7" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
           <Shape name="rollingDoor1ColPartTop" shapeId="8" kinematic="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
           <Shape name="rollingDoor1Trigger" translation="4.27843 -1.24929 0.719349" shapeId="9" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
-          <TransformGroup name="lightSwitch" translation="4.42621 -1.4 0.0620479" rotation="90 0 0" nodeId="68"/>
+          <TransformGroup name="doorSwitch" translation="4.42621 -1.22107 0.0620479" nodeId="68"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="lights" nodeId="69">

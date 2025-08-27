@@ -18,7 +18,7 @@
     <storeItems>
         <storeItem xmlFilename="xml/baleShedSmall.xml" />
         <storeItem xmlFilename="xml/cornerShed.xml" />
-        <storeItem xmlFilename="xml/cowBarnAlternative.xml" />
+        <storeItem xmlFilename="xml/openCowPen.xml" />
         <storeItem xmlFilename="xml/cowBarnLarge.xml" />
         <storeItem xmlFilename="xml/grainSilo.xml" />
         <storeItem xmlFilename="xml/grainStore.xml" />
@@ -28,7 +28,6 @@
         <storeItem xmlFilename="xml/shed3.xml" />
         <storeItem xmlFilename="xml/shed5.xml" />
         <storeItem xmlFilename="xml/sheepBarn.xml" />
-        <storeItem xmlFilename="xml/silageSilo.xml" />
         <storeItem xmlFilename="xml/siloStorage.xml" />
         <storeItem xmlFilename="xml/workshop.xml" />
         <storeItem xmlFilename="xml/workshopStorage.xml" />
@@ -114,10 +113,6 @@
         </text>
         <text name="storeItem_sheepBig">
             <en>Large sheep barn</en>
-            <de></de>
-        </text>
-        <text name="storeItem_silageSilo">
-            <en>Bunker silo</en>
             <de></de>
         </text>
         <text name="shopItem_siloStorage">

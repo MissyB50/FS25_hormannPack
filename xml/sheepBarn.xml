@@ -215,7 +215,6 @@
     <husbandry saveId="Animals_SHEEP" hasStatistics="false">
         <storage node="storage" fillTypes="WATER" isExtension="false">
             <capacity fillType="WATER" capacity="50000" />
-            <capacity fillType="GOATMILK" capacity="50000" />
             <capacity fillType="STRAW"    capacity="20000" />
         </storage>
 
@@ -224,10 +223,6 @@
             <unloadTrigger exactFillRootNode="waterTrigger" fillTypes="WATER" />
             <unloadTrigger fillTypes="WATER" />
         </unloadingStation>
-
-        <loadingStation supportsExtension="true" storageRadius="50">
-            <loadTrigger triggerNode="milkTrigger" fillTypes="GOATMILK" fillLitersPerSecond="3500" />
-        </loadingStation>
 
         <animals type="SHEEP" baseMaxNumAnimals="250" maxNumAnimals="500">
             <navigation shape="navigationMeshShape"/>

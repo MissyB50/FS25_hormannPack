@@ -71,7 +71,7 @@
     </hotspots>
 
     <triggerMarkers>
-        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+        <triggerMarker node="markerLoad" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
     </triggerMarkers>
 
     <infoTrigger triggerNode="infoTrigger"/>
@@ -170,8 +170,8 @@
         <storages>
 			<storage node="storage" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" isExtension="true">
 				<capacity fillType="WHEAT" capacity="1200000"  />
-				<capacity fillType="BARLEY" capacity="120000"  />
-				<capacity fillType="OAT" capacity="120000"  />
+				<capacity fillType="BARLEY" capacity="1200000"  />
+				<capacity fillType="OAT" capacity="1200000"  />
 				<capacity fillType="CANOLA" capacity="1200000"  />
 				<capacity fillType="SUNFLOWER" capacity="1200000"  />
 				<capacity fillType="SOYBEAN" capacity="1200000"  />
@@ -264,7 +264,7 @@
 		<i3dMapping id="aiSpline" node="0>7|3" />
 		<i3dMapping id="mapPosition" node="0>7|4" />
 		<i3dMapping id="storage" node="0>7|5" />
-		<i3dMapping id="markerUnLoading" node="0>7|6" />
+		<i3dMapping id="markerLoad" node="0>7|6" />
 		<i3dMapping id="teleportNode" node="0>7|7" />
     </i3dMappings>
 </placeable>

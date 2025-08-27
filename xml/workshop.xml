@@ -13,6 +13,11 @@
         <brand>RUDOLFHOERMANN</brand>
         <species>PLACEABLE</species>
         <category>sheds</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
         <canBeSold>true</canBeSold>
         <showInStore>true</showInStore>
     </storeData>
@@ -49,7 +54,6 @@
     <tipOcclusionUpdateAreas>
         <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
     </tipOcclusionUpdateAreas>
-
 
     <ai>
         <updateAreas>
@@ -187,7 +191,7 @@
         <i3dMapping id="rollingDoor1ColPartTop" node="0>7|0|2" />
         <i3dMapping id="rollingDoor1Trigger" node="0>7|0|3" />
         <i3dMapping id="doorSwitch" node="0>7|0|4"/>
-        <i3dMapping id="lightSwitch01" node="0>8|0" />
+        <i3dMapping id="lightSwitch" node="0>8|0" />
         <i3dMapping id="lightTrigger" node="0>8|1" />
         <i3dMapping id="lightNode01" node="0>8|2|0" />
         <i3dMapping id="lightNode02" node="0>8|2|1" />

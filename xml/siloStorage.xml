@@ -6,7 +6,7 @@
             <function>$l10n_function_farmSilo</function>
         </functions>
         <image>store/store_storage.dds</image>
-        <price>1</price>
+        <price>250000</price>
         <dailyUpkeep>0</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -220,17 +220,17 @@
             </high>
         </realLights>
 
-        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger1">
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger1" groupIndex="1">
             <sounds>
                 <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
             </sounds>
         </group>
-        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger2">
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger2" groupIndex="2">
             <sounds>
                 <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
             </sounds>
         </group>
-        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger3">
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger3" groupIndex="3">
             <sounds>
                 <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
             </sounds>
@@ -251,14 +251,14 @@
 
 		<storages>
 			<storage node="storage" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" isExtension="true">
-				<capacity fillType="WHEAT" capacity="800000"  />
-				<capacity fillType="BARLEY" capacity="800000" />
-				<capacity fillType="OAT" capacity="800000"  />
-				<capacity fillType="CANOLA" capacity="800000"  />
-				<capacity fillType="SUNFLOWER" capacity="800000"  />
-				<capacity fillType="SOYBEAN" capacity="800000"  />
-				<capacity fillType="MAIZE" capacity="800000"  />
-				<capacity fillType="SORGHUM" capacity="800000"  />
+				<capacity fillType="WHEAT" capacity="1500000"  />
+				<capacity fillType="BARLEY" capacity="1500000" />
+				<capacity fillType="OAT" capacity="1500000"  />
+				<capacity fillType="CANOLA" capacity="1500000"  />
+				<capacity fillType="SUNFLOWER" capacity="1500000"  />
+				<capacity fillType="SOYBEAN" capacity="1500000"  />
+				<capacity fillType="MAIZE" capacity="1500000"  />
+				<capacity fillType="SORGHUM" capacity="1500000"  />
 			</storage>
 		</storages>
     </silo>

@@ -66,10 +66,9 @@
         <triggerMarker node="markerFood"         filename="$data/shared/assets/marker/markerIconFood.i3d" />
         <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIconAnimals.i3d" />
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIconSlurry.i3d" />
-        <triggerMarker node="markerWater" filename="$data/shared/assets/marker/markerIconSlurry.i3d" />
-        <triggerMarker node="markerBale" filename="$data/shared/assets/marker/markerIconSlurry.i3d" />
-        <triggerMarker node="markerLoad" filename="$data/shared/assets/marker/markerIconSlurry.i3d" />
-        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="markerWater" filename="$data/shared/assets/marker/markerIconWater.i3d" />
+        <triggerMarker node="markerBale" filename="$data/shared/assets/marker/markerIconBale.i3d" />
+        <triggerMarker node="markerLoad" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
     </triggerMarkers>
 
     <hotspots>
@@ -145,30 +144,27 @@
     </animatedObjects>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart node="0" linkNode="lightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
-        <dynamicallyLoadedPart node="0" linkNode="doorSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
         <dynamicallyLoadedPart node="0" linkNode="windowSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
     </dynamicallyLoadedParts>
 
     <infoTrigger triggerNode="infoTrigger" />
 
     <husbandry saveId="Animals_PIG" hasStatistics="false">
-        <storage node="storage" fillTypes="LIQUIDMANURE STRAW MANURE WATER" isExtension="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE STRAW WATER" isExtension="false">
             <capacity fillType="LIQUIDMANURE" capacity="100000" />
             <capacity fillType="STRAW"        capacity="30000" />
-            <capacity fillType="MANURE"       capacity="0" />
             <capacity fillType="WATER"        capacity="50000" />
         </storage>
 
          <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true" >
             <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
             <baleTrigger triggerNode="baleTriggerStraw" fillTypes="STRAW"/>
-            <unloadTrigger fillTypes="LIQUIDMANURE MANURE" />
+            <unloadTrigger fillTypes="LIQUIDMANURE" />
             <unloadTrigger exactFillRootNode="exactFillRootNodeWater" fillTypes="WATER" />
          </unloadingStation>
 
          <loadingStation supportsExtension="true" storageRadius="50" fillTypes="STRAW">
-             <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure"/>
+            <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure"/>
          </loadingStation>
 
         <animals type="PIG" baseMaxNumAnimals="100"  maxNumVisualAnimals="25">
@@ -282,13 +278,6 @@
         <i3dMapping id="rollingDoor1ColTop" node="0>5|2|1" />
         <i3dMapping id="rollingDoor1" node="0>5|2|2" />
         <i3dMapping id="rollingDoor1Trigger" node="0>5|2|3" />
-        <i3dMapping id="lightSwitch" node="0>6|0" />
-        <i3dMapping id="realLightsLow" node="0>6|2|0" />
-        <i3dMapping id="realLightsHigh" node="0>6|2|1" />
-        <i3dMapping id="light01" node="0>6|1|0" />
-        <i3dMapping id="light02" node="0>6|1|1" />
-        <i3dMapping id="light03" node="0>6|1|2" />
-        <i3dMapping id="lightTrigger" node="0>6|4"/>
         <i3dMapping id="exactFillRootNodeFood" node="0>7|0" />
         <i3dMapping id="foodPlane" node="0>7|1" />
         <i3dMapping id="foodPlace1" node="0>7|2|0" />
@@ -323,13 +312,12 @@
         <i3dMapping id="loadingTrigger" node="0>16" />
         <i3dMapping id="infoTrigger" node="0>17" />
 
-        <i3dMapping id="markerLiquidManure" node="0>10|0" />
-        <i3dMapping id="markerFood" node="0>10|1" />
-        <i3dMapping id="markerAnimals" node="0>10|2" />
-        <i3dMapping id="markerLoad" node="" />
-        <i3dMapping id="markerWater" node="" />
-        <i3dMapping id="markerBale" node="" />
-        <i3dMapping id="warningStripes01" node="0>5|5" />
+        <i3dMapping id="markerLiquidManure" node="0>20|0" />
+        <i3dMapping id="markerFood" node="0>20|5" />
+        <i3dMapping id="markerAnimals" node="0>20|3" />
+        <i3dMapping id="markerLoad" node="0>20|2" />
+        <i3dMapping id="markerWater" node="0>20|4" />
+        <i3dMapping id="markerBale" node="0>20|1" />
 
 <!--         <i3dMapping id="solarPanels" node="0>18|1" /> -->
     </i3dMappings>

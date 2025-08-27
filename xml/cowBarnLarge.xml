@@ -256,12 +256,11 @@
     <infoTrigger triggerNode="infoTrigger" />
 
     <husbandry saveId="Animals_COW" hasStatistics="false">
-        <storage node="storage" fillTypes="LIQUIDMANURE MILK BUFFALOMILK STRAW MANURE WATER" isExtension="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE MILK BUFFALOMILK STRAW WATER" isExtension="false">
             <capacity fillType="LIQUIDMANURE" capacity="500000" />
             <capacity fillType="MILK"         capacity="300000" />
             <capacity fillType="BUFFALOMILK"  capacity="300000" />
             <capacity fillType="STRAW"        capacity="300000" />
-            <capacity fillType="MANURE"       capacity="0" />
             <capacity fillType="WATER"        capacity="240000" />
         </storage>
 

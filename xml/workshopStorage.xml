@@ -63,7 +63,8 @@
     </ai>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart node="0" linkNode="powerSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="doorSwitch" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
     </dynamicallyLoadedParts>
 
     <lights>
@@ -217,7 +218,8 @@
         <i3dMapping id="rollingDoor1ColPartBottom" node="0>7|0|1" />
         <i3dMapping id="rollingDoor1ColPartTop" node="0>7|0|2" />
         <i3dMapping id="rollingDoor1Trigger" node="0>7|0|3" />
-        <i3dMapping id="powerSwitch01" node="0>8|0" />
+        <i3dMapping id="doorSwitch" node="0>7|0|4"/>
+        <i3dMapping id="lightSwitch" node="0>8|0" />
         <i3dMapping id="lightTrigger" node="0>8|1" />
         <i3dMapping id="lightNode01" node="0>8|2|0" />
         <i3dMapping id="lightNode02" node="0>8|2|1" />
