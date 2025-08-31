@@ -74,11 +74,15 @@
         <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
     </colorConfigurations>
 
-<!--     <solarPanels>
+    <solarPanels>
         <solarPanelsConfigurations>
-            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" incomePerHour="278" />
+            <solarPanelsConfiguration name="$l10n_ui_no" isActive="false">
+                <objectChange node="solarPanels" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="53750" incomePerHour="187" />
         </solarPanelsConfigurations>
-    </solarPanels> -->
+    </solarPanels>
 
     <i3dMappings>
         <i3dMapping id="clearAreaStart01" node="0>0|0" />
@@ -94,5 +98,6 @@
         <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>3|0|0" />
         <i3dMapping id="testAreaStart01" node="0>4|0" />
         <i3dMapping id="testAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="solarPanels" node="0>5|1"/>
     </i3dMappings>
 </placeable>
