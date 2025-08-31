@@ -98,6 +98,8 @@
       <Normalmap fileId="32"/>
       <Glossmap fileId="9"/>
     </Material>
+    <Material name="UnnamedMaterial" materialId="169" diffuseColor="1 1 1 1">
+    </Material>
     <Material name="window_mat" materialId="16" specularColor="1 1 0.301961" alphaBlending="true" customShaderId="18">
       <Texture fileId="15"/>
       <Normalmap fileId="16"/>
@@ -258,10 +260,17 @@
       <TransformGroup name="9_collisions" nodeId="151">
         <Shape name="collisionMain" shapeId="22" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="152" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
         <Shape name="tipCollision" shapeId="23" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="153" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
+        <Shape name="collisionMiddle" shapeId="24" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="168" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="169"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>
 
 
   <Animation externalAnimFile="grainStore.i3d.anim" />
+  <UserAttributes>
+    <UserAttribute nodeId="153">
+      <Attribute name="collisionHeight" type="float" value="4"/>
+    </UserAttribute>
+  </UserAttributes>
+
 </i3D>

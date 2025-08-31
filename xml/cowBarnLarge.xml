@@ -40,12 +40,13 @@
 
     <clearAreas>
         <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
-
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
     </clearAreas>
 
     <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="concrete"/>
+            <levelArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height" groundType="concrete"/>
         </levelAreas>
     </leveling>
 
@@ -54,8 +55,8 @@
     </indoorAreas>
 
     <triggerMarkers>
-        <triggerMarker node="markerFood01"         filename="$data/shared/assets/marker/markerIconFood.i3d" adjustToGround="true"/>
-        <triggerMarker node="markerFood02"         filename="$data/shared/assets/marker/markerIconFood.i3d" adjustToGround="true"/>
+        <triggerMarker node="markerFood01"       filename="$data/shared/assets/marker/markerIconFood.i3d" adjustToGround="true"/>
+        <triggerMarker node="markerFood02"       filename="$data/shared/assets/marker/markerIconFood.i3d" adjustToGround="true"/>
         <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIconAnimals.i3d"  adjustToGround="true"/>
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIconSlurry.i3d"  adjustToGround="true"/>
         <triggerMarker node="markerBale"         filename="$data/shared/assets/marker/markerIconBales.i3d"  adjustToGround="true"/>
@@ -233,8 +234,8 @@
         <animatedObject saveId="sideWindowBack2" >
             <animation duration="8.0">
                 <part node="window9">
-                    <keyFrame time="0.0" translation="32.848 2.215 -18.222"/>
-                    <keyFrame time="1.0" translation="32.848 3.40 -18.222"/>
+                    <keyFrame time="0.0" translation="32.848 2.215 -18.222" rotation="0 90 0"/>
+                    <keyFrame time="1.0" translation="32.848 3.40 -18.222" rotation="0 90 0"/>
                 </part>
             </animation>
             <controls triggerNode="windowTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openWindow" negText="action_closeWindow" />
@@ -251,6 +252,7 @@
         <dynamicallyLoadedPart node="0" linkNode="milkContainer2" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="milkContainer3" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="milkContainer4" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="props" filename="i3d/cowBarnProps.i3d"/>
     </dynamicallyLoadedParts>
 
     <infoTrigger triggerNode="infoTrigger" />
@@ -488,6 +490,7 @@
         <i3dMapping id="markerBale" node="0>20|5" />
         <i3dMapping id="markerMilk" node="0>20|6" />
         <i3dMapping id="markerAnimals" node="0>20|7" />
+        <i3dMapping id="props" node="0>21"/>
         <i3dMapping id="solarPanels" node="0>21|2" />
     </i3dMappings>
 </placeable>

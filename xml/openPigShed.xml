@@ -67,7 +67,7 @@
         <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIconAnimals.i3d" />
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIconSlurry.i3d" />
         <triggerMarker node="markerWater" filename="$data/shared/assets/marker/markerIconWater.i3d" />
-        <triggerMarker node="markerBales" filename="$data/shared/assets/marker/markerIconBale.i3d" />
+        <triggerMarker node="markerBales" filename="$data/shared/assets/marker/markerIconBales.i3d" />
         <triggerMarker node="markerLoad" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
     </triggerMarkers>
 
@@ -99,7 +99,7 @@
             </sounds>
         </animatedObject>
 
-        <animatedObject saveId="gateLarge" >
+<!--         <animatedObject saveId="gateLarge" >
             <animation duration="1.5">
                 <part node="gateMain">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -112,7 +112,7 @@
                 <posEnd linkNode="gateLargeDoor" template="fenceMetalOpen" pitchScale="1"/>
                 <negEnd linkNode="gateLargeDoor" template="fenceMetalClose" pitchScale="0.7"/>
             </sounds>
-        </animatedObject>
+        </animatedObject> -->
 
         <animatedObject saveId="rollingDoor1" >
             <animation duration="5">
@@ -129,6 +129,11 @@
                     <keyFrame time="0.0" translation="0 0 0" />
                     <keyFrame time="1.0" translation="0 3.85 0" />
                 </part>
+                <part node="gateMain">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+            </animation>
                 <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
                     <keyFrame time="0.0" values="0 - - -" />
                     <keyFrame time="1.0" values="0.94 - - -" />
@@ -150,22 +155,23 @@
     <infoTrigger triggerNode="infoTrigger" />
 
     <husbandry saveId="Animals_PIG" hasStatistics="false">
-        <storage node="storage" fillTypes="LIQUIDMANURE STRAW WATER" isExtension="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE STRAW WATER MANURE" isExtension="false">
             <capacity fillType="LIQUIDMANURE" capacity="100000" />
             <capacity fillType="STRAW"        capacity="30000" />
             <capacity fillType="WATER"        capacity="50000" />
+            <capacity fillType="MANURE"        capacity="50000" />
         </storage>
 
-         <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true" >
+        <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true" >
             <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
             <baleTrigger triggerNode="baleTriggerStraw" fillTypes="STRAW"/>
             <unloadTrigger fillTypes="LIQUIDMANURE" />
             <unloadTrigger exactFillRootNode="exactFillRootNodeWater" fillTypes="WATER" />
-         </unloadingStation>
+        </unloadingStation>
 
-         <loadingStation supportsExtension="true" storageRadius="50" fillTypes="STRAW">
+        <loadingStation supportsExtension="true" storageRadius="50" fillTypes="STRAW">
             <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure"/>
-         </loadingStation>
+        </loadingStation>
 
         <animals type="PIG" baseMaxNumAnimals="100"  maxNumVisualAnimals="50">
             <navigation shape="navigationMeshShape"/>

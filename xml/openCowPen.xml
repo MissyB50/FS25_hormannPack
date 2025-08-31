@@ -61,6 +61,7 @@
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIconSlurry.i3d"  adjustToGround="true"/>
         <triggerMarker node="markerManure"       filename="$data/shared/assets/marker/markerIconLoad.i3d"  adjustToGround="true"/>
         <triggerMarker node="markerMilk"         filename="$data/shared/assets/marker/markerIconMilk.i3d"  adjustToGround="true"/>
+        <triggerMarker node="markerBales"         filename="$data/shared/assets/marker/markerIconBales.i3d"  adjustToGround="true"/>
     </triggerMarkers>
 
     <tipOcclusionUpdateAreas>
@@ -577,7 +578,8 @@
         <i3dMapping id="markerLiquidManure" node="0>17|2" />
         <i3dMapping id="markerFood" node="0>17|3" />
         <i3dMapping id="markerManure" node="0>17|4" />
-        <i3dMapping id="infoTrigger" node="0>17|5" />
+        <i3dMapping id="markerBales" node="0>17|5" />
+        <i3dMapping id="infoTrigger" node="0>17|6" />
         <i3dMapping id="loadingTrigger" node="0>18" />
     </i3dMappings>
 </placeable>
