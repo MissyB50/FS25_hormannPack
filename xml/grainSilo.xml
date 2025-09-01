@@ -154,7 +154,7 @@
 
     <silo>
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
-            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" aiNode="aiLoadingNode">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="3000" dischargeNode="dischargeNode" fillTypes="BARLEY CANOLA MAIZE OAT SORGHUM SOYBEAN SUNFLOWER WHEAT" aiNode="aiLoadingNode">
                 <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
                 <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
                 <sounds>

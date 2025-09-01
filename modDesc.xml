@@ -18,45 +18,19 @@
     <storeItems>
         <storeItem xmlFilename="xml/baleShedSmall.xml" />
         <storeItem xmlFilename="xml/cornerShed.xml" />
-        <storeItem xmlFilename="xml/openCowPen.xml" />
-        <storeItem xmlFilename="xml/cowBarnLarge.xml" />
         <storeItem xmlFilename="xml/grainSilo.xml" />
         <storeItem xmlFilename="xml/grainStore.xml" />
         <storeItem xmlFilename="xml/objectStorage.xml" />
-        <storeItem xmlFilename="xml/openPigShed.xml" />
         <storeItem xmlFilename="xml/shed2.xml" />
         <storeItem xmlFilename="xml/shed3.xml" />
         <storeItem xmlFilename="xml/shed5.xml" />
-        <storeItem xmlFilename="xml/sheepBarn.xml" />
+        <storeItem xmlFilename="xml/silageSilo.xml" />
         <storeItem xmlFilename="xml/siloStorage.xml" />
         <storeItem xmlFilename="xml/workshop.xml" />
         <storeItem xmlFilename="xml/workshopStorage.xml" />
     </storeItems>
 
     <placeableTypes>
-        <type name="cowHusbandryBarnMilkManure" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
-            <specialization name="husbandryWater" />
-            <specialization name="husbandryMilk" />
-            <specialization name="husbandryStraw" />
-            <specialization name="husbandryLiquidManure" />
-            <specialization name="manureHeap" />
-            <specialization name="husbandryMeadow" />
-        </type>
-        <type name="cowHusbandryManure" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
-            <specialization name="husbandryMilk" />
-            <specialization name="husbandryStraw" />
-            <specialization name="husbandryLiquidManure" />
-            <specialization name="manureHeap" />
-            <specialization name="husbandryMeadow" />
-        </type>
-        <type name="pigManureShed" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
-            <specialization name="husbandryWater" />
-            <specialization name="husbandryStraw" />
-            <specialization name="husbandryLiquidManure" />
-            <specialization name="manureHeap" />
-            <specialization name="husbandryMeadow" />
-        </type>
-
  		<type name="WorkshopSilo" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
 		    <specialization name="workshop" />	
 			<specialization name="silo" />	
@@ -79,14 +53,6 @@
             <en>Corner shed</en>
             <de></de>
         </text>
-        <text name="storeItem_cowBarnOpenRoof">
-            <en>Cow barn with open roof</en>
-            <de>Kuhstall Mit Offenem Dach</de>
-        </text>
-        <text name="storeItem_cowBarnPasture">
-            <en>Large cow barn</en>
-            <de></de>
-        </text>
         <text name="storeItem_hoermannGrainSilo">
             <en>Grain silo</en>
             <de></de>
@@ -95,7 +61,7 @@
             <en>Store grain to rootcrops</en>
             <de></de>
         </text>
-        <text name="storeItem_objectStorage">
+        <text name="storeItem_hoermannobjectStorage">
             <en>For storing bales to pallets</en>
             <de></de>
         </text>
@@ -111,11 +77,7 @@
             <en>5 Door vehicle shed</en>
             <de></de>
         </text>
-        <text name="storeItem_sheepBig">
-            <en>Large sheep barn</en>
-            <de></de>
-        </text>
-        <text name="shopItem_siloStorage">
+        <text name="storeItem_hoermannsiloStorage">
             <en>Large vehicle storage with silo</en>
             <de></de>
         </text>
