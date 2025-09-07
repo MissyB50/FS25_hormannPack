@@ -2,7 +2,7 @@
 
 <i3D name="baleShedSmall.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
   </Asset>
 
   <Files>
@@ -97,7 +97,7 @@
             <Shape name="solarPanelsLOD0" translation="0 4.57997 0.00248148" rotation="-5 -0 0" shapeId="4" clipDistance="400" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="9"/>
             <Shape name="solarPanelsLOD1" translation="0 4.61091 -0.00497573" rotation="-5 -0 0" shapeId="5" clipDistance="600" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="9"/>
           </TransformGroup>
-          <Shape name="supports" translation="0 4.57427 0.00457395" rotation="-5.5 -0 0" shapeId="6" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="supports" translation="0 4.57427 0.00457395" rotation="-5.5 -0 0" shapeId="6" clipDistance="100" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="5"/>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="50"/>
       </TransformGroup>

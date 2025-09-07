@@ -2,7 +2,7 @@
 
 <i3D name="objectStorage.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
   </Asset>
 
   <Files>
@@ -12,7 +12,11 @@
     <File fileId="8" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_diffuse.dds"/>
     <File fileId="9" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_normal.dds"/>
     <File fileId="10" filename="$data/placeables/rudolfHormann/garageBig/garageBig02_specular.dds"/>
+    <File fileId="17" filename="$data/placeables/rudolfHormann/shared/solarPanels_diffuse.dds"/>
+    <File fileId="18" filename="$data/placeables/rudolfHormann/shared/solarPanels_normal.dds"/>
+    <File fileId="19" filename="$data/placeables/rudolfHormann/shared/solarPanels_specular.dds"/>
     <File fileId="11" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="20" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="2" filename="$data/shared/warningStripes_diffuse.dds"/>
     <File fileId="3" filename="$data/shared/warningStripes_normal.dds"/>
     <File fileId="4" filename="$data/shared/warningStripes_specular.dds"/>
@@ -27,19 +31,24 @@
       <Normalmap fileId="6"/>
       <Glossmap fileId="7"/>
     </Material>
-    <Material name="objectStorage02_mat" materialId="81" customShaderId="11" customShaderVariation="colorScale">
+    <Material name="objectStorage02_mat" materialId="7" customShaderId="11" customShaderVariation="colorScale">
       <Texture fileId="8"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
-    <Material name="objectStorage02_mat" materialId="75" customShaderId="11" customShaderVariation="colorScale" shadingRate="2x1">
+    <Material name="objectStorage02_mat" materialId="8" customShaderId="11" customShaderVariation="colorScale" shadingRate="2x1">
       <Texture fileId="8"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
     <Material name="objectStorage02_mat" materialId="9" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
+    <Material name="solarPanel_mat" materialId="70" customShaderId="20">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
     </Material>
     <Material name="warningStripes_mat" materialId="10">
       <Texture fileId="2"/>
@@ -112,17 +121,23 @@
         <TransformGroup name="visual" lodDistance="0 100" lodBlending="false" nodeId="59">
           <TransformGroup name="LOD0" nodeId="60">
             <Shape name="objectStorage01_vis" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="400" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis" shapeId="6" clipDistance="400" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="75"/>
+            <Shape name="objectStorage02_vis" shapeId="6" clipDistance="400" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="8"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="63">
             <Shape name="objectStorage01_vis_LOD" shapeId="7" clipDistance="600" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="6"/>
-            <Shape name="objectStorage02_vis_LOD" shapeId="6" clipDistance="600" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="81"/>
+            <Shape name="objectStorage02_vis_LOD" shapeId="6" clipDistance="600" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="7"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="winter" nodeId="66"/>
+        <TransformGroup name="solarPanels" nodeId="75">
+          <TransformGroup name="visuals_LOD" lodDistance="0 600" lodBlending="false" nodeId="76">
+            <Shape name="solarPanelsLOD0" translation="0 4.57997 0.00248148" rotation="-5 -0 0" shapeId="8" clipDistance="400" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="70"/>
+            <Shape name="solarPanelsLOD1" translation="0 4.61091 -0.00497573" rotation="-5 -0 0" shapeId="9" clipDistance="600" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="70"/>
+          </TransformGroup>
+          <Shape name="supports" translation="0 4.57427 0.00457395" rotation="-5.5 -0 0" shapeId="10" clipDistance="100" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="67">
-        <Shape name="collision" shapeId="8" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="collision" shapeId="11" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

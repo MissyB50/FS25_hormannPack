@@ -83,6 +83,16 @@
         </storageAreas>
     </objectStorage>
 
+    <solarPanels>
+        <solarPanelsConfigurations>
+            <solarPanelsConfiguration name="$l10n_ui_no" isActive="false">
+                <objectChange node="solarPanels" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="53750" incomePerHour="187" />
+        </solarPanelsConfigurations>
+    </solarPanels>
+
     <i3dMappings>
         <i3dMapping id="clearAreaStart01" node="0>0|0" />
         <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
@@ -108,5 +118,6 @@
         <i3dMapping id="infoTrigger" node="0>5|3" />
         <i3dMapping id="objectTriggerMarker" node="0>5|4" />
         <i3dMapping id="warningStripes" node="0>5|5" />
+        <i3dMapping id="solarPanels" node="0>6|1"/>
     </i3dMappings>
 </placeable>

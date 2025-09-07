@@ -174,7 +174,7 @@
         <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
     </colorConfigurations>
 
-<!--     <solarPanels>
+    <solarPanels>
         <solarPanelsConfigurations>
             <solarPanelsConfiguration name="$l10n_ui_no" isActive="false">
                 <objectChange node="solarPanels" visibilityActive="false"/>
@@ -182,7 +182,7 @@
 
             <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="281250" incomePerHour="978" />
         </solarPanelsConfigurations>
-    </solarPanels> -->
+    </solarPanels>
 
     <i3dMappings>
         <i3dMapping id="clearAreaStart01" node="0>0|0" />
@@ -233,7 +233,6 @@
         <i3dMapping id="doorMain" node="0>6|4|0" />
         <i3dMapping id="doorTrigger" node="0>6|4|1" />
         <i3dMapping id="doorBase" node="0>6|4|2" />
-
-<!--         <i3dMapping id="solarPanels" node="0>7|1" /> -->
+        <i3dMapping id="solarPanels" node="0>7|2" />
     </i3dMappings>
 </placeable>

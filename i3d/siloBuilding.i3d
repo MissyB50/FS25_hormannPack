@@ -2,7 +2,7 @@
 
 <i3D name="siloBuilding.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
   </Asset>
 
   <Files>
@@ -69,7 +69,7 @@
       <Custommap name="mMaskMap" fileId="58"/>
       <CustomParameter name="colorScale0" value="0.0667 0.2588 0.1961 1"/>
     </Material>
-    <Material name="garageDoor_mat" materialId="7" customShaderId="4" customShaderVariation="colorScale">
+    <Material name="garageDoor_mat" materialId="471" customShaderId="4">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
@@ -551,10 +551,10 @@
       </TransformGroup>
       <TransformGroup name="silo" nodeId="337">
         <TransformGroup name="loadingTriggers" nodeId="338">
-          <Shape name="loadingTrigger" translation="0 4.81046 -0.013935" shapeId="13" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="339" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
-          <TransformGroup name="dischargeNode" translation="0 5.5 0" nodeId="340"/>
+          <Shape name="loadingTrigger" translation="0 5 0" shapeId="13" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="339" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="dischargeNode" translation="0 5 0" nodeId="340"/>
           <TransformGroup name="dischargeEffect" translation="0 3.82791 0" nodeId="341">
-            <Shape name="pipeEffect" translation="0 0.908079 -0.013935" rotation="90 0 0" shapeId="14" clipDistance="300" nodeId="342" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="pipeEffect" translation="0 1.0684 0" rotation="90 0 0" shapeId="14" clipDistance="300" nodeId="342" castsShadows="true" receiveShadows="true" materialIds="10"/>
             <Shape name="pipeEffectSmoke" translation="0 -2.56733 0" shapeId="15" clipDistance="100" nodeId="343" castsShadows="true" receiveShadows="true" materialIds="10"/>
           </TransformGroup>
           <TransformGroup name="aiLoadingNode" translation="0 0 -5.80073e-07" nodeId="344"/>
@@ -581,10 +581,10 @@
       <TransformGroup name="visuals" nodeId="361">
         <TransformGroup name="visual_lod" lodDistance="0 600" nodeId="362">
           <TransformGroup name="LOD0" nodeId="363">
-            <Shape name="siloBuilding01_vis" shapeId="21" clipDistance="400" nodeId="364" castsShadows="true" receiveShadows="true" materialIds="14"/>
+            <Shape name="siloBuilding_01_vis" shapeId="21" clipDistance="400" nodeId="418" castsShadows="true" receiveShadows="true" materialIds="14"/>
             <Shape name="siloBuilding_02_vis" rotation="0 180 0" shapeId="22" clipDistance="400" nodeId="365" castsShadows="true" receiveShadows="true" materialIds="15"/>
-            <Shape name="grainGrateNew" translation="8 0.025 9.5" shapeId="23" clipDistance="300" nodeId="366" castsShadows="true" receiveShadows="true" materialIds="13"/>
-            <Shape name="metalFrame" shapeId="24" clipDistance="300" nodeId="367" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="metalFrame" shapeId="23" clipDistance="400" nodeId="417" castsShadows="true" receiveShadows="true" materialIds="471"/>
+            <Shape name="grainGrateNew" translation="8 0.025 9.5" shapeId="24" clipDistance="300" nodeId="366" castsShadows="true" receiveShadows="true" materialIds="13"/>
             <Shape name="warningStripes" translation="-3.60029 0.1 -11.8" rotation="1.91277e-10 90 0" shapeId="25" clipDistance="250" nodeId="368" castsShadows="false" receiveShadows="true" materialIds="25"/>
             <Shape name="warningStripes" translation="-3.6 0.1 11.8" rotation="1.91277e-10 0 0" shapeId="25" clipDistance="250" nodeId="369" castsShadows="false" receiveShadows="true" materialIds="25"/>
             <Shape name="warningStripes" translation="-9.4 0.1 11.8" rotation="1.91277e-10 -90 0" shapeId="25" clipDistance="250" nodeId="370" castsShadows="false" receiveShadows="true" materialIds="25"/>

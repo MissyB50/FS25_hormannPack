@@ -2,7 +2,7 @@
 
 <i3D name="grainSilo.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
   </Asset>
 
   <Files>
@@ -17,6 +17,9 @@
     <File fileId="5" filename="$data/placeables/rudolfHormann/shared/garageDoors_mask.png"/>
     <File fileId="2" filename="$data/placeables/rudolfHormann/shared/garageDoors_normal.png"/>
     <File fileId="3" filename="$data/placeables/rudolfHormann/shared/garageDoors_specular.dds"/>
+    <File fileId="43" filename="$data/placeables/rudolfHormann/shared/solarPanels_diffuse.dds"/>
+    <File fileId="44" filename="$data/placeables/rudolfHormann/shared/solarPanels_normal.dds"/>
+    <File fileId="45" filename="$data/placeables/rudolfHormann/shared/solarPanels_specular.dds"/>
     <File fileId="28" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_diffuse.dds"/>
     <File fileId="29" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_normal.dds"/>
     <File fileId="30" filename="$data/placeables/shared/sellingStationGeneric/sellingStationGeneric_specular.dds"/>
@@ -109,6 +112,11 @@
       <Texture fileId="28"/>
       <Normalmap fileId="29"/>
       <Glossmap fileId="30"/>
+    </Material>
+    <Material name="solarPanel_mat" materialId="265">
+      <Texture fileId="43"/>
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="45"/>
     </Material>
     <Material name="uniaSilos_mat" materialId="19">
       <Texture fileId="32"/>
@@ -318,7 +326,7 @@
             <Shape name="grainStorage01_vis" shapeId="18" nodeId="194" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="13,11"/>
             <Shape name="grainStorage02_vis" shapeId="19" clipDistance="400" nodeId="195" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="14"/>
             <Shape name="grainInlet" translation="-3.46009 0.0491019 -0.00203991" rotation="-0 90 0" scale="0.990295 1 1.05" shapeId="20" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="18"/>
-            <Shape name="metalFrame" shapeId="21" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="17"/>
+            <Shape name="metalFrame" shapeId="21" clipDistance="600" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="17"/>
           </TransformGroup>
           <TransformGroup name="LOD1" nodeId="198">
             <Shape name="grainStorage01_vis_LOD" shapeId="22" nodeId="199" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="13,12"/>
@@ -397,11 +405,17 @@
             <Shape name="tipCollision" translation="-3e-06 0 -2e-06" shapeId="37" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="253" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
           </TransformGroup>
         </TransformGroup>
+        <TransformGroup name="solarPanels" nodeId="263">
+          <TransformGroup name="visuals" lodDistance="0 600" nodeId="277">
+            <Shape name="solarMainPanels" shapeId="38" clipDistance="600" nodeId="269" castsShadows="true" receiveShadows="true" materialIds="265"/>
+            <Shape name="supports" shapeId="39" clipDistance="100" nodeId="270" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          </TransformGroup>
+        </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="254">
-        <Shape name="collisionGrain" translation="-3.475 0.1 0" shapeId="38" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="255" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
-        <Shape name="collisionMain" shapeId="39" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="256" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
-        <Shape name="collision" translation="-9.5 0 0" shapeId="40" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="257" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="23"/>
+        <Shape name="collisionGrain" translation="-3.475 0.1 0" shapeId="40" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="255" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        <Shape name="collisionMain" shapeId="41" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="256" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        <Shape name="collision" translation="-9.5 0 0" shapeId="42" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="257" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="23"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>
