@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="WorkshopSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_shopItem_hoermannsiloStorage</name>
+        <name>$l10n_storeItem_hoermannSiloStorage</name>
         <functions>
             <function>$l10n_function_farmSilo</function>
         </functions>
@@ -220,17 +220,7 @@
             </high>
         </realLights>
 
-        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger1" groupIndex="1">
-            <sounds>
-                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
-            </sounds>
-        </group>
-        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger2" groupIndex="2">
-            <sounds>
-                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
-            </sounds>
-        </group>
-        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger3" groupIndex="3">
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger" groupIndex="1">
             <sounds>
                 <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
             </sounds>
@@ -290,7 +280,7 @@
                 <objectChange node="solarPanels" visibilityActive="false"/>
             </solarPanelsConfiguration>
 
-            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="90000" incomePerHour="1000" />
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="53750" incomePerHour="187" />
         </solarPanelsConfigurations>
     </solarPanels>
 
@@ -391,9 +381,7 @@
         <i3dMapping id="switch1" node="0>6|0" />
         <i3dMapping id="switch2" node="0>6|1" />
         <i3dMapping id="switch3" node="0>6|2" />
-        <i3dMapping id="lightTrigger1" node="0>6|3" />
-        <i3dMapping id="lightTrigger2" node="0>6|4" />
-        <i3dMapping id="lightTrigger3" node="0>6|5" />
+        <i3dMapping id="lightTrigger" node="0>6|3" />
         <i3dMapping id="lightNode01" node="0>6|6|0" />
         <i3dMapping id="lightNode02" node="0>6|6|1" />
         <i3dMapping id="lightNode03" node="0>6|6|2" />

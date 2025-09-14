@@ -108,16 +108,16 @@
             <animation duration="5">
                 <part node="rollingDoor1">
                     <keyFrame time="0.0" translation="0 0 0"/>
-                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                    <keyFrame time="1.0" translation="0 4.825 0"/>
                 </part>
                 <part node="rollingDoor1ColPartBottom">
                     <keyFrame time="0.0" translation="0 0 0"/>
-                    <keyFrame time="1.0" translation="0 4.35 0"/>
+                    <keyFrame time="1.0" translation="0 5 0"/>
                 </part>
                 <part node="rollingDoor1ColPartTop">
                     <keyFrame time="0.0" translation="0 0 0"/>
                     <keyFrame time="0.5" translation="0 0 0"/>
-                    <keyFrame time="1.0" translation="0 2.114 0"/>
+                    <keyFrame time="1.0" translation="0 2.3 0"/>
                 </part>
                 <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
                     <keyFrame time="0.0" values="0 - - -" />
@@ -179,7 +179,7 @@
                 <objectChange node="solarPanels" visibilityActive="false"/>
             </solarPanelsConfiguration>
 
-            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="281250" incomePerHour="978" />
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="53750" incomePerHour="187" />
         </solarPanelsConfigurations>
     </solarPanels>
 

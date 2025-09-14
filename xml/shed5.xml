@@ -184,7 +184,7 @@
         <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE"/>
     </colorConfigurations>
 
-<!--     <solarPanels>
+    <solarPanels>
         <solarPanelsConfigurations>
             <solarPanelsConfiguration name="$l10n_ui_no" isActive="false">
                 <objectChange node="solarPanels" visibilityActive="false"/>
@@ -192,7 +192,7 @@
 
             <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="53750" incomePerHour="187" />
         </solarPanelsConfigurations>
-    </solarPanels> -->
+    </solarPanels>
 
 
     <i3dMappings>

@@ -91,7 +91,7 @@
                 <objectChange node="solarPanels" visibilityActive="false"/>
             </solarPanelsConfiguration>
 
-            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="25000" incomePerHour="87" />
+            <solarPanelsConfiguration name="$l10n_ui_yes" isActive="true" price="53750" incomePerHour="187" />
         </solarPanelsConfigurations>
     </solarPanels>
 

@@ -2,7 +2,7 @@
 
 <i3D name="shed3.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
   </Asset>
 
   <Files>
@@ -39,7 +39,7 @@
 
 
   <Materials>
-    <Material name="3BayShed01_mat" materialId="5" customShaderId="4">
+    <Material name="3BayShed01_mat" materialId="202" customShaderId="4">
       <Texture fileId="20"/>
       <Normalmap fileId="21"/>
       <Glossmap fileId="22"/>
@@ -56,7 +56,9 @@
       <Glossmap fileId="3"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
-    <Material name="5bayShed02_mat.001" materialId="8" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    <Material name="5bayShed02_mat.002" materialId="166" specularColor="0.501961 1 0">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
     </Material>
     <Material name="assetLibraryDecals_mat" materialId="9" alphaBlending="true" customShaderId="13">
       <Texture fileId="10"/>
@@ -79,13 +81,15 @@
     </Material>
     <Material name="lambert1" materialId="12" diffuseColor="0.501961 0.501961 0.501961 1">
     </Material>
+    <Material name="lambert1" materialId="167" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
+    </Material>
     <Material name="shed3Door02_mat" materialId="13" customShaderId="4" customShaderVariation="colorScale">
       <Texture fileId="24"/>
       <Normalmap fileId="25"/>
       <Glossmap fileId="26"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
-    <Material name="snow_mat" materialId="169" customShaderId="29">
+    <Material name="snow_mat" materialId="14" customShaderId="29">
       <Texture fileId="27"/>
       <Normalmap fileId="28"/>
       <Glossmap fileId="8"/>
@@ -235,7 +239,7 @@
       <TransformGroup name="visuals" nodeId="132">
         <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="133">
           <TransformGroup name="LOD0" nodeId="134">
-            <Shape name="3bayShed01_vis" shapeId="12" clipDistance="400" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="3bayShed01_vis" shapeId="12" clipDistance="400" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="202"/>
             <Shape name="3bayShed02_vis" shapeId="13" clipDistance="400" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="13"/>
             <Shape name="metalFrame" shapeId="14" clipDistance="600" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="7"/>
           </TransformGroup>
@@ -245,7 +249,7 @@
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="winter" nodeId="141">
-          <Shape name="snowMask" translation="-0.0118098 7.39433 0.0324459" shapeId="16" clipDistance="600" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="169" weatherRequiredMask="0x8"/>
+          <Shape name="snowMask" translation="-0.0118098 7.39433 0.0324459" shapeId="16" clipDistance="600" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="14" weatherRequiredMask="0x8"/>
         </TransformGroup>
         <TransformGroup name="solarPanels" clipDistance="300" nodeId="143">
           <TransformGroup name="panel01" nodeId="144">
@@ -265,7 +269,7 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="154">
-        <Shape name="collision" shapeId="23" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="155" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8,8"/>
+        <Shape name="collision" shapeId="23" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="177" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="167,166"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

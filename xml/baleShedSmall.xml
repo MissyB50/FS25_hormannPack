@@ -58,7 +58,7 @@
     </ai>
 
     <colorConfigurations>
-        <material slotName="mainColor_mat" />
+        <material slotName="color_mat" />
         <colorConfiguration color="RUDOLFHOERMANN_GREEN"/>
         <colorConfiguration color="RUDOLFHOERMANN_BEIGE"/>
         <colorConfiguration color="RUDOLFHOERMANN_RED"/>

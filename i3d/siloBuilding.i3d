@@ -69,7 +69,7 @@
       <Custommap name="mMaskMap" fileId="58"/>
       <CustomParameter name="colorScale0" value="0.0667 0.2588 0.1961 1"/>
     </Material>
-    <Material name="garageDoor_mat" materialId="471" customShaderId="4">
+    <Material name="garageDoor_mat" materialId="7" customShaderId="4">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
@@ -83,6 +83,8 @@
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
     </Material>
     <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="410" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
     <Material name="lambert2_mat" materialId="10" diffuseColor="0.501961 0.501961 0.501961 1">
       <Normalmap fileId="23"/>
@@ -113,8 +115,6 @@
       <Normalmap fileId="38"/>
       <Glossmap fileId="39"/>
       <CustomParameter name="colorScale0" value="0.067 0.259 0.196 1"/>
-    </Material>
-    <Material name="siloStoreage02LOD_mat" materialId="16" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0">
     </Material>
     <Material name="snow_mat" materialId="17" customShaderId="50">
       <Texture fileId="48"/>
@@ -581,10 +581,10 @@
       <TransformGroup name="visuals" nodeId="361">
         <TransformGroup name="visual_lod" lodDistance="0 600" nodeId="362">
           <TransformGroup name="LOD0" nodeId="363">
-            <Shape name="siloBuilding_01_vis" shapeId="21" clipDistance="400" nodeId="418" castsShadows="true" receiveShadows="true" materialIds="14"/>
-            <Shape name="siloBuilding_02_vis" rotation="0 180 0" shapeId="22" clipDistance="400" nodeId="365" castsShadows="true" receiveShadows="true" materialIds="15"/>
-            <Shape name="metalFrame" shapeId="23" clipDistance="400" nodeId="417" castsShadows="true" receiveShadows="true" materialIds="471"/>
-            <Shape name="grainGrateNew" translation="8 0.025 9.5" shapeId="24" clipDistance="300" nodeId="366" castsShadows="true" receiveShadows="true" materialIds="13"/>
+            <Shape name="siloBuilding01_vis" shapeId="21" clipDistance="400" nodeId="485" castsShadows="true" receiveShadows="true" materialIds="14"/>
+            <Shape name="siloBuilding02_vis" shapeId="22" clipDistance="400" nodeId="423" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            <Shape name="metalFrame" shapeId="23" clipDistance="400" nodeId="366" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="grainGrateNew" translation="8 0.025 9.5" shapeId="24" clipDistance="300" nodeId="367" castsShadows="true" receiveShadows="true" materialIds="13"/>
             <Shape name="warningStripes" translation="-3.60029 0.1 -11.8" rotation="1.91277e-10 90 0" shapeId="25" clipDistance="250" nodeId="368" castsShadows="false" receiveShadows="true" materialIds="25"/>
             <Shape name="warningStripes" translation="-3.6 0.1 11.8" rotation="1.91277e-10 0 0" shapeId="25" clipDistance="250" nodeId="369" castsShadows="false" receiveShadows="true" materialIds="25"/>
             <Shape name="warningStripes" translation="-9.4 0.1 11.8" rotation="1.91277e-10 -90 0" shapeId="25" clipDistance="250" nodeId="370" castsShadows="false" receiveShadows="true" materialIds="25"/>
@@ -618,8 +618,8 @@
         <Shape name="logoGreenDecal" translation="0 8.96796 0" shapeId="36" clipDistance="400" nodeId="389" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="390">
-        <Shape name="collisionGrate" translation="7.01557 0.1 0" shapeId="37" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="391" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="5"/>
-        <Shape name="collisionMain" shapeId="38" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="392" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        <Shape name="collisionMain" shapeId="37" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="419" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="410"/>
+        <Shape name="collisionGrate" translation="7.01557 0.1 0" shapeId="38" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="391" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="5"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>
