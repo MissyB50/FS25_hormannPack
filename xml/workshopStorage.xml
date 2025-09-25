@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="Workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_hoermannWorkshopStorage</name>
+        <name>$l10n_storeItem_hoermannStorage</name>
         <functions>
-            <function>$l10n_function_workshop</function>
+            <function>$l10n_function_objectStorage</function>
         </functions>
         <image>store/store_workshop.dds</image>
         <price>65000</price>
@@ -134,16 +134,16 @@
     </animatedObjects>
 
     <triggerMarkers>
-        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+<!--         <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" /> -->
         <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d"   adjustToGround="true" />
         <triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
     </triggerMarkers>
 
     <infoTrigger triggerNode="infoTrigger"/>
 
-    <workshop>
+<!--     <workshop>
         <sellingPoint playerTriggerNode="fixTrigger" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
-    </workshop>
+    </workshop> -->
 
     <objectStorage supportsBales="true" supportsPallets="true" maxLength="8.5" maxWidth="6" maxHeight="3.5">
         <playerTrigger node="playerTrigger" />
@@ -200,7 +200,6 @@
         <i3dMapping id="vehicleTrigger" node="0>5|0" />
         <i3dMapping id="fixTrigger" node="0>5|1" />
         <i3dMapping id="markerWrench" node="0>5|1|0" />
-
         <i3dMapping id="objectStorage" node="0>6" />
         <i3dMapping id="spawnAreaStart01" node="0>6|0|0" />
         <i3dMapping id="spawnAreaEnd01" node="0>6|0|0|0" />
@@ -211,8 +210,6 @@
         <i3dMapping id="playerTrigger" node="0>6|2" />
         <i3dMapping id="playerTriggerMarker" node="0>6|2|0" />
         <i3dMapping id="infoTrigger" node="0>6|3" />
-
-
         <i3dMapping id="rollingDoor1Base" node="0>7|0" />
         <i3dMapping id="rollingDoor1" node="0>7|0|0" />
         <i3dMapping id="rollingDoor1ColPartBottom" node="0>7|0|1" />

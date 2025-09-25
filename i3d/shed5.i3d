@@ -282,7 +282,7 @@
       <TransformGroup name="visuals" nodeId="176">
         <TransformGroup name="visual_LOD" lodDistance="0 100" lodBlending="false" nodeId="177">
           <TransformGroup name="LOD0" nodeId="178">
-            <Shape name="5bayShed01_vis" shapeId="12" clipDistance="400" nodeId="240" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="5bayShed01_vis" shapeId="12" clipDistance="400" nodeId="179" castsShadows="true" receiveShadows="true" materialIds="5"/>
             <Shape name="5bayShed02_vis" shapeId="13" clipDistance="400" nodeId="180" castsShadows="true" receiveShadows="true" materialIds="6"/>
             <Shape name="metalFrame" shapeId="14" clipDistance="600" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="10"/>
           </TransformGroup>
@@ -340,7 +340,7 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="collisions" nodeId="218">
-        <Shape name="collision" shapeId="27" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="238" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        <Shape name="collision" shapeId="27" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="219" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
       </TransformGroup>
     </TransformGroup>
   </Scene>

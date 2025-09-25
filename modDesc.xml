@@ -19,25 +19,22 @@
         <storeItem xmlFilename="xml/baleShedSmall.xml" />
         <storeItem xmlFilename="xml/cornerShed.xml" />
         <storeItem xmlFilename="xml/grainSilo.xml" />
-        <storeItem xmlFilename="xml/grainStore.xml" />
         <storeItem xmlFilename="xml/objectStorage.xml" />
         <storeItem xmlFilename="xml/shed2.xml" />
         <storeItem xmlFilename="xml/shed3.xml" />
         <storeItem xmlFilename="xml/shed5.xml" />
-        <storeItem xmlFilename="xml/silageSilo.xml" />
         <storeItem xmlFilename="xml/siloStorage.xml" />
         <storeItem xmlFilename="xml/workshop.xml" />
         <storeItem xmlFilename="xml/workshopStorage.xml" />
+        <storeItem xmlFilename="xml/garageWooden.xml"/>
     </storeItems>
 
     <placeableTypes>
  		<type name="WorkshopSilo" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
 		    <specialization name="workshop" />	
-			<specialization name="silo" />	
-			<specialization name="infoTrigger" />
 	    </type>
 
-		<type name="Workshop" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
+		<type name="workshop" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >	
 		    <specialization name="workshop" />
 			<specialization name="infoTrigger" />	
 			<specialization name="objectStorage" />	
@@ -57,11 +54,7 @@
             <en>Grain silo</en>
             <de></de>
         </text>
-        <text name="storeItem_hoermannGrainStore">
-            <en>Store grain to rootcrops</en>
-            <de></de>
-        </text>
-        <text name="storeItem_hoermannObjectStorage">
+        <text name="storeItem_objectStorage">
             <en>For storing bales to pallets</en>
             <de></de>
         </text>
@@ -77,7 +70,7 @@
             <en>5 Door vehicle shed</en>
             <de></de>
         </text>
-        <text name="storeItem_hoermannsiloStorage">
+        <text name="storeItem_hoermannSiloStorage">
             <en>Large vehicle storage with silo</en>
             <de></de>
         </text>
@@ -85,8 +78,8 @@
             <en>Vehicle workshop</en>
             <de></de>
         </text>
-        <text name="storeItem_hoermannWorkshopStorage">
-            <en>Workshop</en>
+        <text name="storeItem_hoermannStorage">
+            <en>For storing bales to pallets</en>
             <de></de>
         </text>
     </l10n>

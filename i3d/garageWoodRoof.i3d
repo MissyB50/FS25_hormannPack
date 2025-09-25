@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="garageWoodRoof.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
+  </Asset>
+
+  <Files>
+    <File fileId="17" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor01_diffuse.png"/>
+    <File fileId="18" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor01_normal.png"/>
+    <File fileId="19" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor01_specular.png"/>
+    <File fileId="20" filename="$data/placeables/rudolfHormann/garageContractor/garageContractor_mask.png"/>
+    <File fileId="10" filename="$data/placeables/rudolfHormann/garageWoodRoof/garageWoodRoof_diffuse.png"/>
+    <File fileId="11" filename="$data/placeables/rudolfHormann/garageWoodRoof/garageWoodRoof_normal.png"/>
+    <File fileId="12" filename="$data/placeables/rudolfHormann/garageWoodRoof/garageWoodRoof_specular.png"/>
+    <File fileId="1" filename="$data/placeables/rudolfHormann/shared/sharedWood_diffuse.dds"/>
+    <File fileId="2" filename="$data/placeables/rudolfHormann/shared/sharedWood_normal.dds"/>
+    <File fileId="3" filename="$data/placeables/rudolfHormann/shared/sharedWood_specular.dds"/>
+    <File fileId="13" filename="$data/placeables/rudolfHormann/shared/solarPanels_diffuse.png"/>
+    <File fileId="14" filename="$data/placeables/rudolfHormann/shared/solarPanels_normal.png"/>
+    <File fileId="15" filename="$data/placeables/rudolfHormann/shared/solarPanels_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="16" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="garageContractor01_mat" materialId="5" customShaderId="4" customShaderVariation="colorScale">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="mMaskMap" fileId="20"/>
+      <CustomParameter name="colorScale0" value="0.0667 0.2588 0.1961 1"/>
+    </Material>
+    <Material name="lamvert" materialId="6" diffuseColor="1 1 1 1" customShaderId="4">
+    </Material>
+    <Material name="sharedWood_mat" materialId="80" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="snowScale" value="0"/>
+    </Material>
+    <Material name="solarPanels_mat" materialId="7" customShaderId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="woodShedLong_mat" materialId="8" customShaderId="4">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="garageWoodRoof.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="garageWoodRoof" scale="1 1.2 1" nodeId="14">
+      <TransformGroup name="clearAreas" nodeId="15">
+        <TransformGroup name="clearAreaStart01" translation="-15.2997 -0.003583 -3.67989" nodeId="16">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 7.31957" nodeId="17"/>
+          <TransformGroup name="clearAreaHeight01" translation="30.596 0 0" nodeId="18"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="leveling" nodeId="19">
+        <TransformGroup name="levelAreaStart01" translation="-15.3054 0 -3.66568" nodeId="20">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 7.29521" nodeId="21"/>
+          <TransformGroup name="levelAreaHeight01" translation="30.6961 0 0" nodeId="22"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="23">
+        <TransformGroup name="indoorAreaStart01" translation="-15.1183 0 -3.55092" nodeId="24">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 7.57239" nodeId="25"/>
+          <TransformGroup name="indoorAreaHeight01" translation="30.4455 0 0" nodeId="26"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="27">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-15.6988 0 -3.73241" nodeId="28">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="31.6721 0 7.36358" nodeId="29"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="30">
+        <TransformGroup name="testAreaStart01" translation="-16.8129 0 -3.67537" nodeId="31">
+          <TransformGroup name="testAreaEnd01" translation="32.3611 5.5 7.30409" nodeId="32"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="33">
+        <TransformGroup name="visual_lod" lodDistance="0 800" nodeId="34">
+          <TransformGroup name="LOD0" nodeId="35">
+            <TransformGroup name="winter" nodeId="36"/>
+            <Shape name="woodFrame" shapeId="1" clipDistance="400" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="80"/>
+            <Shape name="woodenShedLong_vis" shapeId="2" clipDistance="400" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="38">
+            <Shape name="woodenShedLong_vis_LOD" shapeId="3" clipDistance="600" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="solarPanels" translation="-7.50571 0.434836 -0.642682" rotation="10.2799 -0 0" scale="1 1 0.857465" clipDistance="300" nodeId="40">
+          <TransformGroup name="visual_lod" translation="-2.71954 0.489715 -2.46735" scale="1 1 1.00912" lodDistance="0 60" nodeId="41">
+            <Shape name="LOD0" translation="2.55249 3.69933 2.42092" shapeId="4" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="LOD1" translation="2.54725 3.69837 2.41638" shapeId="5" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="supports" translation="0 0.0148068 -0.00085143" shapeId="6" clipDistance="50" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <TransformGroup name="visual_lod" translation="12.6345 0.489715 -2.46735" scale="1 1 1.00912" lodDistance="0 60" nodeId="45">
+            <Shape name="LOD0" translation="2.55249 3.69933 2.42092" shapeId="4" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="LOD1" translation="2.54725 3.69837 2.41638" shapeId="5" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <Shape name="supports" translation="15.3528 0 0" shapeId="6" clipDistance="50" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collision" nodeId="49">
+        <Shape name="collision" shapeId="3" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
